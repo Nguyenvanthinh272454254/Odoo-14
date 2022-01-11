@@ -66,3 +66,7 @@
 2022-01-11 10:03:50,787 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:03:50] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.005 0.013
 2022-01-11 10:04:17,889 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:04:17] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.029
 2022-01-11 10:04:19,225 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:04:19] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.016 0.034
+2022-01-11 10:05:09,234 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:05:09] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.034 50.030
+2022-01-11 10:05:12,280 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:05:12] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-11 10:06:01,279 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:06:01] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.021
+2022-01-11 10:06:04,343 696098 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:06:04] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.025
