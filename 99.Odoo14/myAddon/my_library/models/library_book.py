@@ -95,6 +95,8 @@ class my_library(models.Model):
         logger.info('Books found: %s', books)
         return True
 
+    
+
 class LibraryMember(models.Model):
     _name = 'library.member'
     _inherits = {'res.partner': 'partner_id'}
