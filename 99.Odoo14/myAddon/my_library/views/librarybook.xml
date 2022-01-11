@@ -31,15 +31,9 @@
             <field name="name">Library Book List</field>
             <field name="model">library.book</field>
             <field name="arch" type="xml">
-                <tree  decoration-info="reader_rating == 'draft'">
+                <tree>
                     <field name="name"/>
-                    <field name="cover" widget="image" class="oe_avatar" width="50px" height="50px"/>
                     <field name="date_release"/>
-                    <field name="date_updated"/>
-                    <field name="cost_price"/>
-                    <field name="reader_rating" 
-                   
-                    />
                 </tree>
             </field>
         </record>

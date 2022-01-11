@@ -12049,3 +12049,1602 @@ ValueError: Wrong value for library.book.state: 'borrowed'
 2022-01-11 07:02:31,275 579292 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
 2022-01-11 07:02:46,170 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:02:46] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.015 50.043
 2022-01-11 07:02:47,214 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:02:47] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.025
+2022-01-11 07:03:38,263 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:03:38] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.021 50.050
+2022-01-11 07:03:39,304 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:03:39] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-11 07:04:30,308 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:04:30] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.023
+2022-01-11 07:04:31,351 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:04:31] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-11 07:05:22,356 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:05:22] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.026
+2022-01-11 07:05:23,413 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:05:23] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.034
+2022-01-11 07:06:14,431 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:06:14] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.043
+2022-01-11 07:06:15,470 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:06:15] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-11 07:07:06,480 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:07:06] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.028
+2022-01-11 07:07:07,530 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:07:07] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.031
+2022-01-11 07:07:58,532 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:07:58] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.027
+2022-01-11 07:07:59,602 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:07:59] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.044
+2022-01-11 07:08:50,608 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:08:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.046
+2022-01-11 07:08:52,680 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:08:52] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.019 0.035
+2022-01-11 07:09:42,691 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:09:42] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.037 50.032
+2022-01-11 07:09:44,740 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:09:44] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.023
+2022-01-11 07:10:33,743 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:10:33] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.025
+2022-01-11 07:10:36,808 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:10:36] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.031
+2022-01-11 07:11:24,808 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:11:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.029
+2022-01-11 07:11:29,170 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:11:29] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.033
+2022-01-11 07:12:16,117 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:12:16] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.030
+2022-01-11 07:12:21,247 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:12:21] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-11 07:12:31,881 579292 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-11 07:12:31,917 579292 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-11 07:13:07,253 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:13:07] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.030
+2022-01-11 07:13:13,302 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:13:13] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.022
+2022-01-11 07:13:38,340 588265 INFO ? odoo: Odoo version 14.0 
+2022-01-11 07:13:38,341 588265 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-11 07:13:38,341 588265 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-11 07:13:38,342 588265 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-11 07:13:38,790 588265 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-11 07:13:39,087 588265 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-11 07:13:39,110 588265 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:13:39,201 588265 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.09s, 0 queries (+0 extra) 
+2022-01-11 07:13:39,530 588265 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-11 07:13:39,543 588265 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-11 07:13:41,481 588265 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 07:13:41,481 588265 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 07:13:42,959 588265 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-11 07:13:43,092 588265 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-11 07:13:43,251 588265 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:13:43,266 588265 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:13:43,267 588265 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:13:43,268 588265 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:13:43,410 588265 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:13:43,836 588265 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:13:43,933 588265 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:13:44,055 588265 INFO pro15 odoo.addons.base.models.ir_ui_view: Field "cover" does not exist in model "library.book"
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:13:44,059 588265 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:13:44,060 588265 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:13:44,061 588265 CRITICAL pro15 odoo.service.server: Failed to initialize database `pro15`. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 862, in _postprocess_view
+    self.postprocess(node, [], editable, name_manager)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 962, in postprocess
+    self.postprocess(child, current_node_path, node_info['editable'], name_manager)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 953, in postprocess
+    validator(node, name_manager, node_info)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1089, in _validate_tag_field
+    self.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field "cover" does not exist in model "library.book"
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 1199, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="cover" widget="image" class="oe_avatar" width="50px" height="50px"/>
+                    <field name="date_release"/>
+                    <field name="date_updated"/>
+                    <field name="cost_price"/>
+                    <field name="reader_rating"/>
+                </tree>
+            </field>
+        </record>
+2022-01-11 07:13:44,076 588265 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:13:44,125 588265 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-11 07:13:44,251 588265 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:13:44,253 588265 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:13:44,254 588265 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:13:44,254 588265 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:13:44,398 588265 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:13:44,523 588265 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:13:44,570 588265 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:13:44,604 588265 INFO pro15 odoo.addons.base.models.ir_ui_view: Field "cover" does not exist in model "library.book"
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:13:44,608 588265 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:13:44,608 588265 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:13:44,614 588265 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:13:44,643 588265 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-11 07:13:44,717 588265 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:13:44,719 588265 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:13:44,719 588265 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:13:44,720 588265 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:13:44,905 588265 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:13:45,024 588265 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:13:45,085 588265 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:13:45,159 588265 INFO pro15 odoo.addons.base.models.ir_ui_view: Field "cover" does not exist in model "library.book"
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:13:45,163 588265 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:13:45,164 588265 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:13:45,193 588265 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:13:45] "GET /web HTTP/1.1" 500 - 203 0.150 2.069
+2022-01-11 07:13:45,268 588265 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 862, in _postprocess_view
+    self.postprocess(node, [], editable, name_manager)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 962, in postprocess
+    self.postprocess(child, current_node_path, node_info['editable'], name_manager)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 953, in postprocess
+    validator(node, name_manager, node_info)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1089, in _validate_tag_field
+    self.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field "cover" does not exist in model "library.book"
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="cover" widget="image" class="oe_avatar" width="50px" height="50px"/>
+                    <field name="date_release"/>
+                    <field name="date_updated"/>
+                    <field name="cost_price"/>
+                    <field name="reader_rating"/>
+                </tree>
+            </field>
+        </record>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 862, in _postprocess_view
+    self.postprocess(node, [], editable, name_manager)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 962, in postprocess
+    self.postprocess(child, current_node_path, node_info['editable'], name_manager)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 953, in postprocess
+    validator(node, name_manager, node_info)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1089, in _validate_tag_field
+    self.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field "cover" does not exist in model "library.book"
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="cover" widget="image" class="oe_avatar" width="50px" height="50px"/>
+                    <field name="date_release"/>
+                    <field name="date_updated"/>
+                    <field name="cost_price"/>
+                    <field name="reader_rating"/>
+                </tree>
+            </field>
+        </record> - - -
+2022-01-11 07:14:48,990 588265 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:14:49,027 588265 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-11 07:14:49,102 588265 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:14:49,103 588265 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:14:49,104 588265 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:14:49,104 588265 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:14:49,200 588265 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:14:49,316 588265 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:14:49,360 588265 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:14:49,405 588265 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:14:49,408 588265 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:14:49,409 588265 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:14:49,414 588265 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:14:49,445 588265 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-11 07:14:49,516 588265 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:14:49,517 588265 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:14:49,517 588265 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:14:49,518 588265 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:14:49,639 588265 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:14:49,824 588265 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:14:49,932 588265 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:14:50,024 588265 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:14:50,028 588265 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:14:50,028 588265 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:14:50,055 588265 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:14:50] "GET /web HTTP/1.1" 500 - 209 0.183 0.892
+2022-01-11 07:14:50,135 588265 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record> - - -
+2022-01-11 07:14:59,080 589155 INFO ? odoo: Odoo version 14.0 
+2022-01-11 07:14:59,081 589155 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-11 07:14:59,081 589155 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-11 07:14:59,082 589155 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-11 07:14:59,704 589155 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-11 07:14:59,961 589155 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-11 07:14:59,976 589155 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:15:00,004 589155 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-11 07:15:00,274 589155 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-11 07:15:00,281 589155 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-11 07:15:02,264 589155 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 07:15:02,265 589155 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 07:15:03,766 589155 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-11 07:15:03,932 589155 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:15:03,946 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:03,946 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:03,947 589155 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:15:04,084 589155 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:15:04,430 589155 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:15:04,504 589155 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:15:04,591 589155 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:15:04,597 589155 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:15:04,598 589155 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:15:04,598 589155 CRITICAL pro15 odoo.service.server: Failed to initialize database `pro15`. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 1199, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record>
+2022-01-11 07:15:05,479 589155 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-11 07:15:05,496 589155 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:15:05,529 589155 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-11 07:15:05,614 589155 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:15:05,616 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:05,617 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:05,618 589155 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:15:05,724 589155 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:15:05,855 589155 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:15:05,908 589155 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:15:05,959 589155 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:15:05,963 589155 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:15:05,964 589155 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:15:05,984 589155 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:15:06,030 589155 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-11 07:15:06,110 589155 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:15:06,112 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:06,112 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:06,113 589155 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:15:06,318 589155 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:15:06,592 589155 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:15:06,688 589155 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:15:06,767 589155 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:15:06,771 589155 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:15:06,772 589155 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:15:06,806 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:15:06] "GET /web HTTP/1.1" 500 - 209 0.215 1.105
+2022-01-11 07:15:06,870 589155 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:30, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record> - - -
+2022-01-11 07:15:58,297 589155 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:15:58,341 589155 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-11 07:15:58,441 589155 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:15:58,443 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:58,444 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:58,445 589155 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:15:58,537 589155 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:15:58,696 589155 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:15:58,769 589155 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:15:58,921 589155 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-11 07:15:59,061 589155 INFO pro15 odoo.modules.loading: Module my_library loaded in 0.62s, 188 queries 
+2022-01-11 07:15:59,091 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:59,091 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:59,155 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:59,155 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:59,447 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:59,447 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:59,474 589155 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:15:59,474 589155 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:15:59,802 589155 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-11 07:16:00,325 589155 INFO pro15 odoo.modules.loading: 67 modules loaded in 1.88s, 188 queries (+0 extra) 
+2022-01-11 07:16:01,539 589155 INFO pro15 odoo.modules.loading: Model base.archive is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-11 07:16:01,540 589155 INFO pro15 odoo.modules.loading: Model library.member is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-11 07:16:02,015 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1434@ir.model.constraint (my_library.constraint_library_book_copy_positive_page) 
+2022-01-11 07:16:02,752 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80412] 
+2022-01-11 07:16:02,753 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.constraint records with IDs: [1434] 
+2022-01-11 07:16:02,754 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1433@ir.model.constraint (my_library.constraint_library_book_copy_name_uniq) 
+2022-01-11 07:16:02,767 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80411] 
+2022-01-11 07:16:02,767 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.constraint records with IDs: [1433] 
+2022-01-11 07:16:02,769 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10014@ir.model.fields (my_library.field_library_book_copy__active) 
+2022-01-11 07:16:02,773 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.active (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:02,802 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80394] 
+2022-01-11 07:16:02,802 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10014] 
+2022-01-11 07:16:02,813 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10013@ir.model.fields (my_library.field_library_book_copy__ref_doc_id) 
+2022-01-11 07:16:02,816 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.ref_doc_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:02,840 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80393] 
+2022-01-11 07:16:02,840 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10013] 
+2022-01-11 07:16:02,850 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10012@ir.model.fields (my_library.field_library_book_copy__age_days) 
+2022-01-11 07:16:02,854 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.age_days (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:02,874 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80392] 
+2022-01-11 07:16:02,874 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10012] 
+2022-01-11 07:16:02,891 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10011@ir.model.fields (my_library.field_library_book_copy__category_id) 
+2022-01-11 07:16:02,896 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.category_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:02,918 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80391] 
+2022-01-11 07:16:02,918 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10011] 
+2022-01-11 07:16:02,929 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10010@ir.model.fields (my_library.field_library_book_copy__publisher_city) 
+2022-01-11 07:16:02,932 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.publisher_city (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:02,951 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80390] 
+2022-01-11 07:16:02,951 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10010] 
+2022-01-11 07:16:02,962 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10009@ir.model.fields (my_library.field_library_book_copy__publisher_id) 
+2022-01-11 07:16:02,965 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.publisher_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:02,988 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80389] 
+2022-01-11 07:16:02,989 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10009] 
+2022-01-11 07:16:02,999 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10008@ir.model.fields (my_library.field_library_book_copy__description) 
+2022-01-11 07:16:03,002 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.description (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,027 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80388] 
+2022-01-11 07:16:03,028 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10008] 
+2022-01-11 07:16:03,044 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10007@ir.model.fields (my_library.field_library_book_copy__retail_price) 
+2022-01-11 07:16:03,049 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.retail_price (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,075 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80387] 
+2022-01-11 07:16:03,075 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10007] 
+2022-01-11 07:16:03,085 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10006@ir.model.fields (my_library.field_library_book_copy__currency_id) 
+2022-01-11 07:16:03,089 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.currency_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,113 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80386] 
+2022-01-11 07:16:03,113 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10006] 
+2022-01-11 07:16:03,124 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10005@ir.model.fields (my_library.field_library_book_copy__cost_price) 
+2022-01-11 07:16:03,128 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.cost_price (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,149 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80385] 
+2022-01-11 07:16:03,149 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10005] 
+2022-01-11 07:16:03,160 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10003@ir.model.fields (my_library.field_library_book_copy__reader_rating) 
+2022-01-11 07:16:03,163 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.reader_rating (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,186 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80383] 
+2022-01-11 07:16:03,186 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10003] 
+2022-01-11 07:16:03,197 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10002@ir.model.fields (my_library.field_library_book_copy__pages) 
+2022-01-11 07:16:03,200 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.pages (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,222 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80382] 
+2022-01-11 07:16:03,223 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10002] 
+2022-01-11 07:16:03,232 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10001@ir.model.fields (my_library.field_library_book_copy__date_updated) 
+2022-01-11 07:16:03,236 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.date_updated (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,256 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80381] 
+2022-01-11 07:16:03,256 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10001] 
+2022-01-11 07:16:03,266 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9999@ir.model.fields (my_library.field_library_book_copy__out_of_print) 
+2022-01-11 07:16:03,269 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.out_of_print (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,293 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80379] 
+2022-01-11 07:16:03,293 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9999] 
+2022-01-11 07:16:03,303 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9998@ir.model.fields (my_library.field_library_book_copy__cover) 
+2022-01-11 07:16:03,308 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.cover (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,329 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80378] 
+2022-01-11 07:16:03,330 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9998] 
+2022-01-11 07:16:03,340 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9996@ir.model.fields (my_library.field_library_book_copy__notes) 
+2022-01-11 07:16:03,344 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.notes (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,364 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80376] 
+2022-01-11 07:16:03,365 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9996] 
+2022-01-11 07:16:03,375 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9995@ir.model.fields (my_library.field_library_book_copy__short_name) 
+2022-01-11 07:16:03,379 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.short_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,401 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80375] 
+2022-01-11 07:16:03,402 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9995] 
+2022-01-11 07:16:03,412 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9993@ir.model.fields (my_library.field_library_member__count_books) 
+2022-01-11 07:16:03,416 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.count_books (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,438 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80373] 
+2022-01-11 07:16:03,438 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9993] 
+2022-01-11 07:16:03,457 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9992@ir.model.fields (my_library.field_library_member__authored_book_ids) 
+2022-01-11 07:16:03,462 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.authored_book_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,480 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80372] 
+2022-01-11 07:16:03,480 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9992] 
+2022-01-11 07:16:03,491 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9991@ir.model.fields (my_library.field_library_member__published_book_ids) 
+2022-01-11 07:16:03,494 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.published_book_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,511 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80371] 
+2022-01-11 07:16:03,511 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9991] 
+2022-01-11 07:16:03,521 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9990@ir.model.fields (my_library.field_library_member__image_128) 
+2022-01-11 07:16:03,525 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_128 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,542 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80370] 
+2022-01-11 07:16:03,542 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9990] 
+2022-01-11 07:16:03,552 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9989@ir.model.fields (my_library.field_library_member__image_256) 
+2022-01-11 07:16:03,556 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_256 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,573 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80369] 
+2022-01-11 07:16:03,573 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9989] 
+2022-01-11 07:16:03,583 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9988@ir.model.fields (my_library.field_library_member__image_512) 
+2022-01-11 07:16:03,586 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_512 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,602 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80368] 
+2022-01-11 07:16:03,603 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9988] 
+2022-01-11 07:16:03,614 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9987@ir.model.fields (my_library.field_library_member__image_1024) 
+2022-01-11 07:16:03,617 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_1024 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,633 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80367] 
+2022-01-11 07:16:03,633 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9987] 
+2022-01-11 07:16:03,644 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9986@ir.model.fields (my_library.field_library_member__image_1920) 
+2022-01-11 07:16:03,648 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_1920 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,664 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80366] 
+2022-01-11 07:16:03,664 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9986] 
+2022-01-11 07:16:03,674 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9985@ir.model.fields (my_library.field_library_member__self) 
+2022-01-11 07:16:03,677 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.self (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,694 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80365] 
+2022-01-11 07:16:03,695 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9985] 
+2022-01-11 07:16:03,705 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9984@ir.model.fields (my_library.field_library_member__barcode) 
+2022-01-11 07:16:03,708 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.barcode (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,726 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80364] 
+2022-01-11 07:16:03,726 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9984] 
+2022-01-11 07:16:03,736 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9983@ir.model.fields (my_library.field_library_member__company_name) 
+2022-01-11 07:16:03,741 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.company_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,761 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80363] 
+2022-01-11 07:16:03,761 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9983] 
+2022-01-11 07:16:03,772 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9982@ir.model.fields (my_library.field_library_member__commercial_company_name) 
+2022-01-11 07:16:03,775 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.commercial_company_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,793 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80362] 
+2022-01-11 07:16:03,794 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9982] 
+2022-01-11 07:16:03,804 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9981@ir.model.fields (my_library.field_library_member__commercial_partner_id) 
+2022-01-11 07:16:03,808 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.commercial_partner_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,827 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80361] 
+2022-01-11 07:16:03,828 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9981] 
+2022-01-11 07:16:03,838 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9980@ir.model.fields (my_library.field_library_member__contact_address) 
+2022-01-11 07:16:03,841 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.contact_address (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,860 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80360] 
+2022-01-11 07:16:03,861 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9980] 
+2022-01-11 07:16:03,871 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9979@ir.model.fields (my_library.field_library_member__partner_share) 
+2022-01-11 07:16:03,876 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_share (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,896 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80359] 
+2022-01-11 07:16:03,897 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9979] 
+2022-01-11 07:16:03,907 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9978@ir.model.fields (my_library.field_library_member__user_ids) 
+2022-01-11 07:16:03,911 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.user_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,930 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80358] 
+2022-01-11 07:16:03,930 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9978] 
+2022-01-11 07:16:03,941 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9977@ir.model.fields (my_library.field_library_member__color) 
+2022-01-11 07:16:03,944 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.color (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,963 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80357] 
+2022-01-11 07:16:03,963 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9977] 
+2022-01-11 07:16:03,974 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9976@ir.model.fields (my_library.field_library_member__company_id) 
+2022-01-11 07:16:03,978 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.company_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:03,995 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80356] 
+2022-01-11 07:16:03,995 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9976] 
+2022-01-11 07:16:04,006 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9975@ir.model.fields (my_library.field_library_member__company_type) 
+2022-01-11 07:16:04,009 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.company_type (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,027 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80355] 
+2022-01-11 07:16:04,028 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9975] 
+2022-01-11 07:16:04,044 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9974@ir.model.fields (my_library.field_library_member__industry_id) 
+2022-01-11 07:16:04,049 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.industry_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,070 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80354] 
+2022-01-11 07:16:04,070 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9974] 
+2022-01-11 07:16:04,087 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9973@ir.model.fields (my_library.field_library_member__is_company) 
+2022-01-11 07:16:04,091 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.is_company (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,111 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80353] 
+2022-01-11 07:16:04,111 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9973] 
+2022-01-11 07:16:04,121 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9972@ir.model.fields (my_library.field_library_member__mobile) 
+2022-01-11 07:16:04,125 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.mobile (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,144 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80352] 
+2022-01-11 07:16:04,144 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9972] 
+2022-01-11 07:16:04,155 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9971@ir.model.fields (my_library.field_library_member__phone) 
+2022-01-11 07:16:04,160 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.phone (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,180 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80351] 
+2022-01-11 07:16:04,180 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9971] 
+2022-01-11 07:16:04,197 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9970@ir.model.fields (my_library.field_library_member__email_formatted) 
+2022-01-11 07:16:04,202 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.email_formatted (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,221 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80350] 
+2022-01-11 07:16:04,222 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9970] 
+2022-01-11 07:16:04,232 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9969@ir.model.fields (my_library.field_library_member__email) 
+2022-01-11 07:16:04,235 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.email (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,255 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80349] 
+2022-01-11 07:16:04,255 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9969] 
+2022-01-11 07:16:04,265 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9968@ir.model.fields (my_library.field_library_member__partner_longitude) 
+2022-01-11 07:16:04,269 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_longitude (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,289 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80348] 
+2022-01-11 07:16:04,289 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9968] 
+2022-01-11 07:16:04,306 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9967@ir.model.fields (my_library.field_library_member__partner_latitude) 
+2022-01-11 07:16:04,310 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_latitude (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,329 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80347] 
+2022-01-11 07:16:04,330 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9967] 
+2022-01-11 07:16:04,341 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9966@ir.model.fields (my_library.field_library_member__country_id) 
+2022-01-11 07:16:04,344 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.country_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,364 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80346] 
+2022-01-11 07:16:04,365 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9966] 
+2022-01-11 07:16:04,382 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9965@ir.model.fields (my_library.field_library_member__state_id) 
+2022-01-11 07:16:04,387 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.state_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,409 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80345] 
+2022-01-11 07:16:04,409 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9965] 
+2022-01-11 07:16:04,426 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9964@ir.model.fields (my_library.field_library_member__city) 
+2022-01-11 07:16:04,431 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.city (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,451 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80344] 
+2022-01-11 07:16:04,452 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9964] 
+2022-01-11 07:16:04,469 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9963@ir.model.fields (my_library.field_library_member__zip) 
+2022-01-11 07:16:04,474 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.zip (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,494 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80343] 
+2022-01-11 07:16:04,494 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9963] 
+2022-01-11 07:16:04,505 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9962@ir.model.fields (my_library.field_library_member__street2) 
+2022-01-11 07:16:04,510 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.street2 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,529 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80342] 
+2022-01-11 07:16:04,529 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9962] 
+2022-01-11 07:16:04,540 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9961@ir.model.fields (my_library.field_library_member__street) 
+2022-01-11 07:16:04,543 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.street (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,561 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80341] 
+2022-01-11 07:16:04,561 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9961] 
+2022-01-11 07:16:04,578 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9960@ir.model.fields (my_library.field_library_member__type) 
+2022-01-11 07:16:04,583 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.type (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,604 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80340] 
+2022-01-11 07:16:04,604 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9960] 
+2022-01-11 07:16:04,621 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9959@ir.model.fields (my_library.field_library_member__function) 
+2022-01-11 07:16:04,627 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.function (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,647 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80339] 
+2022-01-11 07:16:04,647 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9959] 
+2022-01-11 07:16:04,658 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9958@ir.model.fields (my_library.field_library_member__employee) 
+2022-01-11 07:16:04,661 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.employee (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,678 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80338] 
+2022-01-11 07:16:04,678 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9958] 
+2022-01-11 07:16:04,689 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9957@ir.model.fields (my_library.field_library_member__active) 
+2022-01-11 07:16:04,692 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.active (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,711 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80337] 
+2022-01-11 07:16:04,711 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9957] 
+2022-01-11 07:16:04,728 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9956@ir.model.fields (my_library.field_library_member__credit_limit) 
+2022-01-11 07:16:04,732 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.credit_limit (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,750 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80336] 
+2022-01-11 07:16:04,751 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9956] 
+2022-01-11 07:16:04,761 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9955@ir.model.fields (my_library.field_library_member__category_id) 
+2022-01-11 07:16:04,765 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.category_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,782 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80335] 
+2022-01-11 07:16:04,782 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9955] 
+2022-01-11 07:16:04,792 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9954@ir.model.fields (my_library.field_library_member__comment) 
+2022-01-11 07:16:04,795 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.comment (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,816 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80334] 
+2022-01-11 07:16:04,816 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9954] 
+2022-01-11 07:16:04,833 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9953@ir.model.fields (my_library.field_library_member__website) 
+2022-01-11 07:16:04,838 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.website (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,859 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80333] 
+2022-01-11 07:16:04,860 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9953] 
+2022-01-11 07:16:04,876 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9952@ir.model.fields (my_library.field_library_member__bank_ids) 
+2022-01-11 07:16:04,881 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.bank_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,902 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80332] 
+2022-01-11 07:16:04,902 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9952] 
+2022-01-11 07:16:04,919 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9951@ir.model.fields (my_library.field_library_member__same_vat_partner_id) 
+2022-01-11 07:16:04,924 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.same_vat_partner_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,945 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80331] 
+2022-01-11 07:16:04,945 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9951] 
+2022-01-11 07:16:04,962 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9950@ir.model.fields (my_library.field_library_member__vat) 
+2022-01-11 07:16:04,967 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.vat (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:04,990 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80330] 
+2022-01-11 07:16:04,990 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9950] 
+2022-01-11 07:16:05,007 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9949@ir.model.fields (my_library.field_library_member__user_id) 
+2022-01-11 07:16:05,012 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.user_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,033 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80329] 
+2022-01-11 07:16:05,033 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9949] 
+2022-01-11 07:16:05,050 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9948@ir.model.fields (my_library.field_library_member__tz_offset) 
+2022-01-11 07:16:05,055 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.tz_offset (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,075 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80328] 
+2022-01-11 07:16:05,075 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9948] 
+2022-01-11 07:16:05,085 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9947@ir.model.fields (my_library.field_library_member__tz) 
+2022-01-11 07:16:05,089 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.tz (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,110 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80327] 
+2022-01-11 07:16:05,110 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9947] 
+2022-01-11 07:16:05,127 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9946@ir.model.fields (my_library.field_library_member__active_lang_count) 
+2022-01-11 07:16:05,131 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.active_lang_count (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,152 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80326] 
+2022-01-11 07:16:05,153 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9946] 
+2022-01-11 07:16:05,169 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9945@ir.model.fields (my_library.field_library_member__lang) 
+2022-01-11 07:16:05,174 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.lang (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,195 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80325] 
+2022-01-11 07:16:05,196 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9945] 
+2022-01-11 07:16:05,212 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9944@ir.model.fields (my_library.field_library_member__ref) 
+2022-01-11 07:16:05,217 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.ref (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,238 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80324] 
+2022-01-11 07:16:05,239 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9944] 
+2022-01-11 07:16:05,256 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9943@ir.model.fields (my_library.field_library_member__child_ids) 
+2022-01-11 07:16:05,259 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.child_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,279 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80323] 
+2022-01-11 07:16:05,279 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9943] 
+2022-01-11 07:16:05,296 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9942@ir.model.fields (my_library.field_library_member__parent_name) 
+2022-01-11 07:16:05,301 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.parent_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,322 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80322] 
+2022-01-11 07:16:05,323 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9942] 
+2022-01-11 07:16:05,340 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9941@ir.model.fields (my_library.field_library_member__parent_id) 
+2022-01-11 07:16:05,344 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.parent_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,364 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80321] 
+2022-01-11 07:16:05,365 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9941] 
+2022-01-11 07:16:05,375 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9940@ir.model.fields (my_library.field_library_member__title) 
+2022-01-11 07:16:05,379 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.title (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,396 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80320] 
+2022-01-11 07:16:05,397 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9940] 
+2022-01-11 07:16:05,407 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9939@ir.model.fields (my_library.field_library_member__date) 
+2022-01-11 07:16:05,411 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,429 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80319] 
+2022-01-11 07:16:05,430 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9939] 
+2022-01-11 07:16:05,440 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9938@ir.model.fields (my_library.field_library_member__name) 
+2022-01-11 07:16:05,444 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,465 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80318] 
+2022-01-11 07:16:05,465 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9938] 
+2022-01-11 07:16:05,482 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9937@ir.model.fields (my_library.field_library_member____last_update) 
+2022-01-11 07:16:05,487 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.__last_update (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,508 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80317] 
+2022-01-11 07:16:05,508 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9937] 
+2022-01-11 07:16:05,525 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9936@ir.model.fields (my_library.field_library_member__write_date) 
+2022-01-11 07:16:05,530 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.write_date (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,548 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80316] 
+2022-01-11 07:16:05,548 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9936] 
+2022-01-11 07:16:05,559 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9935@ir.model.fields (my_library.field_library_member__write_uid) 
+2022-01-11 07:16:05,563 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.write_uid (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,582 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80315] 
+2022-01-11 07:16:05,583 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9935] 
+2022-01-11 07:16:05,595 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9934@ir.model.fields (my_library.field_library_member__create_date) 
+2022-01-11 07:16:05,598 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.create_date (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,621 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80314] 
+2022-01-11 07:16:05,621 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9934] 
+2022-01-11 07:16:05,633 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9933@ir.model.fields (my_library.field_library_member__create_uid) 
+2022-01-11 07:16:05,639 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.create_uid (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,660 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80313] 
+2022-01-11 07:16:05,660 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9933] 
+2022-01-11 07:16:05,671 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9932@ir.model.fields (my_library.field_library_member__display_name) 
+2022-01-11 07:16:05,676 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.display_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,697 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80312] 
+2022-01-11 07:16:05,697 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9932] 
+2022-01-11 07:16:05,714 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9931@ir.model.fields (my_library.field_library_member__id) 
+2022-01-11 07:16:05,719 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,740 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80311] 
+2022-01-11 07:16:05,740 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9931] 
+2022-01-11 07:16:05,750 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9930@ir.model.fields (my_library.field_library_member__date_of_birth) 
+2022-01-11 07:16:05,753 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date_of_birth (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,770 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80310] 
+2022-01-11 07:16:05,770 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9930] 
+2022-01-11 07:16:05,780 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9929@ir.model.fields (my_library.field_library_member__member_number) 
+2022-01-11 07:16:05,784 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.member_number (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,804 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80309] 
+2022-01-11 07:16:05,804 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9929] 
+2022-01-11 07:16:05,814 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9928@ir.model.fields (my_library.field_library_member__date_end) 
+2022-01-11 07:16:05,817 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date_end (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,837 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80308] 
+2022-01-11 07:16:05,838 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9928] 
+2022-01-11 07:16:05,848 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9927@ir.model.fields (my_library.field_library_member__date_start) 
+2022-01-11 07:16:05,851 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date_start (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,872 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80307] 
+2022-01-11 07:16:05,872 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9927] 
+2022-01-11 07:16:05,889 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9926@ir.model.fields (my_library.field_library_member__partner_id) 
+2022-01-11 07:16:05,894 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,915 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80306] 
+2022-01-11 07:16:05,915 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9926] 
+2022-01-11 07:16:05,932 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9925@ir.model.fields (my_library.field_library_book__active) 
+2022-01-11 07:16:05,937 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.active (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,961 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80305] 
+2022-01-11 07:16:05,961 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9925] 
+2022-01-11 07:16:05,971 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9924@ir.model.fields (my_library.field_base_archive____last_update) 
+2022-01-11 07:16:05,975 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field base.archive.__last_update (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:05,995 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80304] 
+2022-01-11 07:16:05,995 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9924] 
+2022-01-11 07:16:06,006 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9923@ir.model.fields (my_library.field_base_archive__display_name) 
+2022-01-11 07:16:06,009 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field base.archive.display_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,029 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80303] 
+2022-01-11 07:16:06,029 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9923] 
+2022-01-11 07:16:06,040 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9922@ir.model.fields (my_library.field_base_archive__id) 
+2022-01-11 07:16:06,043 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field base.archive.id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,062 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80302] 
+2022-01-11 07:16:06,062 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9922] 
+2022-01-11 07:16:06,073 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9921@ir.model.fields (my_library.field_base_archive__active) 
+2022-01-11 07:16:06,076 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field base.archive.active (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,094 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80301] 
+2022-01-11 07:16:06,094 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9921] 
+2022-01-11 07:16:06,104 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 703@ir.model (my_library.model_library_member) 
+2022-01-11 07:16:06,111 589155 WARNING pro15 odoo.addons.base.models.ir_model: The model library.member could not be dropped because it did not exist in the registry. 
+2022-01-11 07:16:06,383 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80252] 
+2022-01-11 07:16:06,383 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model records with IDs: [703] 
+2022-01-11 07:16:06,385 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 700@ir.model (my_library.model_base_archive) 
+2022-01-11 07:16:06,393 589155 WARNING pro15 odoo.addons.base.models.ir_model: The model base.archive could not be dropped because it did not exist in the registry. 
+2022-01-11 07:16:06,413 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80251] 
+2022-01-11 07:16:06,413 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model records with IDs: [700] 
+2022-01-11 07:16:06,415 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9920@ir.model.fields (my_library.field_library_book__ref_doc_id) 
+2022-01-11 07:16:06,418 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.ref_doc_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,440 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80078] 
+2022-01-11 07:16:06,441 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9920] 
+2022-01-11 07:16:06,451 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9919@ir.model.fields (my_library.field_library_book__age_days) 
+2022-01-11 07:16:06,455 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.age_days (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,474 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80077] 
+2022-01-11 07:16:06,474 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9919] 
+2022-01-11 07:16:06,484 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9918@ir.model.fields (my_library.field_library_book__publisher_city) 
+2022-01-11 07:16:06,489 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.publisher_city (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,508 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80076] 
+2022-01-11 07:16:06,509 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9918] 
+2022-01-11 07:16:06,519 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1432@ir.model.constraint (my_library.constraint_library_book_positive_page) 
+2022-01-11 07:16:06,533 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80010] 
+2022-01-11 07:16:06,534 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.constraint records with IDs: [1432] 
+2022-01-11 07:16:06,535 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1431@ir.model.constraint (my_library.constraint_library_book_name_uniq) 
+2022-01-11 07:16:06,551 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [80009] 
+2022-01-11 07:16:06,551 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.constraint records with IDs: [1431] 
+2022-01-11 07:16:06,553 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9917@ir.model.fields (my_library.field_library_book__retail_price) 
+2022-01-11 07:16:06,559 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.retail_price (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,584 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79940] 
+2022-01-11 07:16:06,585 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9917] 
+2022-01-11 07:16:06,599 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9916@ir.model.fields (my_library.field_library_book__currency_id) 
+2022-01-11 07:16:06,602 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.currency_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,627 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79939] 
+2022-01-11 07:16:06,627 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9916] 
+2022-01-11 07:16:06,639 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9915@ir.model.fields (my_library.field_res_users__count_books) 
+2022-01-11 07:16:06,643 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field res.users.count_books (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,662 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79879] 
+2022-01-11 07:16:06,663 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9915] 
+2022-01-11 07:16:06,674 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9914@ir.model.fields (my_library.field_res_users__authored_book_ids) 
+2022-01-11 07:16:06,678 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field res.users.authored_book_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,697 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79878] 
+2022-01-11 07:16:06,697 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9914] 
+2022-01-11 07:16:06,708 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9913@ir.model.fields (my_library.field_res_users__published_book_ids) 
+2022-01-11 07:16:06,712 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field res.users.published_book_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,731 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79877] 
+2022-01-11 07:16:06,731 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9913] 
+2022-01-11 07:16:06,742 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9901@ir.model.fields (my_library.field_res_partner__count_books) 
+2022-01-11 07:16:06,747 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field res.partner.count_books (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,768 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79865] 
+2022-01-11 07:16:06,769 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9901] 
+2022-01-11 07:16:06,786 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9900@ir.model.fields (my_library.field_res_partner__authored_book_ids) 
+2022-01-11 07:16:06,792 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field res.partner.authored_book_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,817 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79864] 
+2022-01-11 07:16:06,817 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9900] 
+2022-01-11 07:16:06,835 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9899@ir.model.fields (my_library.field_res_partner__published_book_ids) 
+2022-01-11 07:16:06,841 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field res.partner.published_book_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,864 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79863] 
+2022-01-11 07:16:06,864 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9899] 
+2022-01-11 07:16:06,877 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9898@ir.model.fields (my_library.field_library_book__publisher_id) 
+2022-01-11 07:16:06,881 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.publisher_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,910 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79862] 
+2022-01-11 07:16:06,910 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9898] 
+2022-01-11 07:16:06,921 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9897@ir.model.fields (my_library.field_library_book__category_id) 
+2022-01-11 07:16:06,925 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.category_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:06,948 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79861] 
+2022-01-11 07:16:06,948 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9897] 
+2022-01-11 07:16:06,967 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9896@ir.model.fields (my_library.field_library_book__cost_price) 
+2022-01-11 07:16:06,972 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.cost_price (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,002 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79824] 
+2022-01-11 07:16:07,003 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9896] 
+2022-01-11 07:16:07,025 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9895@ir.model.fields (my_library.field_library_book__reader_rating) 
+2022-01-11 07:16:07,031 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.reader_rating (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,065 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79823] 
+2022-01-11 07:16:07,065 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9895] 
+2022-01-11 07:16:07,083 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9894@ir.model.fields (my_library.field_library_book__pages) 
+2022-01-11 07:16:07,089 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.pages (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,115 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79822] 
+2022-01-11 07:16:07,115 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9894] 
+2022-01-11 07:16:07,127 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9893@ir.model.fields (my_library.field_library_book__date_updated) 
+2022-01-11 07:16:07,130 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.date_updated (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,155 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79821] 
+2022-01-11 07:16:07,155 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9893] 
+2022-01-11 07:16:07,166 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9892@ir.model.fields (my_library.field_library_book__out_of_print) 
+2022-01-11 07:16:07,170 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.out_of_print (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,196 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79820] 
+2022-01-11 07:16:07,197 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9892] 
+2022-01-11 07:16:07,211 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9891@ir.model.fields (my_library.field_library_book__cover) 
+2022-01-11 07:16:07,215 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.cover (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,236 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79819] 
+2022-01-11 07:16:07,237 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9891] 
+2022-01-11 07:16:07,248 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9889@ir.model.fields (my_library.field_library_book__notes) 
+2022-01-11 07:16:07,251 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.notes (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,276 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79817] 
+2022-01-11 07:16:07,276 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9889] 
+2022-01-11 07:16:07,286 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9880@ir.model.fields (my_library.field_library_book__description) 
+2022-01-11 07:16:07,292 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.description (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,315 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79770] 
+2022-01-11 07:16:07,315 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9880] 
+2022-01-11 07:16:07,328 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting 9877@ir.model.fields (my_library.field_library_book__short_name) 
+2022-01-11 07:16:07,332 589155 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.short_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 07:16:07,357 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79767] 
+2022-01-11 07:16:07,358 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [9877] 
+2022-01-11 07:16:07,376 589155 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [79840, 79839, 79838, 79835] 
+2022-01-11 07:16:07,377 589155 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-11 07:16:07,423 589155 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-11 07:16:07,441 589155 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-11 07:16:10,311 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web HTTP/1.1" 200 - 3348 2.660 9.366
+2022-01-11 07:16:10,488 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.004 0.057
+2022-01-11 07:16:10,521 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web/content/607-2559c83/web.assets_backend.js HTTP/1.1" 304 - 2 0.004 0.082
+2022-01-11 07:16:10,544 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.009 0.053
+2022-01-11 07:16:10,588 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 304 - 2 0.006 0.097
+2022-01-11 07:16:10,591 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web/content/606-2559c83/web.assets_backend.css HTTP/1.1" 304 - 2 0.017 0.055
+2022-01-11 07:16:10,611 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:10] "GET /web/webclient/load_menus/38b11f16055d15afc60a87b889d32c979c5f03a51aa4de89190502548adf3f8b HTTP/1.1" 200 - 1 0.000 0.015
+2022-01-11 07:16:11,057 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:11] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.001 0.075
+2022-01-11 07:16:14,176 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:14] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.003 0.011
+2022-01-11 07:16:16,144 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /web/static/src/xml/debug.xml?debug=1641885376065 HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,144 589155 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-11 07:16:16,153 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,186 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,352 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.002 0.062
+2022-01-11 07:16:16,388 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.060
+2022-01-11 07:16:16,427 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.013 0.043
+2022-01-11 07:16:16,428 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.102 0.092
+2022-01-11 07:16:16,435 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 17 0.152 0.083
+2022-01-11 07:16:16,498 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,510 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,528 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /sale/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,537 589155 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:16:16,728 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /mail/init_messaging HTTP/1.1" 200 - 119 0.499 0.324
+2022-01-11 07:16:16,738 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /web/action/load HTTP/1.1" 200 - 23 0.093 0.071
+2022-01-11 07:16:16,904 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:16] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.024 0.040
+2022-01-11 07:16:17,024 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:17] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 35 0.034 0.070
+2022-01-11 07:16:17,079 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:17] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.008 0.019
+2022-01-11 07:16:17,139 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:17] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.010
+2022-01-11 07:16:17,380 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:17] "POST /calendar/notify HTTP/1.1" 200 - 3 0.011 0.014
+2022-01-11 07:16:20,836 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:20] "POST /web/dataset/call_kw/library.book/onchange HTTP/1.1" 200 - 3 0.003 0.012
+2022-01-11 07:16:49,004 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:49] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 9 0.007 0.022
+2022-01-11 07:16:50,173 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:50] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.005 0.014
+2022-01-11 07:16:54,394 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:54] "POST /web/dataset/call_kw/library.book/create HTTP/1.1" 200 - 6 0.006 0.036
+2022-01-11 07:16:54,451 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:54] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 12 0.010 0.031
+2022-01-11 07:16:54,501 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:54] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.006 0.017
+2022-01-11 07:16:54,552 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:54] "POST /web/dataset/call_button HTTP/1.1" 200 - 6 0.007 0.017
+2022-01-11 07:16:54,629 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:54] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 12 0.013 0.035
+2022-01-11 07:16:54,676 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:54] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.006 0.020
+2022-01-11 07:16:57,569 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:16:57] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.010
+2022-01-11 07:17:06,145 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:17:06] "POST /longpolling/poll HTTP/1.1" 200 - 21 0.077 50.093
+2022-01-11 07:17:06,973 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:17:06] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.028
+2022-01-11 07:17:57,989 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:17:57] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.046
+2022-01-11 07:17:59,035 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:17:59] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.024
+2022-01-11 07:18:50,049 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:18:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.029
+2022-01-11 07:18:51,102 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:18:51] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.033
