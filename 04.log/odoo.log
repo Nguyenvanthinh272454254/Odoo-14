@@ -12049,3 +12049,481 @@ ValueError: Wrong value for library.book.state: 'borrowed'
 2022-01-11 07:02:31,275 579292 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
 2022-01-11 07:02:46,170 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:02:46] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.015 50.043
 2022-01-11 07:02:47,214 579292 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:02:47] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.025
+2022-01-11 07:28:54,848 597184 INFO ? odoo: Odoo version 14.0 
+2022-01-11 07:28:54,850 597184 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-11 07:28:54,850 597184 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-11 07:28:54,850 597184 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-11 07:28:55,386 597184 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-11 07:28:55,655 597184 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-11 07:28:55,671 597184 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:28:55,711 597184 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-11 07:28:55,980 597184 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-11 07:28:55,988 597184 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-11 07:28:58,200 597184 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 07:28:58,200 597184 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 07:28:59,665 597184 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-11 07:28:59,881 597184 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:28:59,893 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:28:59,894 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:28:59,894 597184 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:29:00,061 597184 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:29:00,523 597184 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:29:00,597 597184 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:29:00,661 597184 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:29:00,666 597184 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:29:00,666 597184 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:29:00,667 597184 CRITICAL pro15 odoo.service.server: Failed to initialize database `pro15`. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 1199, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:31, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record>
+2022-01-11 07:29:02,055 597184 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-11 07:29:02,069 597184 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:29:02,100 597184 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-11 07:29:02,181 597184 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:29:02,183 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:02,183 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:02,184 597184 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:29:02,307 597184 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:29:02,520 597184 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:29:02,569 597184 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:29:02,620 597184 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:29:02,624 597184 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:29:02,625 597184 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:29:02,634 597184 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:29:02,684 597184 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-11 07:29:02,849 597184 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:29:02,850 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:02,851 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:02,851 597184 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:29:02,985 597184 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:29:03,267 597184 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:29:03,387 597184 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:29:03,463 597184 INFO pro15 odoo.addons.base.models.ir_ui_view: Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+ 
+2022-01-11 07:29:03,467 597184 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-11 07:29:03,467 597184 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-11 07:29:03,499 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:03] "GET /web HTTP/1.1" 500 - 245 0.256 1.186
+2022-01-11 07:29:03,604 597184 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:31, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 677, in _tag_root
+    f(rec)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 580, in _tag_record
+    record = model._load_records([data], self.mode == 'update')
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4209, in _load_records
+    data['record']._load_records_write(data['values'])
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 1841, in _load_records_write
+    super(View, self)._load_records_write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 4146, in _load_records_write
+    self.write(values)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3704, in write
+    fields[0].determine_inverse(real_recs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/fields.py", line 1187, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 300, in _inverse_arch
+    view.write(data)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 500, in write
+    res = super(View, self).write(self._compute_defaults(vals))
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 3694, in write
+    real_recs._validate_fields(vals, inverse_fields)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1266, in _validate_fields
+    check(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 408, in _check_xml
+    raise ValidationError(_(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 391, in _check_xml
+    view.postprocess_and_fields(view_doc, validate=True)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 850, in postprocess_and_fields
+    arch, name_manager = self._postprocess_view(node, model, validate=validate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 864, in _postprocess_view
+    name_manager.check_view_fields(self)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 2008, in check_view_fields
+    view.handle_view_error(msg)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_ui_view.py", line 673, in handle_view_error
+    raise ValueError(formatted_message).with_traceback(from_traceback) from from_exception
+odoo.exceptions.ValidationError: Error while validating view:
+
+Field reader_rating used in decoration-info=reader_rating == 'draft' must be present in view but is missing.
+
+View name: Library Book List
+Error context:
+ view: ir.ui.view(1421,)
+ xmlid: library_book_view_tree
+ view.model: library.book
+ file: /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 733, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 799, in convert_xml_import
+    obj.parse(doc.getroot())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 719, in parse
+    self._tag_root(de)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 681, in _tag_root
+    raise ParseError('while parsing %s:%s, near\n%s' % (
+odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/views/librarybook.xml:31, near
+<record id="library_book_view_tree" model="ir.ui.view">
+            <field name="name">Library Book List</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree decoration-info="reader_rating == 'draft'">
+                    <field name="name"/>
+                    <field name="date_release"/>
+                </tree>
+            </field>
+        </record> - - -
+2022-01-11 07:29:40,881 597184 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 07:29:40,911 597184 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-11 07:29:40,985 597184 INFO pro15 odoo.modules.loading: loading 67 modules... 
+2022-01-11 07:29:40,986 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:40,987 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:40,987 597184 INFO pro15 odoo.modules.loading: Loading module my_library (3/67) 
+2022-01-11 07:29:41,095 597184 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 07:29:41,448 597184 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 07:29:41,521 597184 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 07:29:41,662 597184 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-11 07:29:41,798 597184 INFO pro15 odoo.modules.loading: Module my_library loaded in 0.81s, 205 queries 
+2022-01-11 07:29:41,823 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:41,824 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:41,889 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:41,889 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:42,185 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:42,185 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:42,215 597184 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 07:29:42,215 597184 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 07:29:42,457 597184 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-11 07:29:43,194 597184 INFO pro15 odoo.modules.loading: 67 modules loaded in 2.21s, 205 queries (+0 extra) 
+2022-01-11 07:29:44,335 597184 WARNING pro15 odoo.modules.loading: The model library.member has no access rules, consider adding one. E.g. access_library_member,access_library_member,model_library_member,base.group_user,1,0,0,0 
+2022-01-11 07:29:44,639 597184 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-11 07:29:45,955 597184 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-11 07:29:45,980 597184 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-11 07:29:48,639 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web HTTP/1.1" 200 - 1267 0.945 6.823
+2022-01-11 07:29:48,800 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.006 0.072
+2022-01-11 07:29:48,846 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web/content/607-2559c83/web.assets_backend.js HTTP/1.1" 304 - 2 0.021 0.100
+2022-01-11 07:29:48,850 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 200 - 2 0.004 0.094
+2022-01-11 07:29:48,867 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.007 0.128
+2022-01-11 07:29:48,868 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web/content/606-2559c83/web.assets_backend.css HTTP/1.1" 304 - 2 0.006 0.079
+2022-01-11 07:29:48,893 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:48] "GET /web/webclient/load_menus/38b11f16055d15afc60a87b889d32c979c5f03a51aa4de89190502548adf3f8b HTTP/1.1" 200 - 1 0.001 0.017
+2022-01-11 07:29:49,264 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:49] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.001 0.097
+2022-01-11 07:29:49,519 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:49] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.005 0.011
+2022-01-11 07:29:49,827 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:49] "GET /web/static/src/xml/debug.xml?debug=1641886189798 HTTP/1.1" 200 - - - -
+2022-01-11 07:29:49,867 597184 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-11 07:29:49,871 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:49] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2022-01-11 07:29:50,114 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.004 0.046
+2022-01-11 07:29:50,134 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.002 0.049
+2022-01-11 07:29:50,150 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 18 0.135 0.099
+2022-01-11 07:29:50,165 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.158 0.088
+2022-01-11 07:29:50,207 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.009 0.034
+2022-01-11 07:29:50,260 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:29:50,285 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:29:50,334 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:29:50,353 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "GET /sale/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 07:29:50,555 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/action/load HTTP/1.1" 200 - 23 0.078 0.113
+2022-01-11 07:29:50,566 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /mail/init_messaging HTTP/1.1" 200 - 117 0.504 0.343
+2022-01-11 07:29:50,743 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 35 0.059 0.082
+2022-01-11 07:29:50,822 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.018 0.052
+2022-01-11 07:29:50,895 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.010
+2022-01-11 07:29:50,963 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:50] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.005 0.015
+2022-01-11 07:29:51,164 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:51] "GET /web/image/res.company/1/favicon/ HTTP/1.1" 200 - 11 0.021 0.042
+2022-01-11 07:29:51,392 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:51] "POST /calendar/notify HTTP/1.1" 200 - 3 0.005 0.028
+2022-01-11 07:29:53,099 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:29:53] "POST /web/dataset/call_kw/library.book/onchange HTTP/1.1" 200 - 3 0.003 0.014
+2022-01-11 07:30:00,753 597184 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-01-11 07:30:00,801 597184 INFO pro15 odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-01-11 07:30:00,803 597184 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-11 07:30:00,832 597184 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-11 07:30:06,540 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:06] "POST /web/dataset/call_kw/library.book/create HTTP/1.1" 200 - 5 0.005 0.025
+2022-01-11 07:30:06,585 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:06] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 10 0.008 0.018
+2022-01-11 07:30:06,628 597184 INFO pro15 odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: library.member 
+2022-01-11 07:30:06,628 597184 WARNING pro15 odoo.http: You are not allowed to access 'Library Member' (library.member) records.
+
+No group currently allows this operation.
+
+Contact your administrator to request access if necessary. 
+2022-01-11 07:30:06,636 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:06] "POST /web/dataset/call_button HTTP/1.1" 200 - 11 0.009 0.021
+2022-01-11 07:30:06,766 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:06] "GET /web/static/src/xml/dialog.xml?debug=1641886206759 HTTP/1.1" 200 - - - -
+2022-01-11 07:30:06,785 597184 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:06] "GET /web/static/src/xml/crash_manager.xml?debug=1641886206772 HTTP/1.1" 200 - - - -
+2022-01-11 07:30:10,997 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:10] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 9 0.006 0.021
+2022-01-11 07:30:11,839 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:11] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.004 0.014
+2022-01-11 07:30:13,011 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:13] "POST /web/dataset/call_kw/library.book/write HTTP/1.1" 200 - 12 0.008 0.028
+2022-01-11 07:30:13,074 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:13] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 12 0.012 0.037
+2022-01-11 07:30:13,130 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:13] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.008 0.023
+2022-01-11 07:30:14,434 597184 INFO pro15 odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: library.member 
+2022-01-11 07:30:14,434 597184 WARNING pro15 odoo.http: You are not allowed to access 'Library Member' (library.member) records.
+
+No group currently allows this operation.
+
+Contact your administrator to request access if necessary. 
+2022-01-11 07:30:14,437 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:14] "POST /web/dataset/call_button HTTP/1.1" 200 - 5 0.004 0.011
+2022-01-11 07:30:39,858 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:39] "POST /longpolling/poll HTTP/1.1" 200 - 22 0.049 50.085
+2022-01-11 07:30:40,923 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:40] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.031
+2022-01-11 07:30:42,860 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:42] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.009
+2022-01-11 07:30:44,932 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:44] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 12 0.007 0.023
+2022-01-11 07:30:44,969 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:44] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.006 0.016
+2022-01-11 07:30:50,996 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:50] "POST /web/action/load HTTP/1.1" 200 - 13 0.008 0.038
+2022-01-11 07:30:51,089 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:51] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 28 0.025 0.052
+2022-01-11 07:30:51,128 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:51] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.009
+2022-01-11 07:30:53,317 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:53] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 23 0.012 0.046
+2022-01-11 07:30:53,358 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:53] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.010
+2022-01-11 07:30:55,298 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:55] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 12 0.009 0.027
+2022-01-11 07:30:55,340 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:55] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.006 0.015
+2022-01-11 07:30:56,199 597184 INFO pro15 odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: library.member 
+2022-01-11 07:30:56,200 597184 WARNING pro15 odoo.http: You are not allowed to access 'Library Member' (library.member) records.
+
+No group currently allows this operation.
+
+Contact your administrator to request access if necessary. 
+2022-01-11 07:30:56,204 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:30:56] "POST /web/dataset/call_button HTTP/1.1" 200 - 5 0.004 0.012
+2022-01-11 07:31:29,937 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:31:29] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.021 50.034
+2022-01-11 07:31:32,147 597184 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:31:32] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.033
