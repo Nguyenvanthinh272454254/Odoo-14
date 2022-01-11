@@ -6,10 +6,11 @@ from odoo.exceptions import ValidationError
 class BookCategory(models.Model):
     _name = 'library.book.category'
 
+    description = fields.Text('Description')
+
     _parent_store = True
     _parent_name = "parent_id"  # optional if field is 'parent_id'
 
-    description = fields.Text('Description')
     name = fields.Char('Category')
     parent_id = fields.Many2one(
         'library.book.category',
