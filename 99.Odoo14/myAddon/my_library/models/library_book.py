@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
+import logging
 
 from odoo import models, fields, api
-from datetime import timedelta
 from odoo.exceptions import ValidationError
+from odoo.tools.translate import _
+
+logger = logging.getLogger(__name__)
 
 
 class my_library(models.Model):
@@ -79,6 +82,18 @@ class my_library(models.Model):
     def change_release_date(self):
         self.ensure_one()
         self.date_release = fields.Date.today()
+    
+    def find_book(self):
+        domain = [
+            '|',
+                '&', ('name', 'ilike', 'Book Name'),
+                     ('category_id.name', '=', 'Category Name'),
+                '&', ('name', 'ilike', 'Book Name 2'),
+                     ('category_id.name', '=', 'Category Name 2')
+        ]
+        books = self.search(domain)
+        logger.info('Books found: %s', books)
+        return True
 
 class LibraryMember(models.Model):
     _name = 'library.member'
