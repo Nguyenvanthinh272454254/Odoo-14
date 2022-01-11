@@ -5,33 +5,22 @@ from datetime import timedelta
 from odoo.exceptions import ValidationError
 
 
-class BaseArchive(models.AbstractModel):
-    _name = 'base.archive'
-    _description = 'Abstract Archive'
-
-    active = fields.Boolean(default=True)
-
-    def do_archive(self):
-        for record in self:
-            record.active = not record.active
-
-
 class my_library(models.Model):
     _name = 'library.book'
     _inherit = ['base.archive']
     _description = 'Library Book'
     _order = 'date_release desc, name'
 
-
     name = fields.Char('Title', required=True)
+    date_release = fields.Date('Release Date')
+    author_ids = fields.Many2many('res.partner', string='Authors')
+    category_id = fields.Many2one('library.book.category', string='Category')
+
     state = fields.Selection(
         [('draft', 'Not Available'),
          ('available', 'Available'),
          ('lost', 'Lost')],
         'State', default="draft")
-    date_release = fields.Date('Release Date')
-    author_ids = fields.Many2many('res.partner', string='Authors')
-
     
     # Add a helper method to check whether a state transition is allowed
     @api.model
@@ -44,7 +33,6 @@ class my_library(models.Model):
                    ('lost', 'available')]
         return (old_state, new_state) in allowed
 
-
     # Add a method to change the state of some books to a new state that is passed as anargument
     def change_state(self, new_state):
         for book in self:
@@ -52,7 +40,6 @@ class my_library(models.Model):
                 book.state = new_state
             else:
                 continue
-    
 
     # Add a method to change the book state by calling the change_state method:
     def make_available(self):
@@ -63,14 +50,33 @@ class my_library(models.Model):
 
     def make_lost(self):
         self.change_state('lost')
-    
 
     def log_all_library_members(self):
         library_member_model = self.env['library.member']  # This is an empty recordset of model library.member
         all_members = library_member_model.search([])
         print("ALL MEMBERS:", all_members)
         return True
-
+    
+    def create_categories(self):
+        categ1 = {
+            'name': 'Child category 1',
+            'description': 'Description for child 1'
+        }
+        categ2 = {
+            'name': 'Child category 2',
+            'description': 'Description for child 2'
+        }
+        parent_category_val = {
+            'name': 'Parent category',
+            'description': 'Description for parent category',
+            'child_ids': [
+                (0, 0, categ1),
+                (0, 0, categ2),
+            ]
+        }
+        # Total 3 records (1 parent and 2 child) will be craeted in library.book.category model
+        record = self.env['library.book.category'].create(parent_category_val)
+        return True
 
 class LibraryMember(models.Model):
     _name = 'library.member'
