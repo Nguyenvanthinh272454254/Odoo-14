@@ -7,9 +7,7 @@ from odoo.exceptions import ValidationError
 
 class my_library(models.Model):
     _name = 'library.book'
-    _inherit = ['base.archive']
     _description = 'Library Book'
-    _order = 'date_release desc, name'
 
     name = fields.Char('Title', required=True)
     date_release = fields.Date('Release Date')
@@ -77,6 +75,10 @@ class my_library(models.Model):
         # Total 3 records (1 parent and 2 child) will be craeted in library.book.category model
         record = self.env['library.book.category'].create(parent_category_val)
         return True
+    
+    def change_release_date(self):
+        self.ensure_one()
+        self.date_release = fields.Date.today()
 
 class LibraryMember(models.Model):
     _name = 'library.member'
