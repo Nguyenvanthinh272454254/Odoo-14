@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_employee,employee,model_employee,base.group_user,1,1,1,1
+access_task_manager,task_manager,model_task_manager,base.group_user,1,1,1,1
+access_salary,salary,model_salary,base.group_user,1,1,1,1
+access_department,department,model_department,base.group_user,1,1,1,1
+access_intrutor,intrutor,model_intrutor,base.group_user,1,1,1,1

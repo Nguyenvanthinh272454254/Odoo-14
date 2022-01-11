@@ -1,0 +1,63 @@
+<odoo>
+
+    <record id="salary_form_view" model="ir.ui.view">
+          <field name="name">salary.form.view</field>
+          <field name="model">salary</field>
+          <field name="arch" type="xml">
+              <form>
+                  <sheet>
+                      <group>
+                          <group>
+                              <field name="salary_id"/>
+                              <field name="position"/>
+                              <field name="Songay_lamviec"/>
+                          </group>
+                          <group>
+                              <field name="LCB_nv"/>
+                              <field name="bonus_price"/>
+                              <field name="final_price"/>
+                          </group>
+                      </group>
+                      <group name="images">
+                          <group>
+                              <field name="gender"/>
+                              <field name="address"/>
+                          </group>                            
+                      </group>
+                  </sheet>
+              </form>
+          </field>
+      </record>
+
+      <record id="salary_tree_view" model="ir.ui.view">
+          <field name="name">salary.tree.view</field>
+          <field name="model">salary</field>
+          <field name="arch" type="xml">
+              <tree>
+                  <field name="name"/>
+                  <!-- <field name="salary_id"/> -->
+                  <field name="position"/>
+                  <field name="Songay_lamviec"/>
+                  <field name="LCB_nv"/>
+                  <field name="gender"/>
+                  <field name="address"/>
+                  <field name="bonus_price"/>
+                  <field name="final_price"/>
+                  <button name="custom_remove" type="object" string="Remove" class="oe_highlight"/>
+
+
+              </tree>
+          </field>
+      </record>
+
+
+      <record model="ir.actions.act_window" id="action_salary">
+        <field name="name">salary manager</field>
+        <field name="res_model">salary</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+  
+
+      <menuitem name="salary" id="salary_list_menu" parent="employee_menu_root" action="action_salary" />
+
+</odoo>
