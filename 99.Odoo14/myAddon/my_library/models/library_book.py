@@ -107,6 +107,16 @@ class my_library(models.Model):
             if len(book.author_ids) > 1:
                 return True
         return all_books.filtered(predicate)
+    
+    # Traversing recordset
+    def mapped_books(self):
+        all_books = self.search([])
+        books_authors = self.get_author_names(all_books)
+        logger.info('Books Authors: %s', books_authors)
+
+    @api.model
+    def get_author_names(self, all_books):
+        return all_books.mapped('author_ids.name')
 
     
 
