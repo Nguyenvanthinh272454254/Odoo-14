@@ -13648,3 +13648,9 @@ odoo.tools.convert.ParseError: while parsing /home/thinhnv/Desktop/Odoo/99.Odoo1
 2022-01-11 07:17:59,035 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:17:59] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.024
 2022-01-11 07:18:50,049 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:18:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.029
 2022-01-11 07:18:51,102 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:18:51] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.033
+2022-01-11 07:19:42,102 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:19:42] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.028
+2022-01-11 07:19:43,165 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:19:43] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.037
+2022-01-11 07:20:34,170 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:20:34] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.022 50.033
+2022-01-11 07:20:37,226 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:20:37] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-11 07:21:26,239 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:21:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.019 50.032
+2022-01-11 07:21:29,653 589155 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 07:21:29] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.033
