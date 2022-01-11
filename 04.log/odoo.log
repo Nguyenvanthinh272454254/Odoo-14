@@ -2184,3 +2184,545 @@ OSError: File not found: my_library_return/views/library_return.xml
 2022-01-11 10:32:56,088 713833 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
 2022-01-11 10:33:10,100 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:33:10] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.028
 2022-01-11 10:33:10,402 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:33:10] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.028
+2022-01-11 10:34:01,409 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:34:01] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.028
+2022-01-11 10:34:03,476 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:34:03] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.015 0.035
+2022-01-11 10:34:53,490 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:34:53] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.035 50.033
+2022-01-11 10:34:55,553 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:34:55] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.014 0.030
+2022-01-11 10:34:56,212 713833 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-01-11 10:34:56,240 713833 INFO pro15 odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-01-11 10:34:56,241 713833 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-01-11 10:34:56,262 713833 INFO pro15 odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-01-11 10:35:44,540 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:35:44] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
+2022-01-11 10:35:47,630 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:35:47] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.036
+2022-01-11 10:35:56,325 713833 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-01-11 10:35:56,350 713833 INFO pro15 odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-01-11 10:35:56,352 713833 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-01-11 10:35:56,376 713833 INFO pro15 odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-01-11 10:36:35,617 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:36:35] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.023
+2022-01-11 10:36:39,703 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:36:39] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.031
+2022-01-11 10:37:26,719 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:37:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.018 50.037
+2022-01-11 10:37:31,776 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:37:31] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.022
+2022-01-11 10:38:18,774 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:38:18] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.024
+2022-01-11 10:38:23,852 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:38:23] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-11 10:39:09,839 713833 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:09] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.024
+2022-01-11 10:39:16,698 719741 INFO ? odoo: Odoo version 14.0 
+2022-01-11 10:39:16,699 719741 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-11 10:39:16,700 719741 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-11 10:39:16,700 719741 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-11 10:39:17,306 719741 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-11 10:39:17,556 719741 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-11 10:39:17,572 719741 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 10:39:17,613 719741 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-11 10:39:17,816 719741 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-11 10:39:17,820 719741 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-11 10:39:19,653 719741 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 10:39:19,653 719741 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 10:39:20,959 719741 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-11 10:39:21,470 719741 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-11 10:39:21,599 719741 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-11 10:39:21,612 719741 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:39:21,613 719741 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:39:21,613 719741 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-11 10:39:21,687 719741 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:39:21,747 719741 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 10:39:22,076 719741 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 10:39:22,134 719741 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 10:39:22,251 719741 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-11 10:39:22,363 719741 INFO pro15 odoo.modules.loading: Module my_library loaded in 0.75s, 207 queries 
+2022-01-11 10:39:22,380 719741 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:39:22,380 719741 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:39:22,381 719741 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:39:22,430 719741 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:39:22,431 719741 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:39:22,431 719741 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:39:22,474 719741 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-11 10:39:22,837 719741 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:39:22,912 719741 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-11 10:39:23,040 719741 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-11 10:39:23,079 719741 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-11 10:39:23,171 719741 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 0.70s, 109 queries 
+2022-01-11 10:39:23,373 719741 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:39:23,373 719741 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:39:23,373 719741 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:39:23,395 719741 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:39:23,396 719741 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:39:23,396 719741 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:39:23,629 719741 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-11 10:39:24,122 719741 INFO pro15 odoo.modules.loading: 68 modules loaded in 2.52s, 316 queries (+0 extra) 
+2022-01-11 10:39:25,729 719741 INFO pro15 odoo.modules.loading: Model library.member is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-11 10:39:25,732 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1288@ir.model.fields.selection (my_library.selection__library_book_copy__state__lost) 
+2022-01-11 10:39:26,480 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89410] 
+2022-01-11 10:39:26,480 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1288] 
+2022-01-11 10:39:26,481 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1287@ir.model.fields.selection (my_library.selection__library_book_copy__state__available) 
+2022-01-11 10:39:26,499 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89409] 
+2022-01-11 10:39:26,499 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1287] 
+2022-01-11 10:39:26,501 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1286@ir.model.fields.selection (my_library.selection__library_book_copy__state__draft) 
+2022-01-11 10:39:26,518 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89408] 
+2022-01-11 10:39:26,518 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1286] 
+2022-01-11 10:39:26,520 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1285@ir.model.fields.selection (my_library.selection__library_book__state__lost) 
+2022-01-11 10:39:26,541 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89407] 
+2022-01-11 10:39:26,542 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1285] 
+2022-01-11 10:39:26,543 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1284@ir.model.fields.selection (my_library.selection__library_book__state__available) 
+2022-01-11 10:39:26,564 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89406] 
+2022-01-11 10:39:26,564 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1284] 
+2022-01-11 10:39:26,566 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1283@ir.model.fields.selection (my_library.selection__library_book__state__draft) 
+2022-01-11 10:39:26,583 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89405] 
+2022-01-11 10:39:26,584 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields.selection records with IDs: [1283] 
+2022-01-11 10:39:26,585 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10904@ir.model.fields (my_library.field_library_book_copy__state) 
+2022-01-11 10:39:26,589 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.state (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,613 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89404] 
+2022-01-11 10:39:26,613 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10904] 
+2022-01-11 10:39:26,630 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10903@ir.model.fields (my_library.field_library_book_copy__category_id) 
+2022-01-11 10:39:26,636 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.copy.category_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,660 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89403] 
+2022-01-11 10:39:26,661 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10903] 
+2022-01-11 10:39:26,677 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10902@ir.model.fields (my_library.field_library_member__image_128) 
+2022-01-11 10:39:26,682 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_128 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,703 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89402] 
+2022-01-11 10:39:26,703 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10902] 
+2022-01-11 10:39:26,720 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10901@ir.model.fields (my_library.field_library_member__image_256) 
+2022-01-11 10:39:26,725 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_256 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,747 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89401] 
+2022-01-11 10:39:26,747 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10901] 
+2022-01-11 10:39:26,758 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10900@ir.model.fields (my_library.field_library_member__image_512) 
+2022-01-11 10:39:26,761 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_512 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,781 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89400] 
+2022-01-11 10:39:26,782 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10900] 
+2022-01-11 10:39:26,799 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10899@ir.model.fields (my_library.field_library_member__image_1024) 
+2022-01-11 10:39:26,804 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_1024 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,824 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89399] 
+2022-01-11 10:39:26,824 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10899] 
+2022-01-11 10:39:26,834 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10898@ir.model.fields (my_library.field_library_member__image_1920) 
+2022-01-11 10:39:26,838 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.image_1920 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,858 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89398] 
+2022-01-11 10:39:26,859 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10898] 
+2022-01-11 10:39:26,875 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10897@ir.model.fields (my_library.field_library_member__self) 
+2022-01-11 10:39:26,881 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.self (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,902 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89397] 
+2022-01-11 10:39:26,902 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10897] 
+2022-01-11 10:39:26,919 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10896@ir.model.fields (my_library.field_library_member__barcode) 
+2022-01-11 10:39:26,924 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.barcode (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,942 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89396] 
+2022-01-11 10:39:26,942 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10896] 
+2022-01-11 10:39:26,954 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10895@ir.model.fields (my_library.field_library_member__company_name) 
+2022-01-11 10:39:26,959 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.company_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:26,979 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89395] 
+2022-01-11 10:39:26,979 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10895] 
+2022-01-11 10:39:26,997 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10894@ir.model.fields (my_library.field_library_member__commercial_company_name) 
+2022-01-11 10:39:27,002 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.commercial_company_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,021 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89394] 
+2022-01-11 10:39:27,021 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10894] 
+2022-01-11 10:39:27,037 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10893@ir.model.fields (my_library.field_library_member__commercial_partner_id) 
+2022-01-11 10:39:27,040 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.commercial_partner_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,057 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89393] 
+2022-01-11 10:39:27,057 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10893] 
+2022-01-11 10:39:27,068 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10892@ir.model.fields (my_library.field_library_member__contact_address) 
+2022-01-11 10:39:27,073 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.contact_address (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,094 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89392] 
+2022-01-11 10:39:27,094 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10892] 
+2022-01-11 10:39:27,107 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10891@ir.model.fields (my_library.field_library_member__partner_share) 
+2022-01-11 10:39:27,111 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_share (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,130 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89391] 
+2022-01-11 10:39:27,131 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10891] 
+2022-01-11 10:39:27,141 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10890@ir.model.fields (my_library.field_library_member__user_ids) 
+2022-01-11 10:39:27,144 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.user_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,163 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89390] 
+2022-01-11 10:39:27,164 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10890] 
+2022-01-11 10:39:27,174 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10889@ir.model.fields (my_library.field_library_member__color) 
+2022-01-11 10:39:27,178 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.color (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,195 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89389] 
+2022-01-11 10:39:27,195 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10889] 
+2022-01-11 10:39:27,206 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10888@ir.model.fields (my_library.field_library_member__company_id) 
+2022-01-11 10:39:27,209 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.company_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,230 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89388] 
+2022-01-11 10:39:27,230 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10888] 
+2022-01-11 10:39:27,241 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10887@ir.model.fields (my_library.field_library_member__company_type) 
+2022-01-11 10:39:27,244 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.company_type (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,264 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89387] 
+2022-01-11 10:39:27,265 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10887] 
+2022-01-11 10:39:27,275 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10886@ir.model.fields (my_library.field_library_member__industry_id) 
+2022-01-11 10:39:27,278 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.industry_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,296 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89386] 
+2022-01-11 10:39:27,296 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10886] 
+2022-01-11 10:39:27,307 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10885@ir.model.fields (my_library.field_library_member__is_company) 
+2022-01-11 10:39:27,311 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.is_company (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,328 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89385] 
+2022-01-11 10:39:27,328 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10885] 
+2022-01-11 10:39:27,339 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10884@ir.model.fields (my_library.field_library_member__mobile) 
+2022-01-11 10:39:27,343 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.mobile (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,362 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89384] 
+2022-01-11 10:39:27,362 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10884] 
+2022-01-11 10:39:27,372 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10883@ir.model.fields (my_library.field_library_member__phone) 
+2022-01-11 10:39:27,376 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.phone (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,395 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89383] 
+2022-01-11 10:39:27,395 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10883] 
+2022-01-11 10:39:27,405 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10882@ir.model.fields (my_library.field_library_member__email_formatted) 
+2022-01-11 10:39:27,409 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.email_formatted (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,428 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89382] 
+2022-01-11 10:39:27,429 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10882] 
+2022-01-11 10:39:27,439 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10881@ir.model.fields (my_library.field_library_member__email) 
+2022-01-11 10:39:27,442 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.email (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,460 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89381] 
+2022-01-11 10:39:27,460 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10881] 
+2022-01-11 10:39:27,471 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10880@ir.model.fields (my_library.field_library_member__partner_longitude) 
+2022-01-11 10:39:27,474 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_longitude (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,493 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89380] 
+2022-01-11 10:39:27,493 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10880] 
+2022-01-11 10:39:27,504 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10879@ir.model.fields (my_library.field_library_member__partner_latitude) 
+2022-01-11 10:39:27,507 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_latitude (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,527 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89379] 
+2022-01-11 10:39:27,527 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10879] 
+2022-01-11 10:39:27,544 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10878@ir.model.fields (my_library.field_library_member__country_id) 
+2022-01-11 10:39:27,549 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.country_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,569 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89378] 
+2022-01-11 10:39:27,570 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10878] 
+2022-01-11 10:39:27,587 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10877@ir.model.fields (my_library.field_library_member__state_id) 
+2022-01-11 10:39:27,592 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.state_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,612 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89377] 
+2022-01-11 10:39:27,612 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10877] 
+2022-01-11 10:39:27,629 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10876@ir.model.fields (my_library.field_library_member__city) 
+2022-01-11 10:39:27,634 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.city (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,655 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89376] 
+2022-01-11 10:39:27,656 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10876] 
+2022-01-11 10:39:27,672 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10875@ir.model.fields (my_library.field_library_member__zip) 
+2022-01-11 10:39:27,678 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.zip (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,694 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89375] 
+2022-01-11 10:39:27,694 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10875] 
+2022-01-11 10:39:27,704 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10874@ir.model.fields (my_library.field_library_member__street2) 
+2022-01-11 10:39:27,708 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.street2 (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,724 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89374] 
+2022-01-11 10:39:27,725 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10874] 
+2022-01-11 10:39:27,735 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10873@ir.model.fields (my_library.field_library_member__street) 
+2022-01-11 10:39:27,738 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.street (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,754 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89373] 
+2022-01-11 10:39:27,755 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10873] 
+2022-01-11 10:39:27,765 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10872@ir.model.fields (my_library.field_library_member__type) 
+2022-01-11 10:39:27,769 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.type (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,788 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89372] 
+2022-01-11 10:39:27,788 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10872] 
+2022-01-11 10:39:27,798 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10871@ir.model.fields (my_library.field_library_member__function) 
+2022-01-11 10:39:27,802 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.function (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,819 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89371] 
+2022-01-11 10:39:27,819 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10871] 
+2022-01-11 10:39:27,829 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10870@ir.model.fields (my_library.field_library_member__employee) 
+2022-01-11 10:39:27,833 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.employee (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,850 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89370] 
+2022-01-11 10:39:27,850 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10870] 
+2022-01-11 10:39:27,867 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10869@ir.model.fields (my_library.field_library_member__active) 
+2022-01-11 10:39:27,872 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.active (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,892 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89369] 
+2022-01-11 10:39:27,893 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10869] 
+2022-01-11 10:39:27,910 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10868@ir.model.fields (my_library.field_library_member__credit_limit) 
+2022-01-11 10:39:27,915 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.credit_limit (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,936 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89368] 
+2022-01-11 10:39:27,936 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10868] 
+2022-01-11 10:39:27,953 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10867@ir.model.fields (my_library.field_library_member__category_id) 
+2022-01-11 10:39:27,958 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.category_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:27,976 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89367] 
+2022-01-11 10:39:27,977 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10867] 
+2022-01-11 10:39:27,987 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10866@ir.model.fields (my_library.field_library_member__comment) 
+2022-01-11 10:39:27,991 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.comment (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,009 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89366] 
+2022-01-11 10:39:28,009 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10866] 
+2022-01-11 10:39:28,019 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10865@ir.model.fields (my_library.field_library_member__website) 
+2022-01-11 10:39:28,023 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.website (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,041 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89365] 
+2022-01-11 10:39:28,042 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10865] 
+2022-01-11 10:39:28,058 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10864@ir.model.fields (my_library.field_library_member__bank_ids) 
+2022-01-11 10:39:28,064 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.bank_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,084 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89364] 
+2022-01-11 10:39:28,085 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10864] 
+2022-01-11 10:39:28,101 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10863@ir.model.fields (my_library.field_library_member__same_vat_partner_id) 
+2022-01-11 10:39:28,105 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.same_vat_partner_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,124 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89363] 
+2022-01-11 10:39:28,124 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10863] 
+2022-01-11 10:39:28,135 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10862@ir.model.fields (my_library.field_library_member__vat) 
+2022-01-11 10:39:28,138 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.vat (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,157 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89362] 
+2022-01-11 10:39:28,158 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10862] 
+2022-01-11 10:39:28,170 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10861@ir.model.fields (my_library.field_library_member__user_id) 
+2022-01-11 10:39:28,173 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.user_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,193 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89361] 
+2022-01-11 10:39:28,193 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10861] 
+2022-01-11 10:39:28,204 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10860@ir.model.fields (my_library.field_library_member__tz_offset) 
+2022-01-11 10:39:28,208 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.tz_offset (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,225 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89360] 
+2022-01-11 10:39:28,225 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10860] 
+2022-01-11 10:39:28,236 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10859@ir.model.fields (my_library.field_library_member__tz) 
+2022-01-11 10:39:28,239 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.tz (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,258 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89359] 
+2022-01-11 10:39:28,258 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10859] 
+2022-01-11 10:39:28,268 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10858@ir.model.fields (my_library.field_library_member__active_lang_count) 
+2022-01-11 10:39:28,272 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.active_lang_count (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,288 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89358] 
+2022-01-11 10:39:28,288 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10858] 
+2022-01-11 10:39:28,298 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10857@ir.model.fields (my_library.field_library_member__lang) 
+2022-01-11 10:39:28,302 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.lang (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,321 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89357] 
+2022-01-11 10:39:28,322 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10857] 
+2022-01-11 10:39:28,332 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10856@ir.model.fields (my_library.field_library_member__ref) 
+2022-01-11 10:39:28,335 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.ref (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,354 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89356] 
+2022-01-11 10:39:28,354 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10856] 
+2022-01-11 10:39:28,364 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10855@ir.model.fields (my_library.field_library_member__child_ids) 
+2022-01-11 10:39:28,367 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.child_ids (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,384 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89355] 
+2022-01-11 10:39:28,385 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10855] 
+2022-01-11 10:39:28,395 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10854@ir.model.fields (my_library.field_library_member__parent_name) 
+2022-01-11 10:39:28,398 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.parent_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,418 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89354] 
+2022-01-11 10:39:28,418 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10854] 
+2022-01-11 10:39:28,428 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10853@ir.model.fields (my_library.field_library_member__parent_id) 
+2022-01-11 10:39:28,431 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.parent_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,448 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89353] 
+2022-01-11 10:39:28,448 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10853] 
+2022-01-11 10:39:28,458 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10852@ir.model.fields (my_library.field_library_member__title) 
+2022-01-11 10:39:28,462 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.title (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,478 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89352] 
+2022-01-11 10:39:28,479 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10852] 
+2022-01-11 10:39:28,489 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10851@ir.model.fields (my_library.field_library_member__date) 
+2022-01-11 10:39:28,492 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,512 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89351] 
+2022-01-11 10:39:28,512 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10851] 
+2022-01-11 10:39:28,522 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10850@ir.model.fields (my_library.field_library_member__name) 
+2022-01-11 10:39:28,525 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,542 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89350] 
+2022-01-11 10:39:28,543 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10850] 
+2022-01-11 10:39:28,553 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10849@ir.model.fields (my_library.field_library_member____last_update) 
+2022-01-11 10:39:28,557 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.__last_update (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,574 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89349] 
+2022-01-11 10:39:28,574 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10849] 
+2022-01-11 10:39:28,584 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10848@ir.model.fields (my_library.field_library_member__write_date) 
+2022-01-11 10:39:28,587 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.write_date (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,604 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89348] 
+2022-01-11 10:39:28,604 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10848] 
+2022-01-11 10:39:28,614 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10847@ir.model.fields (my_library.field_library_member__write_uid) 
+2022-01-11 10:39:28,618 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.write_uid (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,635 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89347] 
+2022-01-11 10:39:28,635 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10847] 
+2022-01-11 10:39:28,645 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10846@ir.model.fields (my_library.field_library_member__create_date) 
+2022-01-11 10:39:28,650 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.create_date (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,668 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89346] 
+2022-01-11 10:39:28,669 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10846] 
+2022-01-11 10:39:28,679 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10845@ir.model.fields (my_library.field_library_member__create_uid) 
+2022-01-11 10:39:28,682 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.create_uid (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,699 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89345] 
+2022-01-11 10:39:28,699 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10845] 
+2022-01-11 10:39:28,709 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10844@ir.model.fields (my_library.field_library_member__display_name) 
+2022-01-11 10:39:28,713 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.display_name (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,732 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89344] 
+2022-01-11 10:39:28,732 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10844] 
+2022-01-11 10:39:28,742 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10843@ir.model.fields (my_library.field_library_member__id) 
+2022-01-11 10:39:28,746 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,765 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89343] 
+2022-01-11 10:39:28,765 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10843] 
+2022-01-11 10:39:28,775 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10842@ir.model.fields (my_library.field_library_member__date_of_birth) 
+2022-01-11 10:39:28,779 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date_of_birth (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,798 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89342] 
+2022-01-11 10:39:28,798 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10842] 
+2022-01-11 10:39:28,808 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10841@ir.model.fields (my_library.field_library_member__member_number) 
+2022-01-11 10:39:28,812 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.member_number (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,828 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89341] 
+2022-01-11 10:39:28,829 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10841] 
+2022-01-11 10:39:28,839 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10840@ir.model.fields (my_library.field_library_member__date_end) 
+2022-01-11 10:39:28,842 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date_end (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,862 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89340] 
+2022-01-11 10:39:28,862 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10840] 
+2022-01-11 10:39:28,872 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10839@ir.model.fields (my_library.field_library_member__date_start) 
+2022-01-11 10:39:28,876 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.date_start (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,894 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89339] 
+2022-01-11 10:39:28,895 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10839] 
+2022-01-11 10:39:28,905 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10838@ir.model.fields (my_library.field_library_member__partner_id) 
+2022-01-11 10:39:28,908 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.member.partner_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,928 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89338] 
+2022-01-11 10:39:28,929 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10838] 
+2022-01-11 10:39:28,946 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10837@ir.model.fields (my_library.field_library_book__state) 
+2022-01-11 10:39:28,952 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.state (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:28,971 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89337] 
+2022-01-11 10:39:28,972 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10837] 
+2022-01-11 10:39:28,982 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 10836@ir.model.fields (my_library.field_library_book__category_id) 
+2022-01-11 10:39:28,986 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting field library.book.category_id (hint: fields should be explicitly removed by an upgrade script) 
+2022-01-11 10:39:29,005 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89336] 
+2022-01-11 10:39:29,006 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.fields records with IDs: [10836] 
+2022-01-11 10:39:29,017 719741 INFO pro15 odoo.addons.base.models.ir_model: Deleting 759@ir.model (my_library.model_library_member) 
+2022-01-11 10:39:29,025 719741 WARNING pro15 odoo.addons.base.models.ir_model: The model library.member could not be dropped because it did not exist in the registry. 
+2022-01-11 10:39:29,278 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [89303] 
+2022-01-11 10:39:29,278 719741 INFO pro15 odoo.models.unlink: User #1 deleted ir.model records with IDs: [759] 
+2022-01-11 10:39:29,279 719741 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-11 10:39:29,792 719741 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-11 10:39:29,816 719741 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-11 10:39:29,829 719741 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-11 10:39:30,645 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:30] "POST /web/webclient/version_info HTTP/1.1" 200 - 2 0.005 9.726
+2022-01-11 10:39:32,407 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web HTTP/1.1" 200 - 600 0.349 11.085
+2022-01-11 10:39:32,548 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 304 - 2 0.002 0.026
+2022-01-11 10:39:32,564 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.006 0.019
+2022-01-11 10:39:32,588 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.002 0.019
+2022-01-11 10:39:32,647 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.004 0.049
+2022-01-11 10:39:32,653 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.019 0.057
+2022-01-11 10:39:32,690 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/webclient/load_menus/38b11f16055d15afc60a87b889d32c979c5f03a51aa4de89190502548adf3f8b HTTP/1.1" 200 - 1 0.000 0.022
+2022-01-11 10:39:32,978 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:32] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.000 0.055
+2022-01-11 10:39:33,165 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.005 0.014
+2022-01-11 10:39:33,416 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /web/static/src/xml/debug.xml?debug=1641897573374 HTTP/1.1" 200 - - - -
+2022-01-11 10:39:33,444 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 304 - - - -
+2022-01-11 10:39:33,545 719741 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-11 10:39:33,588 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.004 0.056
+2022-01-11 10:39:33,603 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.006 0.034
+2022-01-11 10:39:33,680 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.007 0.038
+2022-01-11 10:39:33,696 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 18 0.105 0.104
+2022-01-11 10:39:33,728 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.115 0.150
+2022-01-11 10:39:33,915 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-11 10:39:33,970 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /crm/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:39:33,972 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:33] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:39:34,004 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "GET /sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:39:34,024 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /web/action/load HTTP/1.1" 200 - 14 0.130 0.088
+2022-01-11 10:39:34,098 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /mail/init_messaging HTTP/1.1" 200 - 117 0.481 0.340
+2022-01-11 10:39:34,191 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 34 0.045 0.085
+2022-01-11 10:39:34,308 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.030 0.043
+2022-01-11 10:39:34,354 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 8 0.010 0.026
+2022-01-11 10:39:34,413 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /web/dataset/call_kw/library.book.category/onchange HTTP/1.1" 200 - 3 0.006 0.022
+2022-01-11 10:39:34,837 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:39:34] "POST /calendar/notify HTTP/1.1" 200 - 3 0.005 0.127
+2022-01-11 10:40:23,553 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:23] "POST /longpolling/poll HTTP/1.1" 200 - 21 0.093 50.116
+2022-01-11 10:40:24,603 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:24] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.027
+2022-01-11 10:40:30,817 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:30] "POST /web/action/load HTTP/1.1" 200 - 20 0.011 0.049
+2022-01-11 10:40:30,920 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:30] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 39 0.027 0.057
+2022-01-11 10:40:30,962 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:30] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.011
+2022-01-11 10:40:30,998 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:30] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.009
+2022-01-11 10:40:32,345 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:32] "POST /web/dataset/call_kw/library.book/onchange HTTP/1.1" 200 - 3 0.002 0.011
+2022-01-11 10:40:34,462 719741 ERROR pro15 odoo.http: Exception during JSON request handling. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_http.py", line 237, in _dispatch
+    result = request.dispatch()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 684, in dispatch
+    result = self._call_function(**self.params)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 360, in _call_function
+    return checked_call(self.db, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/model.py", line 94, in wrapper
+    return f(dbname, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 348, in checked_call
+    result = self.endpoint(*a, **kw)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 913, in __call__
+    return self.method(*args, **kw)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 532, in response_wrap
+    response = f(*args, **kw)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons/web/controllers/main.py", line 1392, in call_kw
+    return self._call_kw(model, method, args, kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons/web/controllers/main.py", line 1384, in _call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/api.py", line 395, in call_kw
+    result = _call_kw_model(method, model, args, kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/api.py", line 368, in _call_kw_model
+    result = method(recs, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/models.py", line 1800, in name_search
+    ids = self._name_search(name, args, operator, limit=limit)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/library_book.py", line 35, in _name_search
+    return super(LibraryBook, self)._name_search(
+Exception
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 640, in _handle_exception
+    return super(JsonRequest, self)._handle_exception(exception)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 316, in _handle_exception
+    raise exception.with_traceback(None) from new_cause
+NameError: name 'LibraryBook' is not defined
+2022-01-11 10:40:34,471 719741 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:34] "POST /web/dataset/call_kw/library.book/name_search HTTP/1.1" 200 - 1 0.001 0.014
+2022-01-11 10:40:34,492 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:34] "GET /web/static/src/xml/dialog.xml?debug=1641897634481 HTTP/1.1" 200 - - - -
+2022-01-11 10:40:34,510 719741 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:40:34] "GET /web/static/src/xml/crash_manager.xml?debug=1641897634496 HTTP/1.1" 200 - - - -
+2022-01-11 10:41:06,965 720901 INFO ? odoo: Odoo version 14.0 
+2022-01-11 10:41:06,965 720901 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-11 10:41:06,966 720901 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-11 10:41:06,966 720901 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-11 10:41:07,351 720901 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-11 10:41:07,596 720901 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-11 10:41:07,612 720901 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-11 10:41:07,654 720901 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-11 10:41:07,915 720901 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-11 10:41:07,922 720901 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-11 10:41:09,606 720901 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 10:41:09,606 720901 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-11 10:41:10,982 720901 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-11 10:41:11,141 720901 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-11 10:41:11,156 720901 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:41:11,156 720901 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:41:11,157 720901 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-11 10:41:11,243 720901 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:41:11,329 720901 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-11 10:41:11,743 720901 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-11 10:41:11,836 720901 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-11 10:41:11,976 720901 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-11 10:41:12,093 720901 INFO pro15 odoo.modules.loading: Module my_library loaded in 0.94s, 184 queries 
+2022-01-11 10:41:12,114 720901 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:41:12,114 720901 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:41:12,115 720901 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:41:12,157 720901 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:41:12,158 720901 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:41:12,158 720901 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:41:12,196 720901 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-11 10:41:12,646 720901 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:41:12,738 720901 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-11 10:41:12,978 720901 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-11 10:41:13,061 720901 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-11 10:41:13,187 720901 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 0.99s, 109 queries 
+2022-01-11 10:41:13,466 720901 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:41:13,467 720901 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:41:13,467 720901 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:41:13,501 720901 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-11 10:41:13,502 720901 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-11 10:41:13,502 720901 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-11 10:41:13,739 720901 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-11 10:41:14,210 720901 INFO pro15 odoo.modules.loading: 68 modules loaded in 3.07s, 293 queries (+0 extra) 
+2022-01-11 10:41:15,552 720901 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-11 10:41:16,526 720901 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-11 10:41:17,028 720901 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-11 10:41:17,072 720901 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-11 10:41:17,089 720901 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-11 10:41:17,980 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:17] "POST /longpolling/im_status HTTP/1.1" 200 - 20 0.044 1.361
+2022-01-11 10:41:17,985 720901 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-11 10:41:41,306 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web HTTP/1.1" 200 - 597 0.349 1.491
+2022-01-11 10:41:41,400 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 304 - 2 0.002 0.027
+2022-01-11 10:41:41,456 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.012 0.048
+2022-01-11 10:41:41,484 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.004 0.065
+2022-01-11 10:41:41,523 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.022 0.058
+2022-01-11 10:41:41,525 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.026 0.065
+2022-01-11 10:41:41,556 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/webclient/load_menus/38b11f16055d15afc60a87b889d32c979c5f03a51aa4de89190502548adf3f8b HTTP/1.1" 200 - 1 0.001 0.017
+2022-01-11 10:41:41,902 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:41] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.000 0.055
+2022-01-11 10:41:42,083 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.004 0.012
+2022-01-11 10:41:42,349 720901 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /web/static/src/xml/debug.xml?debug=1641897702306 HTTP/1.1" 200 - - - -
+2022-01-11 10:41:42,360 720901 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 304 - - - -
+2022-01-11 10:41:42,547 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.002 0.036
+2022-01-11 10:41:42,587 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.013 0.052
+2022-01-11 10:41:42,618 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.156 0.080
+2022-01-11 10:41:42,639 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.005 0.044
+2022-01-11 10:41:42,644 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 304 - 17 0.070 0.150
+2022-01-11 10:41:42,677 720901 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /crm/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:41:42,704 720901 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:41:42,713 720901 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /account/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:41:42,719 720901 INFO ? werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "GET /sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-11 10:41:42,913 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "POST /mail/init_messaging HTTP/1.1" 200 - 112 0.477 0.236
+2022-01-11 10:41:42,959 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:42] "POST /web/action/load HTTP/1.1" 200 - 20 0.039 0.144
+2022-01-11 10:41:43,067 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:43] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.036 0.045
+2022-01-11 10:41:43,132 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:43] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 40 0.045 0.063
+2022-01-11 10:41:43,173 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:43] "POST /web/dataset/call_kw/library.book/onchange HTTP/1.1" 200 - 3 0.003 0.013
+2022-01-11 10:41:43,326 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:43] "POST /calendar/notify HTTP/1.1" 200 - 3 0.003 0.010
+2022-01-11 10:41:45,530 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:45] "POST /web/dataset/call_kw/library.book/name_search HTTP/1.1" 200 - 7 0.006 0.018
+2022-01-11 10:41:59,215 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:41:59] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 9 0.007 0.022
+2022-01-11 10:42:00,282 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:00] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.005 0.016
+2022-01-11 10:42:07,988 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:07] "POST /longpolling/poll HTTP/1.1" 200 - 24 0.053 51.403
+2022-01-11 10:42:17,133 720901 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-11 10:42:17,164 720901 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-11 10:42:32,389 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.061 50.078
+2022-01-11 10:42:33,117 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:33] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-11 10:42:47,893 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:47] "POST /web/dataset/call_kw/library.book/create HTTP/1.1" 200 - 6 0.005 0.018
+2022-01-11 10:42:47,969 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:47] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 15 0.016 0.041
+2022-01-11 10:42:48,022 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:48] "POST /web/dataset/call_kw/res.partner/read HTTP/1.1" 200 - 7 0.007 0.020
+2022-01-11 10:42:49,299 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:49] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.010
+2022-01-11 10:42:49,329 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:49] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.008
+2022-01-11 10:42:52,024 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:52] "POST /web/action/load HTTP/1.1" 200 - 14 0.013 0.033
+2022-01-11 10:42:52,124 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:52] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 33 0.024 0.057
+2022-01-11 10:42:52,197 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:52] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.009 0.017
+2022-01-11 10:42:54,148 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:54] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 8 0.006 0.024
+2022-01-11 10:42:54,187 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:42:54] "POST /web/dataset/call_kw/library.book.category/onchange HTTP/1.1" 200 - 3 0.002 0.012
+2022-01-11 10:43:07,034 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:43:07] "POST /web/dataset/call_kw/library.book.category/name_search HTTP/1.1" 200 - 5 0.004 0.010
+2022-01-11 10:43:22,442 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:43:22] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.026
+2022-01-11 10:43:23,491 720901 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 10:43:23] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.029
