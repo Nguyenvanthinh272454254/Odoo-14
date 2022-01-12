@@ -24,12 +24,16 @@
 
     # always loaded
     'data': [
+        'security/groups.xml',
         'security/ir.model.access.csv',
         'views/librarybook.xml',
         'views/library_book_categ.xml',
+        'data/data.xml',
+
+
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'data/demo.xml'
     ],
 }
