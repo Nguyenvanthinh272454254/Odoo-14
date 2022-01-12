@@ -29,6 +29,7 @@
         'views/librarybook.xml',
         'views/library_book_categ.xml',
         'views/library_book_rent.xml',
+        'wizard/library_book_rent_wizard.xml'
 
 
     ],

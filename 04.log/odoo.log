@@ -3633,3 +3633,355 @@ ValueError: Wrong value for library.book.rent.state: 'lost'
 2022-01-12 04:53:38,251 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:53:38] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.015 0.033
 2022-01-12 04:54:26,244 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:54:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.029
 2022-01-12 04:54:30,345 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:54:30] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.014 0.042
+2022-01-12 04:54:53,273 824184 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-01-12 04:54:53,306 824184 INFO pro15 odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-01-12 04:55:17,326 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:55:17] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.029
+2022-01-12 04:55:22,422 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:55:22] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 04:56:08,423 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:56:08] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.028
+2022-01-12 04:56:14,490 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:56:14] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 04:56:59,491 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:56:59] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.024
+2022-01-12 04:57:06,573 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:57:06] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.030
+2022-01-12 04:57:50,563 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:57:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.028
+2022-01-12 04:57:58,641 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:57:58] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.024
+2022-01-12 04:58:41,665 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:58:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.019 50.038
+2022-01-12 04:58:50,709 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:58:50] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-12 04:59:33,710 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:59:33] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
+2022-01-12 04:59:42,878 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 04:59:42] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-12 05:00:24,880 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:00:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.024
+2022-01-12 05:00:34,947 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:00:34] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.032
+2022-01-12 05:01:15,983 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:15] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.029 50.041
+2022-01-12 05:01:27,048 824184 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:27] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.039
+2022-01-12 05:01:35,141 866558 INFO ? odoo: Odoo version 14.0 
+2022-01-12 05:01:35,142 866558 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 05:01:35,142 866558 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 05:01:35,142 866558 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 05:01:35,628 866558 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 05:01:35,852 866558 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 05:01:35,869 866558 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 05:01:35,912 866558 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-12 05:01:36,177 866558 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 05:01:36,183 866558 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 05:01:37,879 866558 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 05:01:37,880 866558 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 05:01:39,737 866558 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 05:01:39,970 866558 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 05:01:39,989 866558 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 05:01:39,990 866558 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 05:01:39,991 866558 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 05:01:40,081 866558 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 05:01:40,083 866558 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 05:01:40,084 866558 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 05:01:40,167 866558 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 05:01:40,498 866558 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 05:01:40,498 866558 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 05:01:40,942 866558 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 05:01:41,152 866558 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 05:01:41,166 866558 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 05:01:41,453 866558 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 05:01:41,554 866558 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 05:01:41,613 866558 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 05:01:41,694 866558 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xml 
+2022-01-12 05:01:41,721 866558 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_rent_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 05:01:41,771 866558 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.78s, 340 queries 
+2022-01-12 05:01:41,786 866558 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 05:01:41,787 866558 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 05:01:41,787 866558 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 05:01:41,787 866558 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 05:01:41,787 866558 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 05:01:41,827 866558 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 05:01:41,827 866558 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 05:01:41,827 866558 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 05:01:41,828 866558 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 05:01:41,828 866558 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 05:01:41,873 866558 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-12 05:01:42,156 866558 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 05:01:42,210 866558 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-12 05:01:42,252 866558 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 05:01:42,252 866558 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 05:01:42,375 866558 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-12 05:01:42,436 866558 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-12 05:01:42,534 866558 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 0.66s, 113 queries 
+2022-01-12 05:01:42,760 866558 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 05:01:42,760 866558 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 05:01:42,761 866558 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 05:01:42,761 866558 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 05:01:42,761 866558 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 05:01:42,784 866558 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 05:01:42,784 866558 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 05:01:42,785 866558 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 05:01:42,785 866558 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 05:01:42,785 866558 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 05:01:43,042 866558 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-12 05:01:43,735 866558 INFO pro15 odoo.modules.loading: 68 modules loaded in 3.77s, 453 queries (+0 extra) 
+2022-01-12 05:01:45,119 866558 WARNING pro15 odoo.modules.loading: The model library.book.copy has no access rules, consider adding one. E.g. access_library_book_copy,access_library_book_copy,model_library_book_copy,base.group_user,1,0,0,0 
+2022-01-12 05:01:45,435 866558 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-12 05:01:46,180 866558 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 05:01:46,180 866558 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 05:01:46,833 866558 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-12 05:01:46,851 866558 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-12 05:01:49,389 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web HTTP/1.1" 200 - 604 0.376 7.851
+2022-01-12 05:01:49,557 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.005 0.053
+2022-01-12 05:01:49,574 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.006 0.076
+2022-01-12 05:01:49,584 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.007 0.051
+2022-01-12 05:01:49,631 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 304 - 2 0.014 0.065
+2022-01-12 05:01:49,633 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.004 0.063
+2022-01-12 05:01:49,655 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:49] "GET /web/webclient/load_menus/4d6d1aaa0977884bc31270edf708e5c5e52da6e5744aefd66b0525d024746ff4 HTTP/1.1" 200 - 1 0.001 0.016
+2022-01-12 05:01:50,042 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.000 0.088
+2022-01-12 05:01:50,216 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.003 0.015
+2022-01-12 05:01:50,242 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.000 0.008
+2022-01-12 05:01:50,590 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /web/static/src/xml/debug.xml?debug=1641963710444 HTTP/1.1" 200 - - - -
+2022-01-12 05:01:50,719 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.007 0.066
+2022-01-12 05:01:50,791 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.008 0.083
+2022-01-12 05:01:50,804 866558 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-12 05:01:50,808 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.128 0.099
+2022-01-12 05:01:50,831 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.011 0.049
+2022-01-12 05:01:50,873 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 05:01:50,931 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 17 0.140 0.191
+2022-01-12 05:01:50,951 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 05:01:50,970 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 05:01:50,991 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:50] "GET /sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 05:01:51,107 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "POST /mail/init_messaging HTTP/1.1" 200 - 119 0.444 0.298
+2022-01-12 05:01:51,179 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "POST /web/action/load HTTP/1.1" 200 - 26 0.058 0.082
+2022-01-12 05:01:51,345 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.016 0.052
+2022-01-12 05:01:51,463 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 35 0.046 0.073
+2022-01-12 05:01:51,548 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "POST /web/dataset/call_kw/library.book.rent/read HTTP/1.1" 200 - 5 0.018 0.024
+2022-01-12 05:01:51,699 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 200 - - - -
+2022-01-12 05:01:51,809 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:51] "POST /calendar/notify HTTP/1.1" 200 - 3 0.015 0.015
+2022-01-12 05:01:55,625 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/action/load HTTP/1.1" 200 - 13 0.008 0.033
+2022-01-12 05:01:55,673 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/dataset/call_kw/library.rent.wizard/load_views HTTP/1.1" 200 - 12 0.008 0.022
+2022-01-12 05:01:55,737 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 16 0.012 0.032
+2022-01-12 05:01:55,772 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 3 0.003 0.010
+2022-01-12 05:01:55,819 866558 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "GET /web/static/src/xml/dialog.xml?debug=1641963715813 HTTP/1.1" 200 - - - -
+2022-01-12 05:01:55,890 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.012
+2022-01-12 05:01:55,910 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.015
+2022-01-12 05:01:55,926 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:55] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.003 0.019
+2022-01-12 05:01:59,188 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:59] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.007 0.019
+2022-01-12 05:01:59,224 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:01:59] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.008
+2022-01-12 05:02:00,459 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:00] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.012
+2022-01-12 05:02:00,581 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:00] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.008
+2022-01-12 05:02:00,605 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:00] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.015
+2022-01-12 05:02:00,610 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:00] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.012
+2022-01-12 05:02:02,019 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:02] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 9 0.010 0.031
+2022-01-12 05:02:08,746 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:08] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 22 0.014 0.032
+2022-01-12 05:02:08,786 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:08] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.011
+2022-01-12 05:02:10,070 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:10] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 3 0.002 0.008
+2022-01-12 05:02:11,065 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:11] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.010
+2022-01-12 05:02:20,135 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:20] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 3 0.002 0.011
+2022-01-12 05:02:22,551 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:22] "POST /web/dataset/call_kw/library.rent.wizard/create HTTP/1.1" 200 - 6 0.014 0.015
+2022-01-12 05:02:22,598 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:22] "POST /web/dataset/call_kw/library.rent.wizard/read HTTP/1.1" 200 - 9 0.008 0.020
+2022-01-12 05:02:22,627 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:22] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 3 0.002 0.009
+2022-01-12 05:02:22,735 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:22] "POST /web/dataset/call_button HTTP/1.1" 200 - 40 0.039 0.045
+2022-01-12 05:02:25,390 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:25] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.010
+2022-01-12 05:02:25,523 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:25] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.031
+2022-01-12 05:02:25,537 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:25] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.017
+2022-01-12 05:02:25,553 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:25] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.019
+2022-01-12 05:02:27,867 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:27] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 23 0.012 0.043
+2022-01-12 05:02:27,938 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:27] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.006 0.029
+2022-01-12 05:02:35,226 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:35] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.012
+2022-01-12 05:02:35,486 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:35] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.117 0.034
+2022-01-12 05:02:35,518 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:35] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.028
+2022-01-12 05:02:35,526 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:35] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.032
+2022-01-12 05:02:40,809 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:40] "POST /longpolling/poll HTTP/1.1" 200 - 21 0.120 50.151
+2022-01-12 05:02:41,856 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:02:41] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.024
+2022-01-12 05:02:46,942 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 05:02:46,972 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 05:03:32,865 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:03:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.015 50.030
+2022-01-12 05:03:33,908 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:03:33] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.022
+2022-01-12 05:04:24,917 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:04:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.026
+2022-01-12 05:04:25,968 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:04:25] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 05:05:16,971 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:16] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.030
+2022-01-12 05:05:18,018 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:18] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.024
+2022-01-12 05:05:52,410 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:52] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.002 0.013
+2022-01-12 05:05:52,562 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:52] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.010
+2022-01-12 05:05:52,581 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:52] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.000 0.014
+2022-01-12 05:05:52,590 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:52] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.010
+2022-01-12 05:05:54,700 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:54] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.008 0.029
+2022-01-12 05:05:56,946 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:56] "POST /web/action/load HTTP/1.1" 200 - 14 0.011 0.056
+2022-01-12 05:05:57,051 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:57] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 33 0.024 0.055
+2022-01-12 05:05:57,093 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:57] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.011
+2022-01-12 05:05:57,495 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:57] "POST /web/action/load HTTP/1.1" 200 - 17 0.013 0.037
+2022-01-12 05:05:57,622 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:57] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 35 0.027 0.083
+2022-01-12 05:05:57,658 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:57] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.010
+2022-01-12 05:05:57,868 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:57] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.012
+2022-01-12 05:05:58,169 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:58] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.010
+2022-01-12 05:05:58,616 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:58] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.007 0.025
+2022-01-12 05:05:58,978 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:58] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.006 0.026
+2022-01-12 05:05:59,510 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:59] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.011
+2022-01-12 05:05:59,680 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:59] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.012
+2022-01-12 05:05:59,697 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:59] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.011
+2022-01-12 05:05:59,728 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:05:59] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.026
+2022-01-12 05:06:09,028 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:06:09] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.031
+2022-01-12 05:06:11,028 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:06:11] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.028
+2022-01-12 05:06:59,105 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:06:59] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.023 50.042
+2022-01-12 05:07:01,470 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:07:01] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 05:07:50,464 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:07:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.021
+2022-01-12 05:07:53,524 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:07:53] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:08:41,530 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:08:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.026
+2022-01-12 05:08:45,577 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:08:45] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:09:32,583 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:09:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.024
+2022-01-12 05:09:37,644 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:09:37] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.030
+2022-01-12 05:10:23,634 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:10:23] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.021
+2022-01-12 05:10:29,699 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:10:29] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:11:14,713 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:11:14] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.035
+2022-01-12 05:11:21,759 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:11:21] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:12:05,768 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:12:05] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.034
+2022-01-12 05:12:13,817 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:12:13] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:12:47,470 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 05:12:47,492 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 05:12:56,833 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:12:56] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.034
+2022-01-12 05:13:05,881 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:13:05] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.020
+2022-01-12 05:13:47,893 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:13:47] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.034
+2022-01-12 05:13:57,955 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:13:57] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.034
+2022-01-12 05:14:38,946 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:14:38] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.028
+2022-01-12 05:14:50,012 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:14:50] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:15:30,012 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:15:30] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.022
+2022-01-12 05:15:42,076 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:15:42] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.030
+2022-01-12 05:16:21,067 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:16:21] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:16:34,130 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:16:34] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:17:12,146 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:17:12] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.039
+2022-01-12 05:17:26,198 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:17:26] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.030
+2022-01-12 05:18:06,806 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:18:06] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 52.639
+2022-01-12 05:18:18,846 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:18:18] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:18:58,851 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:18:58] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:19:10,902 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:19:10] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-12 05:19:49,905 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:19:49] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.027
+2022-01-12 05:20:02,954 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:20:02] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:20:40,957 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:20:40] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.024
+2022-01-12 05:20:55,017 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:20:55] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:21:32,011 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:21:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.028
+2022-01-12 05:21:47,079 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:21:47] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:22:23,077 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:22:23] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.028
+2022-01-12 05:22:39,144 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:22:39] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 05:22:48,001 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 05:22:48,026 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 05:23:14,134 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:23:14] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
+2022-01-12 05:23:31,197 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:23:31] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:24:05,201 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:24:05] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.024
+2022-01-12 05:24:23,260 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:24:23] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.028
+2022-01-12 05:24:48,151 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-01-12 05:24:48,185 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-01-12 05:24:56,254 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:24:56] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.024
+2022-01-12 05:25:15,320 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:25:15] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:25:47,317 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:25:47] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.028
+2022-01-12 05:26:07,374 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:26:07] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:26:38,377 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:26:38] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.027
+2022-01-12 05:26:59,427 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:26:59] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:27:29,426 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:27:29] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:27:51,489 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:27:51] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.029
+2022-01-12 05:28:20,475 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:28:20] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.021
+2022-01-12 05:28:43,542 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:28:43] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:29:11,547 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:29:11] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.029
+2022-01-12 05:29:35,604 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:29:35] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:30:02,591 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:30:02] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:30:27,657 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:30:27] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:30:53,655 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:30:53] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
+2022-01-12 05:31:19,711 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:31:19] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:31:44,709 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:31:44] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.024
+2022-01-12 05:32:11,771 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:32:11] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:32:35,767 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:32:35] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.029
+2022-01-12 05:32:48,581 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 05:32:48,601 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 05:33:03,845 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:33:03] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.035
+2022-01-12 05:33:26,827 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:33:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.029
+2022-01-12 05:33:55,899 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:33:55] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.020
+2022-01-12 05:34:17,900 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:34:17] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.027
+2022-01-12 05:34:47,962 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:34:47] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.028
+2022-01-12 05:34:48,725 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2022-01-12 05:34:48,748 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Mail: Email Queue Manager` done. 
+2022-01-12 05:35:08,954 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:35:08] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.027
+2022-01-12 05:35:40,017 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:35:40] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-12 05:35:48,803 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete : Sync with remote DB`. 
+2022-01-12 05:35:48,827 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Partner Autocomplete : Sync with remote DB` done. 
+2022-01-12 05:35:48,830 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2022-01-12 05:35:48,851 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Snailmail: process letters queue` done. 
+2022-01-12 05:35:48,852 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2022-01-12 05:35:48,877 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `SMS: SMS Queue Manager` done. 
+2022-01-12 05:36:00,011 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:36:00] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.023
+2022-01-12 05:36:32,078 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:36:32] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:36:51,065 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:36:51] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
+2022-01-12 05:37:24,130 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:37:24] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.021
+2022-01-12 05:37:42,126 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:37:42] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
+2022-01-12 05:38:16,194 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:38:16] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.026
+2022-01-12 05:38:33,180 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:38:33] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.021
+2022-01-12 05:39:08,247 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:39:08] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.020
+2022-01-12 05:39:24,242 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:39:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:40:00,309 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:40:00] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:40:15,294 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:40:15] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:40:52,364 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:40:52] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.023
+2022-01-12 05:41:06,357 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:41:06] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.023
+2022-01-12 05:41:44,440 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:41:44] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:41:57,415 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:41:57] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.027
+2022-01-12 05:42:36,512 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:42:36] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 05:42:49,305 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 05:42:49,334 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 05:42:49,529 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:42:49] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.022 50.038
+2022-01-12 05:43:29,523 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:43:29] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 05:43:41,586 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:43:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.016 50.030
+2022-01-12 05:44:21,644 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:44:21] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.029
+2022-01-12 05:44:33,629 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:44:33] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.022
+2022-01-12 05:45:13,713 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:45:13] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.022
+2022-01-12 05:45:24,775 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:45:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.021 50.035
+2022-01-12 05:46:05,831 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:46:05] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.024
+2022-01-12 05:46:16,827 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:46:16] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.029
+2022-01-12 05:46:57,898 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:46:57] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.031
+2022-01-12 05:47:07,888 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:47:07] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.031
+2022-01-12 05:47:49,954 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:47:49] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.023
+2022-01-12 05:47:58,948 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:47:58] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.025
+2022-01-12 05:48:42,013 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:48:42] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
+2022-01-12 05:48:50,006 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:48:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.025
+2022-01-12 05:49:34,075 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:49:34] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.030
+2022-01-12 05:49:41,062 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:49:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.024
+2022-01-12 05:50:26,137 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:50:26] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.028
+2022-01-12 05:50:32,123 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:50:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.025
+2022-01-12 05:51:18,205 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:51:18] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.032
+2022-01-12 05:51:23,189 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:51:23] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.025
+2022-01-12 05:52:10,271 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:52:10] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.026
+2022-01-12 05:52:14,258 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:52:14] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.025
+2022-01-12 05:52:49,945 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 05:52:49,977 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 05:53:02,358 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:53:02] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.034
+2022-01-12 05:53:05,327 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:53:05] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.026
+2022-01-12 05:53:54,415 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:53:54] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.023
+2022-01-12 05:53:56,416 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:53:56] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.033
+2022-01-12 05:54:46,473 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:54:46] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.025
+2022-01-12 05:54:47,472 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:54:47] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.031
+2022-01-12 05:54:50,097 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-01-12 05:54:50,130 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-01-12 05:55:38,532 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:55:38] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.036
+2022-01-12 05:55:38,574 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:55:38] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.035 0.038
+2022-01-12 05:56:30,627 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:56:30] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.027
+2022-01-12 05:56:30,629 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:56:30] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.041
+2022-01-12 05:57:22,696 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:57:22] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.033
+2022-01-12 05:57:22,697 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:57:22] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.029
+2022-01-12 05:58:14,755 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:58:14] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.035
+2022-01-12 05:58:14,764 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:58:14] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.030
+2022-01-12 05:59:06,820 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:59:06] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.039
+2022-01-12 05:59:06,890 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:59:06] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.026
+2022-01-12 05:59:57,930 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:59:57] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.021 50.052
+2022-01-12 05:59:58,979 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 05:59:58] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 06:00:49,978 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:00:49] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.025
+2022-01-12 06:00:51,055 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:00:51] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.015 0.045
+2022-01-12 06:01:35,443 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:35] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.002 0.012
+2022-01-12 06:01:35,597 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:35] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.015
+2022-01-12 06:01:35,622 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:35] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.020
+2022-01-12 06:01:35,638 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:35] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.010
+2022-01-12 06:01:37,250 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:37] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 9 0.008 0.029
+2022-01-12 06:01:42,026 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:42] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.023
+2022-01-12 06:01:43,035 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:01:43] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.032
+2022-01-12 06:02:02,324 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:02] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.013
+2022-01-12 06:02:02,494 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:02] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.002 0.023
+2022-01-12 06:02:02,497 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:02] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.002 0.019
+2022-01-12 06:02:02,518 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:02] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.018
+2022-01-12 06:02:04,583 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:04] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.006 0.020
+2022-01-12 06:02:05,897 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:05] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.006 0.027
+2022-01-12 06:02:07,077 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:07] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.011
+2022-01-12 06:02:08,373 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:08] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.011
+2022-01-12 06:02:09,795 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:09] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.011
+2022-01-12 06:02:32,077 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.024
+2022-01-12 06:02:33,128 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:02:33] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.031
+2022-01-12 06:02:50,617 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 06:02:50,639 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 06:03:24,137 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:03:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.032
+2022-01-12 06:03:25,234 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:03:25] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.019 0.043
