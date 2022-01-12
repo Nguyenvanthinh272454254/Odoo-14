@@ -53,6 +53,12 @@ class my_library(models.Model):
             rec_name = "%s (%s)" % (record.name, record.date_release)
             result.append((record.id, rec_name))
         return result
+        
+    @api.model
+    def _update_book_price(self):
+        all_books = self.search([])
+        for book in all_books:
+            book.cost_price += 10
 
 
 class ResPartner(models.Model):
