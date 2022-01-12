@@ -66,11 +66,17 @@ class my_library(models.Model):
         _logger.info("Average book occupation: %s", result)
 
 
+    # def return_all_books(self):
+    #     self.ensure_one()
+    #     wizard = self.env['library.return.wizard']
+    #     with Form(wizard) as return_form:
+    #         return_form.borrower_id = self.env.user.partner_id
+    #         record = return_form.save()
+    #         record.books_returns()
+
     def return_all_books(self):
         self.ensure_one()
         wizard = self.env['library.return.wizard']
-        with Form(wizard) as return_form:
-            return_form.borrower_id = self.env.user.partner_id
-            record = return_form.save()
-            record.books_returns()
+        wizard.create({'borrower_id': self.env.user.partner_id.id}).books_returns()
+
 

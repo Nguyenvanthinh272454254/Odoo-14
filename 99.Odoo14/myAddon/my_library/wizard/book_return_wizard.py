@@ -7,7 +7,7 @@ class LibraryReturnWizard(models.TransientModel):
     _description = "Lib return wizard"
 
     borrower_id = fields.Many2one('res.partner', string='Member')
-    book_ids = fields.Many2many('library.book', string='Books')
+    book_ids = fields.Many2many('library.book', string='Books', compute="onchange_member", readonly=False)
 
     def books_returns(self):
         loanModel = self.env['library.book.rent']
