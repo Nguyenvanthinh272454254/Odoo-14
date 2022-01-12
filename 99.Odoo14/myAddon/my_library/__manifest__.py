@@ -28,12 +28,12 @@
         'security/ir.model.access.csv',
         'views/librarybook.xml',
         'views/library_book_categ.xml',
-        'data/data.xml',
+        'views/library_book_rent.xml',
 
 
     ],
     # only loaded in demonstration mode
-    'demo': [
-        'data/demo.xml'
-    ],
+    # 'demo': [
+    #     'data/demo.xml'
+    # ],
 }
