@@ -36,6 +36,7 @@
 
 
     ],
+    'post_init_hook': 'add_book_hook',
     # only loaded in demonstration mode
     # 'demo': [
     #     'data/demo.xml'
