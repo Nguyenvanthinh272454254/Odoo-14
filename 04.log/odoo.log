@@ -3985,3 +3985,1219 @@ ValueError: Wrong value for library.book.rent.state: 'lost'
 2022-01-12 06:02:50,639 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
 2022-01-12 06:03:24,137 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:03:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.032
 2022-01-12 06:03:25,234 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:03:25] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.019 0.043
+2022-01-12 06:04:15,245 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:04:15] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.043 50.035
+2022-01-12 06:04:17,335 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:04:17] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.037
+2022-01-12 06:05:06,359 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:05:06] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.032 50.039
+2022-01-12 06:05:09,429 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:05:09] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.019 0.034
+2022-01-12 06:05:58,413 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:05:58] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.025
+2022-01-12 06:06:01,846 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:06:01] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-12 06:06:49,900 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:06:49] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.018 50.035
+2022-01-12 06:06:54,193 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:06:54] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.022
+2022-01-12 06:07:41,204 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:07:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.030
+2022-01-12 06:07:46,371 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:07:46] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.023 0.039
+2022-01-12 06:08:32,280 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:08:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.018 50.038
+2022-01-12 06:08:38,510 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:08:38] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.022 0.036
+2022-01-12 06:09:23,482 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:09:23] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.028
+2022-01-12 06:09:30,580 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:09:30] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.027
+2022-01-12 06:10:14,594 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:10:14] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.018 50.034
+2022-01-12 06:10:22,675 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:10:22] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.020 0.042
+2022-01-12 06:11:05,694 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:11:05] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.041
+2022-01-12 06:11:14,780 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:11:14] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.031
+2022-01-12 06:11:56,764 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:11:56] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.031
+2022-01-12 06:12:06,856 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:12:06] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.029
+2022-01-12 06:12:47,846 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:12:47] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.024
+2022-01-12 06:12:51,242 866558 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 06:12:51,270 866558 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 06:12:58,928 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:12:58] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.024
+2022-01-12 06:13:38,929 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:13:38] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.028
+2022-01-12 06:13:50,999 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:13:50] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.031
+2022-01-12 06:14:29,993 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:14:29] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.026
+2022-01-12 06:14:43,064 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:14:43] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.027
+2022-01-12 06:15:21,070 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:15:21] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.016 50.031
+2022-01-12 06:15:35,154 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:15:35] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.016 0.042
+2022-01-12 06:16:12,124 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:16:12] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.025
+2022-01-12 06:16:27,246 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:16:27] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.016 0.041
+2022-01-12 06:17:03,239 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:17:03] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.020 50.038
+2022-01-12 06:17:19,342 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:17:19] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.020 0.038
+2022-01-12 06:17:54,355 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:17:54] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.018 50.047
+2022-01-12 06:18:11,413 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:18:11] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.024
+2022-01-12 06:18:45,441 866558 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:18:45] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.023 50.039
+2022-01-12 06:19:02,587 902371 INFO ? odoo: Odoo version 14.0 
+2022-01-12 06:19:02,588 902371 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 06:19:02,588 902371 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 06:19:02,588 902371 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 06:19:03,036 902371 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 06:19:03,256 902371 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 06:19:03,272 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:03,302 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:19:03,513 902371 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 06:19:03,521 902371 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 06:19:03,761 902371 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 06:19:05,800 902371 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:19:05,800 902371 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:19:07,255 902371 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 06:19:07,432 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:07,447 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:07,448 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:07,448 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:07,530 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:07,531 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:07,532 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:07,603 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:07,808 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:07,808 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:08,009 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:08,097 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:08,228 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:08,414 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:08,513 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:08,649 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:08,658 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:08,659 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:08,659 902371 CRITICAL pro15 odoo.service.server: Failed to initialize database `pro15`. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 1199, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+2022-01-12 06:19:08,670 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:08,732 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.06s, 0 queries (+0 extra) 
+2022-01-12 06:19:08,899 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:08,900 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:08,901 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:08,902 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:08,976 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:08,977 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:08,978 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:09,040 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:09,318 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:09,318 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:09,401 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:09,500 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:09,675 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:09,806 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:09,885 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:09,993 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:09,998 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:09,999 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:10,017 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:10,072 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-12 06:19:10,201 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:10,203 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:10,204 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:10,204 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:10,280 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:10,281 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:10,282 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:10,351 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:10,549 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:10,549 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:10,597 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:10,654 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:10,768 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:10,872 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:10,924 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:10,990 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:10,994 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:10,995 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:11,004 902371 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:19:11] "POST /longpolling/im_status HTTP/1.1" 500 - 617 0.649 6.583
+2022-01-12 06:19:11,016 902371 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml - - -
+2022-01-12 06:19:15,093 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:15,157 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.06s, 0 queries (+0 extra) 
+2022-01-12 06:19:15,300 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:15,302 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:15,302 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:15,303 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:15,392 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:15,394 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:15,394 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:15,478 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:15,753 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:15,754 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:15,807 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:15,867 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:16,024 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:16,114 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:16,175 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:16,267 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:16,271 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:16,272 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:16,279 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:16,318 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-12 06:19:16,408 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:16,409 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:16,410 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:16,410 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:16,453 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:16,454 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:16,455 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:16,492 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:16,742 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:16,743 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:16,816 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:16,917 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:17,107 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:17,257 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:17,344 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:17,456 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:17,462 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:17,463 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:17,471 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:17,520 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-12 06:19:17,668 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:17,670 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:17,671 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:17,671 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:17,752 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:17,754 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:17,754 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:17,851 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:18,134 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:18,134 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:18,188 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:18,274 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:18,484 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:18,607 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:18,681 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:18,767 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:18,772 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:18,773 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:18,781 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:18,815 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:19:18,825 902371 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:19:18] "POST /longpolling/poll HTTP/1.1" 500 - 617 0.665 3.088
+2022-01-12 06:19:18,851 902371 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml - - -
+2022-01-12 06:19:18,918 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:18,920 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:18,920 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:18,921 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:18,965 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:18,965 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:18,966 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:19,004 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:19,171 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:19,172 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:19,226 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:19,310 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:19,465 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:19,562 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:19,635 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:19,711 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:19,715 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:19,715 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:19,720 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:19,751 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:19:19,826 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:19,827 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:19,828 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:19,828 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:19,869 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:19,870 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:19,870 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:19,909 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:20,153 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:20,154 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:20,221 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:20,353 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:20,568 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:20,709 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:20,790 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:20,908 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:20,913 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:20,914 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:20,922 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:20,955 902371 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:19:20] "POST /web/webclient/version_info HTTP/1.1" 500 - 617 0.833 4.103
+2022-01-12 06:19:20,988 902371 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml - - -
+2022-01-12 06:19:20,994 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.07s, 0 queries (+0 extra) 
+2022-01-12 06:19:21,113 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:21,115 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:21,116 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:21,116 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:21,203 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:21,204 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:21,205 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:21,271 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:21,566 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:21,567 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:21,637 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:21,712 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:21,940 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:22,106 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:22,215 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:22,341 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:22,355 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:22,357 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:22,375 902371 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:19:22] "GET /web HTTP/1.1" 500 - 617 0.685 4.851
+2022-01-12 06:19:22,399 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:22,412 902371 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml - - -
+2022-01-12 06:19:22,470 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.07s, 0 queries (+0 extra) 
+2022-01-12 06:19:22,623 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:22,625 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:22,626 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:22,627 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:22,720 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:22,721 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:22,722 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:22,794 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:23,049 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:23,050 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:23,098 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:23,180 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:23,322 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:23,458 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:23,503 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:23,572 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:23,576 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:23,577 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:23,582 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:23,610 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:19:23,698 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:23,700 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:23,700 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:23,701 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:23,746 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:23,747 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:23,747 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:23,787 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:23,982 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:23,983 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:24,018 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:24,063 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:24,160 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:24,284 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:24,369 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:24,485 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:24,495 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:24,496 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:24,505 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:24,552 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-12 06:19:24,678 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:24,680 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:24,681 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:24,682 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:24,766 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:24,766 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:24,767 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:24,952 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:25,239 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:25,240 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:25,303 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:25,380 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:25,600 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:25,749 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:25,847 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:25,976 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:25,983 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:25,984 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:25,995 902371 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:26,034 902371 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:19:26] "POST /web/webclient/version_info HTTP/1.1" 500 - 617 0.743 5.275
+2022-01-12 06:19:26,084 902371 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml - - -
+2022-01-12 06:19:26,101 902371 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.11s, 0 queries (+0 extra) 
+2022-01-12 06:19:26,257 902371 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:26,259 902371 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:26,260 902371 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:26,261 902371 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:26,347 902371 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:26,348 902371 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:26,349 902371 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:26,429 902371 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:26,677 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:26,678 902371 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:26,735 902371 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:26,820 902371 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:27,044 902371 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:27,173 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:27,256 902371 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:27,372 902371 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml 
+2022-01-12 06:19:27,378 902371 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:19:27,379 902371 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:19:27,393 902371 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:19:27] "GET /favicon.ico HTTP/1.1" 500 - 617 0.621 4.184
+2022-01-12 06:19:27,408 902371 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 222, in load_module_graph
+    load_data(cr, idref, mode, kind='data', package=package)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 69, in load_data
+    tools.convert_file(cr, package.name, filename, idref, mode, noupdate, kind)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py", line 727, in convert_file
+    with file_open(pathname, 'rb') as fp:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 198, in file_open
+    return _fileopen(name, mode=mode, basedir=rtp, pathinfo=pathinfo, basename=basename, filter_ext=filter_ext)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/misc.py", line 258, in _fileopen
+    raise IOError('File not found: %s' % basename)
+OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/library_book_return_wizard.xml - - -
+2022-01-12 06:19:53,021 903176 INFO ? odoo: Odoo version 14.0 
+2022-01-12 06:19:53,022 903176 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 06:19:53,022 903176 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 06:19:53,023 903176 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 06:19:53,497 903176 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 06:19:53,751 903176 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 06:19:53,767 903176 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:19:53,808 903176 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-12 06:19:54,081 903176 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 06:19:54,087 903176 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 06:19:56,046 903176 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:19:56,047 903176 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:19:57,685 903176 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 06:19:57,819 903176 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:19:57,828 903176 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:57,828 903176 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:57,829 903176 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:19:57,876 903176 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:57,877 903176 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:57,878 903176 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:57,919 903176 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:19:58,112 903176 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:19:58,112 903176 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:19:58,456 903176 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:19:58,571 903176 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:19:58,774 903176 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:19:58,971 903176 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:19:59,049 903176 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:19:59,151 903176 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xml 
+2022-01-12 06:19:59,186 903176 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_rent_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 06:19:59,220 903176 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_return_wizard.xml 
+2022-01-12 06:19:59,254 903176 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_return_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 06:19:59,363 903176 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.53s, 380 queries 
+2022-01-12 06:19:59,392 903176 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:59,393 903176 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:59,393 903176 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:59,394 903176 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:59,394 903176 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:59,469 903176 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:19:59,470 903176 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:19:59,471 903176 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:19:59,471 903176 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:19:59,471 903176 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:19:59,690 903176 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-12 06:19:59,759 903176 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 06:20:00,309 903176 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:20:00,410 903176 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-12 06:20:00,474 903176 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:20:00,475 903176 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:20:00,658 903176 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-12 06:20:00,779 903176 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-12 06:20:00,919 903176 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 1.23s, 113 queries 
+2022-01-12 06:20:01,101 903176 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:20:01,101 903176 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:20:01,101 903176 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:20:01,102 903176 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:20:01,102 903176 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:20:01,125 903176 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:20:01,125 903176 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:20:01,125 903176 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:20:01,126 903176 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:20:01,126 903176 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:20:01,448 903176 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-12 06:20:02,032 903176 INFO pro15 odoo.modules.loading: 68 modules loaded in 4.21s, 493 queries (+0 extra) 
+2022-01-12 06:20:03,248 903176 WARNING pro15 odoo.modules.loading: The model library.book.copy has no access rules, consider adding one. E.g. access_library_book_copy,access_library_book_copy,model_library_book_copy,base.group_user,1,0,0,0 
+2022-01-12 06:20:03,606 903176 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-12 06:20:04,422 903176 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:20:04,422 903176 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:20:05,229 903176 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-12 06:20:05,250 903176 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-12 06:20:07,768 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:07] "GET /web HTTP/1.1" 200 - 606 0.390 7.593
+2022-01-12 06:20:07,833 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:07] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 304 - 2 0.005 0.027
+2022-01-12 06:20:07,884 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:07] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.005 0.042
+2022-01-12 06:20:07,886 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:07] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.012 0.060
+2022-01-12 06:20:07,924 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:07] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.015 0.040
+2022-01-12 06:20:07,946 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:07] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.009 0.086
+2022-01-12 06:20:08,201 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:08] "GET /web/webclient/load_menus/0006c8c8c854cc93e8394f1df746ac8d8ff464fd47edff32d475ab7b615025a6 HTTP/1.1" 200 - 1 0.000 0.021
+2022-01-12 06:20:08,816 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:08] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.000 0.115
+2022-01-12 06:20:09,901 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:09] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.008 0.023
+2022-01-12 06:20:09,942 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:09] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.001 0.015
+2022-01-12 06:20:10,311 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2022-01-12 06:20:10,370 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /web/static/src/xml/debug.xml?debug=1641968410234 HTTP/1.1" 200 - - - -
+2022-01-12 06:20:10,459 903176 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-12 06:20:10,609 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.021 0.050
+2022-01-12 06:20:10,623 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.166 0.096
+2022-01-12 06:20:10,647 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.002 0.130
+2022-01-12 06:20:10,716 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.028 0.021
+2022-01-12 06:20:10,718 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 17 0.192 0.131
+2022-01-12 06:20:10,746 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:20:10,763 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:20:10,791 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:20:10,803 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "GET /sale/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:20:10,882 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:10] "POST /mail/init_messaging HTTP/1.1" 200 - 118 0.420 0.349
+2022-01-12 06:20:11,049 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "POST /web/action/load HTTP/1.1" 200 - 14 0.025 0.055
+2022-01-12 06:20:11,294 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "GET /web/image/res.company/1/favicon/ HTTP/1.1" 200 - 11 0.089 0.042
+2022-01-12 06:20:11,312 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.070 0.049
+2022-01-12 06:20:11,395 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 34 0.071 0.075
+2022-01-12 06:20:11,452 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.007 0.014
+2022-01-12 06:20:11,501 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.002 0.015
+2022-01-12 06:20:11,727 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:11] "POST /calendar/notify HTTP/1.1" 200 - 3 0.004 0.015
+2022-01-12 06:20:13,005 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/action/load HTTP/1.1" 200 - 13 0.015 0.037
+2022-01-12 06:20:13,066 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/dataset/call_kw/library.return.wizard/load_views HTTP/1.1" 200 - 15 0.011 0.025
+2022-01-12 06:20:13,146 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 15 0.015 0.035
+2022-01-12 06:20:13,187 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/dataset/call_kw/library.return.wizard/onchange HTTP/1.1" 200 - 7 0.008 0.016
+2022-01-12 06:20:13,258 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "GET /web/static/src/xml/dialog.xml?debug=1641968413249 HTTP/1.1" 200 - - - -
+2022-01-12 06:20:13,312 903176 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 200 - - - -
+2022-01-12 06:20:13,438 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.008
+2022-01-12 06:20:13,502 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.009
+2022-01-12 06:20:13,542 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:13] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.010
+2022-01-12 06:20:20,519 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:20] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 9 0.016 0.029
+2022-01-12 06:20:23,333 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:23] "POST /web/dataset/call_kw/library.return.wizard/onchange HTTP/1.1" 200 - 4 0.003 0.013
+2022-01-12 06:20:24,759 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:24] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 22 0.013 0.043
+2022-01-12 06:20:24,801 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:24] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.010
+2022-01-12 06:20:26,231 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:26] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 3 0.003 0.010
+2022-01-12 06:20:27,346 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:27] "POST /web/dataset/call_kw/library.return.wizard/create HTTP/1.1" 200 - 6 0.010 0.023
+2022-01-12 06:20:27,426 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:27] "POST /web/dataset/call_kw/library.return.wizard/read HTTP/1.1" 200 - 9 0.011 0.023
+2022-01-12 06:20:27,465 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:27] "POST /web/dataset/call_kw/library.book/read HTTP/1.1" 200 - 3 0.002 0.012
+2022-01-12 06:20:27,536 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:27] "POST /web/dataset/call_button HTTP/1.1" 200 - 12 0.016 0.016
+2022-01-12 06:20:46,983 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:46] "POST /web/action/load HTTP/1.1" 200 - 17 0.011 0.041
+2022-01-12 06:20:47,108 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:47] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 35 0.028 0.071
+2022-01-12 06:20:47,154 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:47] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.012
+2022-01-12 06:20:54,459 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:54] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 22 0.020 0.052
+2022-01-12 06:20:54,541 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:54] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.034
+2022-01-12 06:20:57,578 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:57] "POST /web/action/load HTTP/1.1" 200 - 22 0.013 0.041
+2022-01-12 06:20:57,694 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:57] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 33 0.033 0.066
+2022-01-12 06:20:57,797 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:20:57] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.012 0.053
+2022-01-12 06:21:00,463 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:00] "POST /longpolling/poll HTTP/1.1" 200 - 21 0.063 50.156
+2022-01-12 06:21:01,445 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:01] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.105
+2022-01-12 06:21:10,396 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/action/load HTTP/1.1" 200 - 13 0.008 0.028
+2022-01-12 06:21:10,448 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/dataset/call_kw/library.rent.wizard/load_views HTTP/1.1" 200 - 12 0.008 0.027
+2022-01-12 06:21:10,511 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 8 0.005 0.023
+2022-01-12 06:21:10,546 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 3 0.003 0.013
+2022-01-12 06:21:10,665 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.013
+2022-01-12 06:21:10,697 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.004 0.023
+2022-01-12 06:21:10,703 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:10] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.018
+2022-01-12 06:21:13,103 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:13] "POST /web/dataset/call_kw/library.return.wizard/onchange HTTP/1.1" 200 - 5 0.004 0.013
+2022-01-12 06:21:13,217 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:13] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.017
+2022-01-12 06:21:13,233 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:13] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.022
+2022-01-12 06:21:13,246 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:13] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.011
+2022-01-12 06:21:50,513 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:50] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.024
+2022-01-12 06:21:52,911 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:21:52] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.027
+2022-01-12 06:22:05,426 903176 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Digest Emails`. 
+2022-01-12 06:22:06,659 903176 INFO pro15 odoo.addons.base.models.ir_cron: Job `Digest Emails` done. 
+2022-01-12 06:22:06,661 903176 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 06:22:06,686 903176 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 06:22:41,905 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:22:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.026
+2022-01-12 06:22:44,999 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:22:44] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.034
+2022-01-12 06:23:32,987 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:23:32] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.027
+2022-01-12 06:23:37,069 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:23:37] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.029
+2022-01-12 06:24:24,073 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:24:24] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.016 50.029
+2022-01-12 06:24:29,137 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:24:29] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.029
+2022-01-12 06:25:06,871 903176 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-01-12 06:25:06,914 903176 INFO pro15 odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-01-12 06:25:15,134 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:25:15] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.026
+2022-01-12 06:25:21,240 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:25:21] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.022 0.045
+2022-01-12 06:26:06,205 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:26:06] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.027
+2022-01-12 06:26:13,325 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:26:13] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.013 0.038
+2022-01-12 06:26:57,330 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:26:57] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.036
+2022-01-12 06:27:05,414 903176 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:05] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.030
+2022-01-12 06:27:37,553 909052 INFO ? odoo: Odoo version 14.0 
+2022-01-12 06:27:37,554 909052 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 06:27:37,555 909052 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 06:27:37,555 909052 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 06:27:38,048 909052 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 06:27:38,409 909052 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 06:27:38,425 909052 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:27:38,462 909052 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-12 06:27:38,732 909052 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 06:27:38,743 909052 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 06:27:41,074 909052 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:27:41,074 909052 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:27:42,587 909052 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 06:27:42,790 909052 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:27:42,801 909052 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:27:42,802 909052 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:27:42,803 909052 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:27:42,869 909052 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:27:42,870 909052 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:27:42,871 909052 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:27:42,920 909052 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:27:43,004 909052 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:27:43,004 909052 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:27:43,344 909052 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:27:43,462 909052 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:27:43,677 909052 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:27:43,861 909052 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:27:43,970 909052 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:27:44,080 909052 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xml 
+2022-01-12 06:27:44,106 909052 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_rent_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 06:27:44,131 909052 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_return_wizard.xml 
+2022-01-12 06:27:44,132 909052 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 06:27:44,163 909052 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_return_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 06:27:44,237 909052 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.43s, 358 queries 
+2022-01-12 06:27:44,257 909052 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:27:44,257 909052 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:27:44,258 909052 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:27:44,258 909052 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:27:44,258 909052 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:27:44,320 909052 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:27:44,320 909052 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:27:44,321 909052 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:27:44,321 909052 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:27:44,321 909052 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:27:44,362 909052 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-12 06:27:44,629 909052 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:27:44,682 909052 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-12 06:27:44,723 909052 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:27:44,723 909052 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:27:44,830 909052 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-12 06:27:44,871 909052 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-12 06:27:44,978 909052 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 0.62s, 113 queries 
+2022-01-12 06:27:45,219 909052 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:27:45,219 909052 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:27:45,220 909052 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:27:45,220 909052 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:27:45,221 909052 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:27:45,249 909052 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:27:45,249 909052 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:27:45,250 909052 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:27:45,250 909052 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:27:45,250 909052 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:27:45,512 909052 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-12 06:27:46,038 909052 INFO pro15 odoo.modules.loading: 68 modules loaded in 3.25s, 471 queries (+0 extra) 
+2022-01-12 06:27:47,221 909052 WARNING pro15 odoo.modules.loading: The model library.book.copy has no access rules, consider adding one. E.g. access_library_book_copy,access_library_book_copy,model_library_book_copy,base.group_user,1,0,0,0 
+2022-01-12 06:27:47,571 909052 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-12 06:27:47,632 909052 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:27:47,633 909052 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:27:48,988 909052 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-12 06:27:49,016 909052 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-12 06:27:51,641 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web HTTP/1.1" 200 - 606 0.368 7.123
+2022-01-12 06:27:51,755 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.002 0.041
+2022-01-12 06:27:51,817 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.016 0.058
+2022-01-12 06:27:51,879 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.007 0.098
+2022-01-12 06:27:51,884 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.007 0.110
+2022-01-12 06:27:51,895 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 200 - 2 0.009 0.048
+2022-01-12 06:27:51,929 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:51] "GET /web/webclient/load_menus/0006c8c8c854cc93e8394f1df746ac8d8ff464fd47edff32d475ab7b615025a6 HTTP/1.1" 200 - 1 0.001 0.028
+2022-01-12 06:27:52,679 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:52] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.001 0.109
+2022-01-12 06:27:53,377 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:53] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.008 0.019
+2022-01-12 06:27:53,455 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:53] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.000 0.013
+2022-01-12 06:27:53,720 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:53] "GET /web/static/src/xml/debug.xml?debug=1641968873698 HTTP/1.1" 200 - - - -
+2022-01-12 06:27:53,786 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:53] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2022-01-12 06:27:53,914 909052 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-12 06:27:53,978 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:53] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.006 0.065
+2022-01-12 06:27:54,000 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.002 0.057
+2022-01-12 06:27:54,089 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.018 0.056
+2022-01-12 06:27:54,096 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 18 0.173 0.122
+2022-01-12 06:27:54,148 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.114 0.180
+2022-01-12 06:27:54,217 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:27:54,243 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "GET /crm/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 06:27:54,275 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 06:27:54,304 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "GET /sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 06:27:54,392 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /mail/init_messaging HTTP/1.1" 200 - 118 0.501 0.302
+2022-01-12 06:27:54,395 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/action/load HTTP/1.1" 200 - 26 0.122 0.105
+2022-01-12 06:27:54,557 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.021 0.035
+2022-01-12 06:27:54,634 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 35 0.038 0.074
+2022-01-12 06:27:54,688 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.007 0.022
+2022-01-12 06:27:54,729 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.009
+2022-01-12 06:27:54,937 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:27:54] "POST /calendar/notify HTTP/1.1" 200 - 3 0.006 0.014
+2022-01-12 06:28:32,451 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/action/load HTTP/1.1" 200 - 13 0.019 0.032
+2022-01-12 06:28:32,504 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/dataset/call_kw/library.return.wizard/load_views HTTP/1.1" 200 - 12 0.007 0.026
+2022-01-12 06:28:32,621 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 16 0.020 0.050
+2022-01-12 06:28:32,671 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/dataset/call_kw/library.return.wizard/onchange HTTP/1.1" 200 - 6 0.005 0.014
+2022-01-12 06:28:32,759 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "GET /web/static/src/xml/dialog.xml?debug=1641968912750 HTTP/1.1" 200 - - - -
+2022-01-12 06:28:32,794 909052 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 304 - - - -
+2022-01-12 06:28:32,859 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.015
+2022-01-12 06:28:32,873 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.010
+2022-01-12 06:28:32,894 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:32] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.010
+2022-01-12 06:28:38,282 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/action/load HTTP/1.1" 200 - 13 0.017 0.047
+2022-01-12 06:28:38,358 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/dataset/call_kw/library.rent.wizard/load_views HTTP/1.1" 200 - 12 0.011 0.033
+2022-01-12 06:28:38,498 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 8 0.007 0.024
+2022-01-12 06:28:38,576 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 3 0.007 0.012
+2022-01-12 06:28:38,751 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.009
+2022-01-12 06:28:38,777 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.000 0.012
+2022-01-12 06:28:38,811 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:38] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.011
+2022-01-12 06:28:42,757 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:42] "POST /web/dataset/call_kw/library.book.rent/onchange HTTP/1.1" 200 - 3 0.003 0.013
+2022-01-12 06:28:43,918 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:43] "POST /longpolling/poll HTTP/1.1" 200 - 21 0.060 50.200
+2022-01-12 06:28:44,632 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:44] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.014 0.039
+2022-01-12 06:28:47,062 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:47] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.007 0.023
+2022-01-12 06:28:49,484 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:49] "POST /web/action/load HTTP/1.1" 200 - 14 0.009 0.030
+2022-01-12 06:28:49,584 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:49] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 33 0.026 0.057
+2022-01-12 06:28:49,624 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:49] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.004 0.014
+2022-01-12 06:28:50,141 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:50] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.012
+2022-01-12 06:28:50,503 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:50] "POST /web/action/load HTTP/1.1" 200 - 17 0.011 0.030
+2022-01-12 06:28:50,617 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:50] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 35 0.025 0.069
+2022-01-12 06:28:50,654 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:50] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.009
+2022-01-12 06:28:52,515 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:52] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.010
+2022-01-12 06:28:53,180 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:53] "POST /web/dataset/call_kw/library.book/onchange HTTP/1.1" 200 - 3 0.006 0.012
+2022-01-12 06:28:57,638 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:57] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.012
+2022-01-12 06:28:58,453 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:58] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 8 0.005 0.023
+2022-01-12 06:28:58,588 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:28:58] "POST /web/dataset/call_kw/library.book.category/onchange HTTP/1.1" 200 - 3 0.002 0.106
+2022-01-12 06:29:00,298 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:29:00] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 23 0.015 0.051
+2022-01-12 06:29:00,355 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:29:00] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.005 0.030
+2022-01-12 06:29:01,543 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:29:01] "POST /web/dataset/call_kw/library.book.rent/onchange HTTP/1.1" 200 - 2 0.002 0.017
+2022-01-12 06:29:04,407 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:29:04] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.006 0.023
+2022-01-12 06:29:33,972 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:29:33] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.029
+2022-01-12 06:29:36,058 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:29:36] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.031
+2022-01-12 06:30:06,082 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:06] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.007 0.022
+2022-01-12 06:30:07,637 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:07] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.007 0.038
+2022-01-12 06:30:08,775 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:08] "POST /web/dataset/call_kw/library.rent.wizard/onchange HTTP/1.1" 200 - 2 0.001 0.009
+2022-01-12 06:30:08,881 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:08] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.010
+2022-01-12 06:30:08,911 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:08] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.016
+2022-01-12 06:30:08,917 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:08] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.001 0.014
+2022-01-12 06:30:13,904 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:13] "POST /web/dataset/call_kw/library.return.wizard/onchange HTTP/1.1" 200 - 5 0.003 0.012
+2022-01-12 06:30:14,027 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:14] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.015
+2022-01-12 06:30:14,047 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:14] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.002 0.019
+2022-01-12 06:30:14,058 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:14] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 1 0.000 0.015
+2022-01-12 06:30:25,064 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:25] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.042
+2022-01-12 06:30:28,058 909052 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:30:28] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.031
