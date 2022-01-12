@@ -5364,3 +5364,493 @@ OSError: File not found: my_library/wizard/library_book_rent_wizard.xmlwizard/li
 2022-01-12 06:42:11,811 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:42:11] "POST /longpolling/poll HTTP/1.1" 200 - 24 0.020 51.214
 2022-01-12 06:42:26,986 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:42:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.060 50.058
 2022-01-12 06:42:28,033 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:42:28] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.024
+2022-01-12 06:43:19,057 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:43:19] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.036
+2022-01-12 06:43:20,103 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:43:20] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-12 06:44:11,124 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:44:11] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.021 50.031
+2022-01-12 06:44:12,488 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:44:12] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.018 0.035
+2022-01-12 06:45:02,498 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:45:02] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.035 50.033
+2022-01-12 06:45:04,573 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:45:04] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.014 0.031
+2022-01-12 06:45:54,576 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:45:54] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.028 50.035
+2022-01-12 06:45:56,654 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:45:56] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.028
+2022-01-12 06:46:45,656 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:46:45] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.030
+2022-01-12 06:46:48,740 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:46:48] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.016 0.037
+2022-01-12 06:47:36,738 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:47:36] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.019 50.033
+2022-01-12 06:47:40,804 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:47:40] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.024
+2022-01-12 06:48:27,805 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:48:27] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.025
+2022-01-12 06:48:32,872 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:48:32] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.030
+2022-01-12 06:49:18,874 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:49:18] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.015 50.029
+2022-01-12 06:49:24,942 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:49:24] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.033
+2022-01-12 06:50:09,936 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:50:09] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.026
+2022-01-12 06:50:17,009 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:50:17] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-12 06:51:01,006 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:51:01] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.023
+2022-01-12 06:51:09,172 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:51:09] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.114
+2022-01-12 06:51:52,085 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:51:52] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.030
+2022-01-12 06:52:01,248 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:52:01] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.034
+2022-01-12 06:52:10,925 918667 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 06:52:10,950 918667 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 06:52:43,269 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:52:43] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.024 50.038
+2022-01-12 06:52:53,332 918667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:52:53] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.034
+2022-01-12 06:53:19,164 926667 INFO ? odoo: Odoo version 14.0 
+2022-01-12 06:53:19,165 926667 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 06:53:19,166 926667 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 06:53:19,166 926667 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 06:53:19,794 926667 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 06:53:20,012 926667 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 06:53:20,031 926667 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:53:20,064 926667 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:53:20,355 926667 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 06:53:20,363 926667 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 06:53:22,708 926667 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:53:22,709 926667 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:53:24,378 926667 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 06:53:24,612 926667 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:53:24,634 926667 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:53:24,635 926667 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:53:24,635 926667 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:53:24,730 926667 CRITICAL pro15 odoo.modules.module: Couldn't load module my_library 
+2022-01-12 06:53:24,730 926667 CRITICAL pro15 odoo.modules.module: cannot import name 'library_book_rent_statistics' from partially initialized module 'odoo.addons.my_library.models' (most likely due to a circular import) (/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/__init__.py) 
+2022-01-12 06:53:24,734 926667 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:53:24,735 926667 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:53:24,736 926667 CRITICAL pro15 odoo.service.server: Failed to initialize database `pro15`. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 1199, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 179, in load_module_graph
+    load_openerp_module(package.name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/module.py", line 385, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/__init__.py", line 4, in <module>
+    from . import models
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/__init__.py", line 7, in <module>
+    from . import library_book_rent_statistics
+ImportError: cannot import name 'library_book_rent_statistics' from partially initialized module 'odoo.addons.my_library.models' (most likely due to a circular import) (/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/__init__.py)
+2022-01-12 06:53:29,666 926667 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 06:53:29,681 926667 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:53:29,710 926667 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:53:29,789 926667 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:53:29,792 926667 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:53:29,793 926667 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:53:29,793 926667 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:53:29,863 926667 CRITICAL pro15 odoo.modules.module: Couldn't load module my_library 
+2022-01-12 06:53:29,864 926667 CRITICAL pro15 odoo.modules.module: cannot import name 'library_book_rent_statistics' from partially initialized module 'odoo.addons.my_library.models' (most likely due to a circular import) (/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/__init__.py) 
+2022-01-12 06:53:29,866 926667 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-12 06:53:29,867 926667 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-12 06:53:29,877 926667 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:53:29] "GET /web HTTP/1.1" 500 - 12 0.007 0.198
+2022-01-12 06:53:29,887 926667 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 455, in load_modules
+    processed_modules += load_marked_modules(cr, graph,
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 347, in load_marked_modules
+    loaded, processed = load_module_graph(
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 179, in load_module_graph
+    load_openerp_module(package.name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/module.py", line 385, in load_openerp_module
+    __import__('odoo.addons.' + module_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/__init__.py", line 4, in <module>
+    from . import models
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/__init__.py", line 7, in <module>
+    from . import library_book_rent_statistics
+ImportError: cannot import name 'library_book_rent_statistics' from partially initialized module 'odoo.addons.my_library.models' (most likely due to a circular import) (/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon/my_library/models/__init__.py) - - -
+See also 255
+If you need to group by publisher, you need to store the field by adding it in the view
+definition, rather than using a related field.
+See also
+• To learn more about UI views for user actions, refer to Chapter 9, Backend Views.
+• For a better understanding of access control and record rules, take a look at
+Chapter 10, Security Access.
+Adding custom settings options
+In Odoo, you can provide optional features through the Settings options. The user can
+enable or disable this option at any time. We will illustrate how to create Settings options
+in this recipe.
+Getting ready
+In previous recipes, we have added buttons so that non-librarian users can borrow and
+return books. This is not the case for every library; however, we will create a settings
+option to enable and disable this feature. We will do this by hiding these buttons. In this
+recipe, we will use the same my_library module from the previous recipes.
+How to do it...
+In order to create custom settings options, follow these steps:
+1. Add a new group in the my_library/security/groups.xml file:
+<record id="group_self_borrow" model="res.groups">
+<field name="name">Self borrow</field>
+<field name="users" eval="[(4, ref('base.user_
+admin'))]"/>
+</reco2022-01-12 06:54:53,027 927715 INFO ? odoo: Odoo version 14.0 
+2022-01-12 06:54:53,028 927715 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 06:54:53,028 927715 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 06:54:53,029 927715 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 06:54:53,443 927715 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 06:54:53,699 927715 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 06:54:53,713 927715 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 06:54:53,741 927715 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries (+0 extra) 
+2022-01-12 06:54:54,016 927715 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 06:54:54,024 927715 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 06:54:56,099 927715 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:54:56,099 927715 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 06:54:57,432 927715 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 06:54:57,805 927715 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 06:54:57,940 927715 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 06:54:57,949 927715 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:54:57,950 927715 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:54:57,950 927715 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 06:54:58,005 927715 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:54:58,006 927715 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:54:58,006 927715 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 06:54:58,007 927715 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:54:58,059 927715 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 06:54:58,236 927715 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:54:58,236 927715 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:54:58,497 927715 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 06:54:58,601 927715 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 06:54:58,792 927715 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 06:54:58,926 927715 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 06:54:59,008 927715 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 06:54:59,079 927715 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xml 
+2022-01-12 06:54:59,106 927715 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_rent_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 06:54:59,139 927715 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_return_wizard.xml 
+2022-01-12 06:54:59,166 927715 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_return_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 06:54:59,198 927715 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_statistics.xml 
+2022-01-12 06:54:59,360 927715 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.41s, 393 queries 
+2022-01-12 06:54:59,419 927715 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:54:59,420 927715 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:54:59,420 927715 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:54:59,420 927715 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:54:59,421 927715 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 06:54:59,431 927715 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:54:59,538 927715 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:54:59,538 927715 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:54:59,539 927715 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:54:59,539 927715 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:54:59,540 927715 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 06:54:59,540 927715 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:54:59,593 927715 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-12 06:55:00,084 927715 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:55:00,178 927715 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-12 06:55:00,265 927715 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:55:00,266 927715 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:55:00,482 927715 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-12 06:55:00,538 927715 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-12 06:55:00,637 927715 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 1.04s, 113 queries 
+2022-01-12 06:55:00,797 927715 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:55:00,798 927715 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:55:00,798 927715 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:55:00,798 927715 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:55:00,799 927715 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 06:55:00,799 927715 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:55:00,823 927715 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 06:55:00,823 927715 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 06:55:00,824 927715 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 06:55:00,824 927715 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 06:55:00,824 927715 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 06:55:00,824 927715 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 06:55:01,067 927715 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-12 06:55:01,847 927715 INFO pro15 odoo.modules.loading: 68 modules loaded in 3.91s, 506 queries (+0 extra) 
+2022-01-12 06:55:03,529 927715 WARNING pro15 odoo.modules.loading: The model library.book.copy has no access rules, consider adding one. E.g. access_library_book_copy,access_library_book_copy,model_library_book_copy,base.group_user,1,0,0,0 
+2022-01-12 06:55:03,847 927715 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-12 06:55:04,540 927715 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 06:55:04,540 927715 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 06:55:05,276 927715 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-12 06:55:05,301 927715 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-12 06:55:07,858 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:07] "GET /web HTTP/1.1" 200 - 608 0.386 10.027
+2022-01-12 06:55:08,000 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.003 0.060
+2022-01-12 06:55:08,035 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 304 - 2 0.012 0.062
+2022-01-12 06:55:08,037 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.009 0.072
+2022-01-12 06:55:08,064 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.014 0.079
+2022-01-12 06:55:08,072 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.022 0.065
+2022-01-12 06:55:08,094 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/webclient/load_menus/20ff7197e0a4ec78f7ce1a470f57d40f37d739e8a1696705640e9b80cedead18 HTTP/1.1" 200 - 1 0.000 0.008
+2022-01-12 06:55:08,810 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.001 0.111
+2022-01-12 06:55:08,907 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:08] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 - - - -
+2022-01-12 06:55:09,142 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.010 0.014
+2022-01-12 06:55:09,241 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.002 0.013
+2022-01-12 06:55:09,683 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "GET /web/static/src/xml/debug.xml?debug=1641970509598 HTTP/1.1" 200 - - - -
+2022-01-12 06:55:09,711 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2022-01-12 06:55:09,748 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "GET /web/static/lib/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - - - -
+2022-01-12 06:55:09,835 927715 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-12 06:55:09,907 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.001 0.020
+2022-01-12 06:55:09,987 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:09] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.001 0.076
+2022-01-12 06:55:10,027 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.021 0.038
+2022-01-12 06:55:10,109 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 18 0.182 0.099
+2022-01-12 06:55:10,168 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 18 0.198 0.106
+2022-01-12 06:55:10,194 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:55:10,253 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 06:55:10,265 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "GET /purchase/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 06:55:10,344 927715 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "GET /sale/static/description/icon.png HTTP/1.1" 304 - - - -
+2022-01-12 06:55:10,365 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /web/action/load HTTP/1.1" 200 - 27 0.156 0.094
+2022-01-12 06:55:10,543 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /mail/init_messaging HTTP/1.1" 200 - 116 0.741 0.329
+2022-01-12 06:55:10,615 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 35 0.067 0.112
+2022-01-12 06:55:10,742 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.036 0.053
+2022-01-12 06:55:10,743 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.024 0.040
+2022-01-12 06:55:10,779 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:10] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.010
+2022-01-12 06:55:11,016 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:11] "POST /calendar/notify HTTP/1.1" 200 - 3 0.004 0.012
+2022-01-12 06:55:21,744 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:21] "POST /web/action/load HTTP/1.1" 200 - 23 0.017 0.051
+2022-01-12 06:55:21,866 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:21] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 39 0.030 0.070
+2022-01-12 06:55:21,926 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:21] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.006 0.014
+2022-01-12 06:55:22,774 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:22] "POST /web/action/load HTTP/1.1" 200 - 14 0.011 0.035
+2022-01-12 06:55:22,891 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:22] "POST /web/dataset/call_kw/library.book.category/load_views HTTP/1.1" 200 - 31 0.023 0.071
+2022-01-12 06:55:22,963 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:22] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.007 0.012
+2022-01-12 06:55:23,908 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:23] "POST /web/dataset/call_kw/library.book.rent/load_views HTTP/1.1" 200 - 23 0.035 0.067
+2022-01-12 06:55:24,202 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:24] "POST /web/dataset/search_read HTTP/1.1" 200 - 8 0.016 0.042
+2022-01-12 06:55:25,278 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:25] "POST /web/action/load HTTP/1.1" 200 - 13 0.012 0.047
+2022-01-12 06:55:25,363 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:25] "POST /web/dataset/call_kw/library.book.rent.statistics/load_views HTTP/1.1" 200 - 19 0.019 0.041
+2022-01-12 06:55:25,419 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:25] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 4 0.010 0.013
+2022-01-12 06:55:25,474 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:25] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 5 0.004 0.014
+2022-01-12 06:55:45,747 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:45] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 4 0.002 0.008
+2022-01-12 06:55:45,783 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:45] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 5 0.004 0.012
+2022-01-12 06:55:46,396 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:46] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 4 0.003 0.008
+2022-01-12 06:55:46,429 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:46] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 5 0.004 0.013
+2022-01-12 06:55:59,838 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:55:59] "POST /longpolling/poll HTTP/1.1" 200 - 22 0.127 50.207
+2022-01-12 06:56:00,798 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:56:00] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.034
+2022-01-12 06:56:05,380 927715 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Calendar: Event Reminder`. 
+2022-01-12 06:56:05,413 927715 INFO pro15 odoo.addons.base.models.ir_cron: Job `Calendar: Event Reminder` done. 
+2022-01-12 06:56:49,890 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:56:49] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.023
+2022-01-12 06:56:50,950 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:56:50] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.013 0.034
+2022-01-12 06:57:41,948 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:57:41] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.035
+2022-01-12 06:57:42,994 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:57:42] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.027
+2022-01-12 06:58:33,998 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:58:33] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.014 50.024
+2022-01-12 06:58:35,051 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:58:35] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.011 0.033
+2022-01-12 06:59:26,057 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:59:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.015 50.031
+2022-01-12 06:59:27,138 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 06:59:27] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.020 0.043
+2022-01-12 07:00:18,103 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:00:18] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.023
+2022-01-12 07:00:19,152 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:00:19] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 07:01:10,187 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:01:10] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.022 50.040
+2022-01-12 07:01:11,243 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:01:11] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.014 0.031
+2022-01-12 07:02:02,250 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:02:02] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.033
+2022-01-12 07:02:03,320 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:02:03] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.018 0.037
+2022-01-12 07:02:05,777 927715 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 07:02:05,807 927715 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 07:02:54,306 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:02:54] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.017 50.027
+2022-01-12 07:02:55,357 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:02:55] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.026
+2022-01-12 07:03:46,380 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:03:46] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.019 50.039
+2022-01-12 07:03:48,452 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:03:48] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.020 0.035
+2022-01-12 07:04:38,469 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:04:38] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.035 50.041
+2022-01-12 07:04:40,516 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:04:40] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.022
+2022-01-12 07:05:29,518 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:05:29] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.023
+2022-01-12 07:05:32,579 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:05:32] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.030
+2022-01-12 07:06:20,583 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:06:20] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.030
+2022-01-12 07:06:24,640 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:06:24] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-12 07:07:11,643 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:07:11] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.010 50.024
+2022-01-12 07:07:16,701 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:07:16] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.028
+2022-01-12 07:08:02,701 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:08:02] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.025
+2022-01-12 07:08:08,740 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:08:08] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-12 07:08:52,789 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:08:52] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.018 50.047
+2022-01-12 07:08:58,838 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:08:58] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.027
+2022-01-12 07:09:44,841 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:09:44] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.028
+2022-01-12 07:09:50,915 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:09:50] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.037
+2022-01-12 07:10:35,923 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:10:35] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.019 50.037
+2022-01-12 07:10:42,985 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:10:42] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.023
+2022-01-12 07:11:26,998 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:11:26] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.039
+2022-01-12 07:11:35,059 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:11:35] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.008 0.029
+2022-01-12 07:12:06,413 927715 INFO pro15 odoo.addons.base.models.ir_cron: Starting job `Post process payment transactions`. 
+2022-01-12 07:12:06,455 927715 INFO pro15 odoo.addons.base.models.ir_cron: Job `Post process payment transactions` done. 
+2022-01-12 07:12:18,072 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:12:18] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.040
+2022-01-12 07:12:27,298 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:12:27] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.012 0.038
+2022-01-12 07:13:09,138 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:13:09] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.013 50.039
+2022-01-12 07:13:19,372 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:13:19] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.010 0.028
+2022-01-12 07:14:00,415 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:14:00] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.031 50.040
+2022-01-12 07:14:11,544 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:14:11] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.019 0.051
+2022-01-12 07:14:51,530 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:14:51] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.020 50.046
+2022-01-12 07:15:03,625 927715 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:03] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.030
+2022-01-12 07:15:07,374 940477 INFO ? odoo: Odoo version 14.0 
+2022-01-12 07:15:07,376 940477 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-12 07:15:07,376 940477 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-12 07:15:07,377 940477 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-12 07:15:08,010 940477 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-12 07:15:08,216 940477 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-12 07:15:08,234 940477 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-12 07:15:08,277 940477 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-12 07:15:08,488 940477 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-12 07:15:08,493 940477 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-12 07:15:10,002 940477 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 07:15:10,002 940477 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-12 07:15:11,938 940477 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-12 07:15:12,105 940477 INFO pro15 odoo.modules.loading: loading 68 modules... 
+2022-01-12 07:15:12,127 940477 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 07:15:12,128 940477 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 07:15:12,128 940477 INFO pro15 odoo.modules.loading: Loading module my_library (3/68) 
+2022-01-12 07:15:12,233 940477 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 07:15:12,234 940477 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 07:15:12,234 940477 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 07:15:12,235 940477 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 07:15:12,306 940477 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-12 07:15:12,641 940477 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 07:15:12,641 940477 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 07:15:12,862 940477 INFO pro15 odoo.modules.loading: loading my_library/security/groups.xml 
+2022-01-12 07:15:13,197 940477 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-12 07:15:13,391 940477 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-12 07:15:13,545 940477 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-12 07:15:13,627 940477 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_rent.xml 
+2022-01-12 07:15:13,725 940477 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_rent_wizard.xml 
+2022-01-12 07:15:13,755 940477 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_rent_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 07:15:13,790 940477 INFO pro15 odoo.modules.loading: loading my_library/wizard/library_book_return_wizard.xml 
+2022-01-12 07:15:13,818 940477 WARNING pro15 py.warnings: /home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/convert.py:336: DeprecationWarning: The <act_window> tag is deprecated, use a <record> for 'action_wizard_return_books'.
+  warnings.warn(f"The <act_window> tag is deprecated, use a <record> for {xml_id!r}.", DeprecationWarning)
+ 
+2022-01-12 07:15:13,855 940477 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_statistics.xml 
+2022-01-12 07:15:13,930 940477 INFO pro15 odoo.modules.loading: loading my_library/views/res_config_settings_views.xml 
+2022-01-12 07:15:14,036 940477 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.91s, 515 queries 
+2022-01-12 07:15:14,052 940477 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 07:15:14,052 940477 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 07:15:14,052 940477 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 07:15:14,053 940477 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 07:15:14,053 940477 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 07:15:14,053 940477 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 07:15:14,103 940477 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 07:15:14,103 940477 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 07:15:14,104 940477 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 07:15:14,104 940477 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 07:15:14,104 940477 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 07:15:14,105 940477 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 07:15:14,138 940477 INFO pro15 odoo.modules.loading: Loading module my_library_return (12/68) 
+2022-01-12 07:15:14,482 940477 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 07:15:14,535 940477 INFO pro15 odoo.modules.registry: module my_library_return: creating or updating database tables 
+2022-01-12 07:15:14,578 940477 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 07:15:14,578 940477 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 07:15:14,733 940477 INFO pro15 odoo.modules.loading: loading my_library_return/security/ir.model.access.csv 
+2022-01-12 07:15:14,785 940477 INFO pro15 odoo.modules.loading: loading my_library_return/views/library_book.xml 
+2022-01-12 07:15:14,872 940477 INFO pro15 odoo.modules.loading: Module my_library_return loaded in 0.73s, 115 queries 
+2022-01-12 07:15:15,112 940477 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 07:15:15,117 940477 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 07:15:15,118 940477 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 07:15:15,118 940477 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 07:15:15,119 940477 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 07:15:15,119 940477 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 07:15:15,159 940477 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-12 07:15:15,160 940477 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-12 07:15:15,161 940477 WARNING pro15 odoo.models: The model library.book.category has no _description 
+2022-01-12 07:15:15,161 940477 WARNING pro15 odoo.models: The model library.book.rent has no _description 
+2022-01-12 07:15:15,162 940477 WARNING pro15 odoo.models: The model library.book.rent.statistics has no _description 
+2022-01-12 07:15:15,162 940477 WARNING pro15 odoo.models: The model library.rent.wizard has no _description 
+2022-01-12 07:15:15,680 940477 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-12 07:15:15,746 940477 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-12 07:15:16,652 940477 INFO pro15 odoo.modules.loading: 68 modules loaded in 4.55s, 630 queries (+0 extra) 
+2022-01-12 07:15:17,917 940477 WARNING pro15 odoo.modules.loading: The model library.book.copy has no access rules, consider adding one. E.g. access_library_book_copy,access_library_book_copy,model_library_book_copy,base.group_user,1,0,0,0 
+2022-01-12 07:15:18,253 940477 INFO pro15 odoo.modules.registry: verifying fields for every extended model 
+2022-01-12 07:15:19,352 940477 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-12 07:15:19,352 940477 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-12 07:15:20,157 940477 INFO pro15 odoo.modules.loading: Modules loaded. 
+2022-01-12 07:15:20,177 940477 INFO pro15 odoo.addons.base.models.ir_http: Generating routing map for key None 
+2022-01-12 07:15:22,692 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web HTTP/1.1" 200 - 609 0.376 6.626
+2022-01-12 07:15:22,824 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web/content/600-577d24e/web.assets_common.css HTTP/1.1" 200 - 2 0.003 0.056
+2022-01-12 07:15:22,830 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web/content/602-577d24e/web.assets_common.js HTTP/1.1" 304 - 2 0.007 0.073
+2022-01-12 07:15:22,871 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web/content/352-b418643/web.assets_backend_prod_only.js HTTP/1.1" 304 - 2 0.015 0.057
+2022-01-12 07:15:22,887 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web/content/614-51bb2c8/web.assets_backend.js HTTP/1.1" 304 - 2 0.008 0.057
+2022-01-12 07:15:22,905 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web/content/613-51bb2c8/web.assets_backend.css HTTP/1.1" 304 - 2 0.007 0.033
+2022-01-12 07:15:22,928 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:22] "GET /web/webclient/load_menus/c32c354d9f7796a1ec3bc0c8541b377bf846f83caecc1d6c6f79657a697d4aec HTTP/1.1" 200 - 1 0.000 0.018
+2022-01-12 07:15:23,363 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:23] "GET /web/webclient/qweb/e13a93a048b1a127e7e5ee20f514c0cf48cf004c409dfae7577163dd4801d2ef?mods=base,web,base_setup,bus,web_tour,mail,sales_team,product,web_editor,http_routing,auth_signup,portal,resource,digest,account,payment,utm,sale,sale_management,calendar,contacts,crm,barcodes,stock,purchase,my_pet,my_pet_plus,purchase_stock,account_check_printing,auth_totp,auth_totp_portal,base_import,crm_iap_lead,employee_management,iap,l10n_generic_coa,l10n_us,mail_bot,my_library,partner_autocomplete,payment_transfer,sale_stock,sms,snailmail,snailmail_account,web_kanban_gauge,web_unsplash HTTP/1.1" 200 - 1 0.000 0.110
+2022-01-12 07:15:23,382 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:23] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 - - - -
+2022-01-12 07:15:23,586 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:23] "GET /web/webclient/translations/5227498d9df4b403b0244c75aac21e0c091e50ce?mods=base%2Cweb%2Cbase_setup%2Cbus%2Cweb_tour%2Cmail%2Csales_team%2Cproduct%2Cweb_editor%2Chttp_routing%2Cauth_signup%2Cportal%2Cresource%2Cdigest%2Caccount%2Cpayment%2Cutm%2Csale%2Csale_management%2Ccalendar%2Ccontacts%2Ccrm%2Cbarcodes%2Cstock%2Cpurchase%2Cmy_pet%2Cmy_pet_plus%2Cpurchase_stock%2Caccount_check_printing%2Cauth_totp%2Cauth_totp_portal%2Cbase_import%2Ccrm_iap_lead%2Cemployee_management%2Ciap%2Cl10n_generic_coa%2Cl10n_us%2Cmail_bot%2Cmy_library%2Cpartner_autocomplete%2Cpayment_transfer%2Csale_stock%2Csms%2Csnailmail%2Csnailmail_account%2Cweb_kanban_gauge%2Cweb_unsplash&lang=en_US HTTP/1.1" 200 - 4 0.007 0.016
+2022-01-12 07:15:23,623 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:23] "GET /web/webclient/locale/en_US HTTP/1.1" 200 - 1 0.000 0.012
+2022-01-12 07:15:23,850 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:23] "GET /web/static/src/xml/debug.xml?debug=1641971723830 HTTP/1.1" 200 - - - -
+2022-01-12 07:15:23,911 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:23] "GET /web/static/src/img/user_menu_avatar.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:24,006 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/ir.model.access/check_access_rights HTTP/1.1" 200 - 1 0.004 0.058
+2022-01-12 07:15:24,054 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/ir.rule/check_access_rights HTTP/1.1" 200 - 1 0.000 0.039
+2022-01-12 07:15:24,132 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 - 2 0.008 0.052
+2022-01-12 07:15:24,183 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /web/image?model=res.users&field=image_128&id=2 HTTP/1.1" 200 - 18 0.110 0.131
+2022-01-12 07:15:24,317 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/action/load HTTP/1.1" 200 - 13 0.061 0.063
+2022-01-12 07:15:24,400 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 61 0.310 0.176
+2022-01-12 07:15:24,504 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /calendar/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:24,510 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/library.book.rent.statistics/load_views HTTP/1.1" 200 - 22 0.066 0.074
+2022-01-12 07:15:24,512 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /account/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:24,524 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /mail/init_messaging HTTP/1.1" 200 - 118 0.510 0.282
+2022-01-12 07:15:24,535 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /purchase/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:24,540 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /crm/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:24,548 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /sale/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:24,576 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 4 0.006 0.012
+2022-01-12 07:15:24,684 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.021 0.043
+2022-01-12 07:15:24,685 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /web/dataset/call_kw/library.book.rent.statistics/read_group HTTP/1.1" 200 - 5 0.012 0.021
+2022-01-12 07:15:24,873 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "POST /calendar/notify HTTP/1.1" 200 - 3 0.011 0.022
+2022-01-12 07:15:24,896 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:24] "GET /web/image/res.company/1/favicon/ HTTP/1.1" 200 - 11 0.018 0.046
+2022-01-12 07:15:26,857 940477 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2022-01-12 07:15:27,207 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:27] "POST /web/action/load HTTP/1.1" 200 - 65 0.039 0.111
+2022-01-12 07:15:27,885 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:27] "POST /web/dataset/call_kw/res.config.settings/load_views HTTP/1.1" 200 - 115 0.069 0.583
+2022-01-12 07:15:28,607 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:28] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 410 0.246 0.384
+2022-01-12 07:15:28,658 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:28] "POST /web/dataset/call_kw/crm.lead.scoring.frequency.field/read HTTP/1.1" 200 - 4 0.004 0.014
+2022-01-12 07:15:28,708 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:28] "POST /web/dataset/call_kw/account.chart.template/name_search HTTP/1.1" 200 - 6 0.005 0.018
+2022-01-12 07:15:28,869 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:28] "GET /base_setup/static/src/img/google_play.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:28,885 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:28] "GET /base_setup/static/src/img/app_store.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:29,143 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:29] "POST /base_setup/data HTTP/1.1" 200 - 4 0.005 0.010
+2022-01-12 07:15:29,170 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:29] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.005 0.017
+2022-01-12 07:15:30,139 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:30] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 317 0.165 0.357
+2022-01-12 07:15:30,176 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:30] "POST /web/dataset/call_kw/crm.lead.scoring.frequency.field/read HTTP/1.1" 200 - 4 0.003 0.014
+2022-01-12 07:15:30,216 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:30] "POST /web/dataset/call_kw/account.chart.template/name_search HTTP/1.1" 200 - 5 0.004 0.014
+2022-01-12 07:15:30,561 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:30] "POST /base_setup/data HTTP/1.1" 200 - 4 0.011 0.012
+2022-01-12 07:15:30,565 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:30] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.005 0.011
+2022-01-12 07:15:30,964 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:30] "GET /base/static/description/settings.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:31,060 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:31] "GET /my_library/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:31,070 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:31] "GET /sale_management/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:31,079 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:31] "GET /stock/static/description/icon.png HTTP/1.1" 200 - - - -
+2022-01-12 07:15:31,107 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:31] "GET /mypet/static/description/icon.png HTTP/1.1" 404 - 2 0.002 0.016
+2022-01-12 07:15:32,008 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:32] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 317 0.298 0.562
+2022-01-12 07:15:32,067 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:32] "POST /web/dataset/call_kw/crm.lead.scoring.frequency.field/read HTTP/1.1" 200 - 4 0.004 0.014
+2022-01-12 07:15:32,112 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:32] "POST /web/dataset/call_kw/account.chart.template/name_search HTTP/1.1" 200 - 5 0.004 0.012
+2022-01-12 07:15:32,536 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:32] "POST /base_setup/data HTTP/1.1" 200 - 4 0.004 0.009
+2022-01-12 07:15:32,559 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:32] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.004 0.013
+2022-01-12 07:15:33,017 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:33] "GET /mypet/static/description/icon.png HTTP/1.1" 404 - 2 0.001 0.007
+2022-01-12 07:15:33,991 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:33] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 317 0.232 0.427
+2022-01-12 07:15:34,025 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:34] "POST /web/dataset/call_kw/crm.lead.scoring.frequency.field/read HTTP/1.1" 200 - 4 0.004 0.013
+2022-01-12 07:15:34,063 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:34] "POST /web/dataset/call_kw/account.chart.template/name_search HTTP/1.1" 200 - 5 0.004 0.011
+2022-01-12 07:15:34,431 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:34] "POST /base_setup/data HTTP/1.1" 200 - 4 0.003 0.015
+2022-01-12 07:15:34,438 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:34] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.005 0.013
+2022-01-12 07:15:34,931 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:34] "GET /mypet/static/description/icon.png HTTP/1.1" 404 - 2 0.001 0.009
+2022-01-12 07:15:35,709 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:35] "POST /web/dataset/call_kw/res.config.settings/onchange HTTP/1.1" 200 - 317 0.189 0.394
+2022-01-12 07:15:35,746 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:35] "POST /web/dataset/call_kw/crm.lead.scoring.frequency.field/read HTTP/1.1" 200 - 4 0.004 0.015
+2022-01-12 07:15:35,783 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:35] "POST /web/dataset/call_kw/account.chart.template/name_search HTTP/1.1" 200 - 5 0.005 0.013
+2022-01-12 07:15:36,138 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:36] "POST /base_setup/data HTTP/1.1" 200 - 4 0.003 0.014
+2022-01-12 07:15:36,158 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:36] "POST /base_setup/demo_active HTTP/1.1" 200 - 4 0.007 0.014
+2022-01-12 07:15:36,848 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:36] "GET /mypet/static/description/icon.png HTTP/1.1" 404 - 2 0.001 0.005
+2022-01-12 07:15:40,306 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:40] "POST /web/action/load HTTP/1.1" 200 - 24 0.024 0.072
+2022-01-12 07:15:40,460 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:40] "POST /web/dataset/call_kw/library.book/load_views HTTP/1.1" 200 - 40 0.034 0.075
+2022-01-12 07:15:40,510 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:40] "POST /web/dataset/search_read HTTP/1.1" 200 - 6 0.005 0.010
+2022-01-12 07:15:40,545 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:40] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.009
+2022-01-12 07:15:43,440 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:43] "POST /web/dataset/call_kw/library.book/onchange HTTP/1.1" 200 - 3 0.002 0.014
+2022-01-12 07:15:43,613 940477 INFO ? werkzeug: 127.0.0.1 - - [12/Jan/2022 07:15:43] "GET /web/static/src/img/form_sheetbg.png HTTP/1.1" 200 - - - -
+2022-01-12 07:16:15,693 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:16:15] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.025
+2022-01-12 07:16:16,861 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:16:16] "POST /longpolling/poll HTTP/1.1" 200 - 21 0.068 53.007
+2022-01-12 07:17:07,781 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:17:07] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.009 0.036
+2022-01-12 07:17:08,739 940477 INFO pro15 werkzeug: 127.0.0.1 - - [12/Jan/2022 07:17:08] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.012 50.022
