@@ -15,7 +15,7 @@
                 "-c", // config file
                 "/home/thinhnv/Desktop/Odoo/05.Config/config.cfg",
                 "-u", // update
-                "my_library",
+                "my_library,",
                 // "-i", //install
                 //  "erpvn_product_costing,erpvn_product_request",
                 "--dev",

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo noupdate="1">
     <record id="res_partner_packt" model="res.partner">
         <field name="name">Packt Publishing</field>
@@ -9,4 +9,4 @@
     <record id="book_category_all" model="library.book.category" forcecreate="False">
         <field name="name">All books</field>
     </record>
-</odoo>
+</odoo> -->

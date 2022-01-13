@@ -18,14 +18,22 @@
         <field name="name">Holger Brunn</field>
     </record>
 
-    <record id="book_cookbook" model="library.book">
+    <record id="author_hb1" model="res.partner">
+        <field name="name">Manh Nguyen</field>
+    </record>
+
+    <record id="book_cookbook_767" model="library.book">
         <field name="name">Odoo 14 Development Cookbook</field>
-        <field name="short_name">cookbook</field>
-        <field name="date_release">2016-03-01</field>
+        <!-- <field name="short_name">cookbook</field> -->
+        <!-- <field name="date_release">2016-03-01</field>
         <field name="author_ids" eval="[(6, 0, [ref('author_pga'),ref('author_af'),
                                 ref('author_dr'),
                                 ref('author_hb')])]" />
-        <field name="publisher_id" ref="res_partner_packt" />
+        <field name="publisher_id" ref="res_partner_packt" /> -->
+    </record>
+
+    <record id="book_cookbook_ew67" model="library.book">
+        <field name="name">Odoo 15 Development Cookbook</field>
     </record>
 
 </odoo>
