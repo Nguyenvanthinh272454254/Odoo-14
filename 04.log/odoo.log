@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2022-01-13 03:59:32,183 1235301 INFO ? odoo: Odoo version 14.0 
 2022-01-13 03:59:32,184 1235301 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
 2022-01-13 03:59:32,184 1235301 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
@@ -474,3 +475,5 @@ Traceback (most recent call last):
   File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 177, in __getitem__
     return self.models[model_name]
 KeyError: 'library.book.rent' - - -
+=======
+>>>>>>> cb1cb8876a075500846539bfd49926f3a6c9142a
