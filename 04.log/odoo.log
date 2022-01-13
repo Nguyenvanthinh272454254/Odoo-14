@@ -11839,3 +11839,500 @@ Contact your administrator to request access if necessary.
 2022-01-11 06:16:56,053 518056 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 06:16:56] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.022
 2022-01-11 06:17:37,056 518056 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 06:17:37] "POST /longpolling/poll HTTP/1.1" 200 - 19 0.011 50.024
 2022-01-11 06:17:48,108 518056 INFO pro15 werkzeug: 127.0.0.1 - - [11/Jan/2022 06:17:48] "POST /longpolling/im_status HTTP/1.1" 200 - 12 0.007 0.021
+2022-01-13 04:02:35,807 1238009 INFO ? odoo: Odoo version 14.0 
+2022-01-13 04:02:35,808 1238009 INFO ? odoo: Using configuration file at /home/thinhnv/Desktop/Odoo/05.Config/config.cfg 
+2022-01-13 04:02:35,809 1238009 INFO ? odoo: addons paths: ['/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons', '/home/thinhnv/Desktop/Odoo/03.Filestore/filestore/addons/14.0', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/addons', '/home/thinhnv/Desktop/Odoo/99.Odoo14/myAddon', '/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo'] 
+2022-01-13 04:02:35,809 1238009 INFO ? odoo: database: thinhnv@localhost:5432 
+2022-01-13 04:02:37,088 1238009 INFO ? odoo.addons.base.models.ir_actions_report: You need Wkhtmltopdf to print a pdf version of the reports. 
+2022-01-13 04:02:37,802 1238009 INFO ? odoo.service.server: HTTP service (werkzeug) running on localhost:8014 
+2022-01-13 04:02:37,822 1238009 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-13 04:02:37,863 1238009 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-13 04:02:38,183 1238009 INFO pro15 odoo.modules.loading: updating modules list 
+2022-01-13 04:02:38,191 1238009 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via n/a 
+2022-01-13 04:02:40,670 1238009 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['My library'] to user __system__ #1 via n/a 
+2022-01-13 04:02:40,670 1238009 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['My library'] to user __system__ #1 via n/a 
+2022-01-13 04:02:42,463 1238009 INFO pro15 odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user __system__ #1 via n/a 
+2022-01-13 04:02:42,625 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:42,670 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:42,691 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:42,691 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:42,692 1238009 INFO pro15 odoo.modules.loading: Loading module my_library (3/77) 
+2022-01-13 04:02:42,870 1238009 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-13 04:02:42,902 1238009 INFO pro15 odoo.schema: Table 'library_book': unable to add constraint 'library_book_name_uniq' as UNIQUE (name) 
+2022-01-13 04:02:43,189 1238009 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-13 04:02:43,189 1238009 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-13 04:02:43,687 1238009 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-13 04:02:43,759 1238009 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-13 04:02:43,962 1238009 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-13 04:02:44,096 1238009 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.40s, 273 queries 
+2022-01-13 04:02:44,117 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:44,117 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:44,153 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:44,153 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:44,538 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:44,539 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:44,569 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:44,570 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:44,787 1238009 INFO ? odoo.http: HTTP Configuring static files 
+2022-01-13 04:02:45,131 1238009 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-13 04:02:45,788 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:45,788 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:45,797 1238009 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-13 04:02:46,337 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 3.67s, 273 queries (+0 extra) 
+2022-01-13 04:02:46,340 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:46,349 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:46,352 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 0.00s, 0 queries (+0 extra) 
+2022-01-13 04:02:46,354 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:46,363 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:46,365 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 0.00s, 0 queries (+0 extra) 
+2022-01-13 04:02:46,368 1238009 ERROR pro15 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['my_module'] 
+2022-01-13 04:02:48,437 1238009 WARNING pro15 odoo.schema: Table 'library_book': unable to add constraint 'library_book_name_uniq' as UNIQUE (name) 
+2022-01-13 04:02:48,440 1238009 WARNING pro15 odoo.modules.loading: The model library.member has no access rules, consider adding one. E.g. access_library_member,access_library_member,model_library_member,base.group_user,1,0,0,0 
+2022-01-13 04:02:48,840 1238009 INFO pro15 odoo.modules.loading: Model library.book.rent is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:48,841 1238009 INFO pro15 odoo.modules.loading: Model library.book.rent.statistics is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:48,841 1238009 INFO pro15 odoo.modules.loading: Model library.rent.wizard is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:48,842 1238009 INFO pro15 odoo.modules.loading: Model library.return.wizard is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:48,850 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1164@ir.model.access (my_library.access_library_book_user) 
+2022-01-13 04:02:49,877 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [107189] 
+2022-01-13 04:02:49,878 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1164] 
+2022-01-13 04:02:49,879 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 537@ir.ui.menu (my_library.library_book_setting_menu) 
+2022-01-13 04:02:49,900 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106963] 
+2022-01-13 04:02:49,900 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [537] 
+2022-01-13 04:02:49,901 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 670@ir.actions.act_window (my_library.library_config_settings_action) 
+2022-01-13 04:02:49,921 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106962] 
+2022-01-13 04:02:49,922 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [670] 
+2022-01-13 04:02:49,925 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1974@ir.ui.view (my_library.res_config_settings_view_form) 
+2022-01-13 04:02:49,955 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106961] 
+2022-01-13 04:02:49,955 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1974] 
+2022-01-13 04:02:49,958 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1973@ir.ui.view (my_library.library_book_rent_view_pivot) 
+2022-01-13 04:02:49,985 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106960] 
+2022-01-13 04:02:49,985 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1973] 
+2022-01-13 04:02:49,987 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 536@ir.ui.menu (my_library.library_book_rent_statistics_menu) 
+2022-01-13 04:02:50,004 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106959] 
+2022-01-13 04:02:50,004 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [536] 
+2022-01-13 04:02:50,006 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 669@ir.actions.act_window (my_library.library_book_rent_statistics_action) 
+2022-01-13 04:02:50,020 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106958] 
+2022-01-13 04:02:50,020 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [669] 
+2022-01-13 04:02:50,022 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 535@ir.ui.menu (my_library.menu_wizard_return_books) 
+2022-01-13 04:02:50,036 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106957] 
+2022-01-13 04:02:50,036 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [535] 
+2022-01-13 04:02:50,038 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 668@ir.actions.act_window (my_library.action_wizard_return_books) 
+2022-01-13 04:02:50,054 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106956] 
+2022-01-13 04:02:50,054 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [668] 
+2022-01-13 04:02:50,056 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1972@ir.ui.view (my_library.library_return_wizard_form) 
+2022-01-13 04:02:50,078 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106955] 
+2022-01-13 04:02:50,078 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1972] 
+2022-01-13 04:02:50,080 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 534@ir.ui.menu (my_library.menu_wizard_rent_books) 
+2022-01-13 04:02:50,105 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106954] 
+2022-01-13 04:02:50,106 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [534] 
+2022-01-13 04:02:50,111 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 667@ir.actions.act_window (my_library.action_wizard_rent_books) 
+2022-01-13 04:02:50,152 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106953] 
+2022-01-13 04:02:50,152 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [667] 
+2022-01-13 04:02:50,156 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1971@ir.ui.view (my_library.library_rent_wizard_form) 
+2022-01-13 04:02:50,209 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106952] 
+2022-01-13 04:02:50,210 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1971] 
+2022-01-13 04:02:50,214 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1970@ir.ui.view (my_library.library_book_rent_view_search) 
+2022-01-13 04:02:50,248 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106951] 
+2022-01-13 04:02:50,248 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1970] 
+2022-01-13 04:02:50,251 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1969@ir.ui.view (my_library.library_book_rent_view_tree) 
+2022-01-13 04:02:50,272 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106950] 
+2022-01-13 04:02:50,272 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1969] 
+2022-01-13 04:02:50,275 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1968@ir.ui.view (my_library.library_book_rent_view_form) 
+2022-01-13 04:02:50,307 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106949] 
+2022-01-13 04:02:50,308 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1968] 
+2022-01-13 04:02:50,309 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 533@ir.ui.menu (my_library.library_book_rent_menu) 
+2022-01-13 04:02:50,328 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106948] 
+2022-01-13 04:02:50,328 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [533] 
+2022-01-13 04:02:50,329 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 666@ir.actions.act_window (my_library.library_book_rent_action) 
+2022-01-13 04:02:50,344 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106947] 
+2022-01-13 04:02:50,344 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [666] 
+2022-01-13 04:02:50,346 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1163@ir.model.access (my_library.access_library_return_wizard) 
+2022-01-13 04:02:50,357 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106936] 
+2022-01-13 04:02:50,358 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1163] 
+2022-01-13 04:02:50,359 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1162@ir.model.access (my_library.access_library_rent_wizard) 
+2022-01-13 04:02:50,370 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106935] 
+2022-01-13 04:02:50,370 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1162] 
+2022-01-13 04:02:50,372 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1161@ir.model.access (my_library.book_rent_statistics_librarian) 
+2022-01-13 04:02:50,386 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106934] 
+2022-01-13 04:02:50,386 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1161] 
+2022-01-13 04:02:50,388 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1160@ir.model.access (my_library.access_library_book_rent_librarian) 
+2022-01-13 04:02:50,403 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106933] 
+2022-01-13 04:02:50,403 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1160] 
+2022-01-13 04:02:50,404 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1159@ir.model.access (my_library.access_library_book_rent) 
+2022-01-13 04:02:50,419 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106932] 
+2022-01-13 04:02:50,420 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1159] 
+2022-01-13 04:02:50,421 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1158@ir.model.access (my_library.access_library_book_category_librarian) 
+2022-01-13 04:02:50,436 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106931] 
+2022-01-13 04:02:50,437 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1158] 
+2022-01-13 04:02:50,438 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1156@ir.model.access (my_library.access_library_book_librarian) 
+2022-01-13 04:02:50,454 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106929] 
+2022-01-13 04:02:50,454 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1156] 
+2022-01-13 04:02:50,456 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 96@res.groups (my_library.group_self_borrow) 
+2022-01-13 04:02:50,580 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106927] 
+2022-01-13 04:02:50,580 1238009 INFO pro15 odoo.models.unlink: User #1 deleted res.groups records with IDs: [96] 
+2022-01-13 04:02:50,778 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 95@res.groups (my_library.group_librarian) 
+2022-01-13 04:02:50,845 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106926] 
+2022-01-13 04:02:50,845 1238009 INFO pro15 odoo.models.unlink: User #1 deleted res.groups records with IDs: [95] 
+2022-01-13 04:02:50,857 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1596@ir.model.fields.selection (my_library.selection__library_book_rent__state__returned) 
+2022-01-13 04:02:50,869 1238009 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-13 04:02:50,872 1238009 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-13 04:02:50,872 1238009 CRITICAL pro15 odoo.service.server: Failed to initialize database `pro15`. 
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 1199, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 503, in load_modules
+    env['ir.model.data']._process_end(processed_modules)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 2296, in _process_end
+    record.unlink()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 1370, in unlink
+    self._process_ondelete()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 1408, in _process_ondelete
+    Model = self.env[selection.field_id.model]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/api.py", line 476, in __getitem__
+    return self.registry[model_name]._browse(self, (), ())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 177, in __getitem__
+    return self.models[model_name]
+KeyError: 'library.book.rent'
+2022-01-13 04:02:50,884 1238009 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-13 04:02:50,930 1238009 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries (+0 extra) 
+2022-01-13 04:02:51,034 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:51,085 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:51,087 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:51,088 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:51,089 1238009 INFO pro15 odoo.modules.loading: Loading module my_library (3/77) 
+2022-01-13 04:02:51,498 1238009 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-13 04:02:51,515 1238009 INFO pro15 odoo.schema: Table 'library_book': unable to add constraint 'library_book_name_uniq' as UNIQUE (name) 
+2022-01-13 04:02:51,709 1238009 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-13 04:02:51,710 1238009 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-13 04:02:51,722 1238009 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-13 04:02:51,957 1238009 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-13 04:02:52,118 1238009 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-13 04:02:52,275 1238009 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.19s, 238 queries 
+2022-01-13 04:02:52,296 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:52,296 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:52,320 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:52,321 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:52,387 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:52,388 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:52,423 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:52,424 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:52,504 1238009 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-13 04:02:52,676 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:52,677 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:52,686 1238009 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-13 04:02:52,817 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 1.73s, 238 queries (+0 extra) 
+2022-01-13 04:02:52,823 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:52,833 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:52,836 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 0.00s, 0 queries (+0 extra) 
+2022-01-13 04:02:52,838 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:52,846 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:52,848 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 0.00s, 0 queries (+0 extra) 
+2022-01-13 04:02:52,849 1238009 ERROR pro15 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['my_module'] 
+2022-01-13 04:02:54,404 1238009 WARNING pro15 odoo.schema: Table 'library_book': unable to add constraint 'library_book_name_uniq' as UNIQUE (name) 
+2022-01-13 04:02:54,407 1238009 WARNING pro15 odoo.modules.loading: The model library.member has no access rules, consider adding one. E.g. access_library_member,access_library_member,model_library_member,base.group_user,1,0,0,0 
+2022-01-13 04:02:54,808 1238009 INFO pro15 odoo.modules.loading: Model library.book.rent is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:54,809 1238009 INFO pro15 odoo.modules.loading: Model library.book.rent.statistics is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:54,809 1238009 INFO pro15 odoo.modules.loading: Model library.rent.wizard is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:54,809 1238009 INFO pro15 odoo.modules.loading: Model library.return.wizard is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:54,817 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1164@ir.model.access (my_library.access_library_book_user) 
+2022-01-13 04:02:55,599 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [107189] 
+2022-01-13 04:02:55,599 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1164] 
+2022-01-13 04:02:55,603 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 537@ir.ui.menu (my_library.library_book_setting_menu) 
+2022-01-13 04:02:55,622 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106963] 
+2022-01-13 04:02:55,622 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [537] 
+2022-01-13 04:02:55,624 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 670@ir.actions.act_window (my_library.library_config_settings_action) 
+2022-01-13 04:02:55,647 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106962] 
+2022-01-13 04:02:55,647 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [670] 
+2022-01-13 04:02:55,652 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1974@ir.ui.view (my_library.res_config_settings_view_form) 
+2022-01-13 04:02:55,684 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106961] 
+2022-01-13 04:02:55,685 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1974] 
+2022-01-13 04:02:55,687 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1973@ir.ui.view (my_library.library_book_rent_view_pivot) 
+2022-01-13 04:02:55,713 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106960] 
+2022-01-13 04:02:55,714 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1973] 
+2022-01-13 04:02:55,717 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 536@ir.ui.menu (my_library.library_book_rent_statistics_menu) 
+2022-01-13 04:02:55,736 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106959] 
+2022-01-13 04:02:55,736 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [536] 
+2022-01-13 04:02:55,738 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 669@ir.actions.act_window (my_library.library_book_rent_statistics_action) 
+2022-01-13 04:02:55,757 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106958] 
+2022-01-13 04:02:55,757 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [669] 
+2022-01-13 04:02:55,758 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 535@ir.ui.menu (my_library.menu_wizard_return_books) 
+2022-01-13 04:02:55,776 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106957] 
+2022-01-13 04:02:55,776 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [535] 
+2022-01-13 04:02:55,778 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 668@ir.actions.act_window (my_library.action_wizard_return_books) 
+2022-01-13 04:02:55,799 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106956] 
+2022-01-13 04:02:55,799 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [668] 
+2022-01-13 04:02:55,801 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1972@ir.ui.view (my_library.library_return_wizard_form) 
+2022-01-13 04:02:55,828 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106955] 
+2022-01-13 04:02:55,828 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1972] 
+2022-01-13 04:02:55,830 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 534@ir.ui.menu (my_library.menu_wizard_rent_books) 
+2022-01-13 04:02:55,849 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106954] 
+2022-01-13 04:02:55,849 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [534] 
+2022-01-13 04:02:55,851 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 667@ir.actions.act_window (my_library.action_wizard_rent_books) 
+2022-01-13 04:02:55,868 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106953] 
+2022-01-13 04:02:55,868 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [667] 
+2022-01-13 04:02:55,870 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1971@ir.ui.view (my_library.library_rent_wizard_form) 
+2022-01-13 04:02:55,897 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106952] 
+2022-01-13 04:02:55,897 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1971] 
+2022-01-13 04:02:55,900 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1970@ir.ui.view (my_library.library_book_rent_view_search) 
+2022-01-13 04:02:55,922 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106951] 
+2022-01-13 04:02:55,923 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1970] 
+2022-01-13 04:02:55,925 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1969@ir.ui.view (my_library.library_book_rent_view_tree) 
+2022-01-13 04:02:55,949 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106950] 
+2022-01-13 04:02:55,949 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1969] 
+2022-01-13 04:02:55,951 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1968@ir.ui.view (my_library.library_book_rent_view_form) 
+2022-01-13 04:02:55,972 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106949] 
+2022-01-13 04:02:55,972 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1968] 
+2022-01-13 04:02:55,974 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 533@ir.ui.menu (my_library.library_book_rent_menu) 
+2022-01-13 04:02:55,993 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106948] 
+2022-01-13 04:02:55,993 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [533] 
+2022-01-13 04:02:55,995 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 666@ir.actions.act_window (my_library.library_book_rent_action) 
+2022-01-13 04:02:56,018 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106947] 
+2022-01-13 04:02:56,018 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [666] 
+2022-01-13 04:02:56,020 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1163@ir.model.access (my_library.access_library_return_wizard) 
+2022-01-13 04:02:56,038 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106936] 
+2022-01-13 04:02:56,038 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1163] 
+2022-01-13 04:02:56,039 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1162@ir.model.access (my_library.access_library_rent_wizard) 
+2022-01-13 04:02:56,055 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106935] 
+2022-01-13 04:02:56,055 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1162] 
+2022-01-13 04:02:56,057 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1161@ir.model.access (my_library.book_rent_statistics_librarian) 
+2022-01-13 04:02:56,071 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106934] 
+2022-01-13 04:02:56,071 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1161] 
+2022-01-13 04:02:56,072 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1160@ir.model.access (my_library.access_library_book_rent_librarian) 
+2022-01-13 04:02:56,086 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106933] 
+2022-01-13 04:02:56,086 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1160] 
+2022-01-13 04:02:56,087 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1159@ir.model.access (my_library.access_library_book_rent) 
+2022-01-13 04:02:56,103 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106932] 
+2022-01-13 04:02:56,104 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1159] 
+2022-01-13 04:02:56,106 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1158@ir.model.access (my_library.access_library_book_category_librarian) 
+2022-01-13 04:02:56,121 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106931] 
+2022-01-13 04:02:56,122 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1158] 
+2022-01-13 04:02:56,123 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1156@ir.model.access (my_library.access_library_book_librarian) 
+2022-01-13 04:02:56,137 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106929] 
+2022-01-13 04:02:56,137 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1156] 
+2022-01-13 04:02:56,138 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 96@res.groups (my_library.group_self_borrow) 
+2022-01-13 04:02:56,214 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106927] 
+2022-01-13 04:02:56,215 1238009 INFO pro15 odoo.models.unlink: User #1 deleted res.groups records with IDs: [96] 
+2022-01-13 04:02:56,488 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 95@res.groups (my_library.group_librarian) 
+2022-01-13 04:02:56,562 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106926] 
+2022-01-13 04:02:56,563 1238009 INFO pro15 odoo.models.unlink: User #1 deleted res.groups records with IDs: [95] 
+2022-01-13 04:02:56,574 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1596@ir.model.fields.selection (my_library.selection__library_book_rent__state__returned) 
+2022-01-13 04:02:56,587 1238009 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-13 04:02:56,588 1238009 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-13 04:02:56,601 1238009 INFO pro15 odoo.modules.loading: loading 1 modules... 
+2022-01-13 04:02:56,652 1238009 INFO pro15 odoo.modules.loading: 1 modules loaded in 0.05s, 0 queries (+0 extra) 
+2022-01-13 04:02:56,734 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:56,771 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:56,773 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:56,773 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:56,774 1238009 INFO pro15 odoo.modules.loading: Loading module my_library (3/77) 
+2022-01-13 04:02:57,096 1238009 INFO pro15 odoo.modules.registry: module my_library: creating or updating database tables 
+2022-01-13 04:02:57,113 1238009 INFO pro15 odoo.schema: Table 'library_book': unable to add constraint 'library_book_name_uniq' as UNIQUE (name) 
+2022-01-13 04:02:57,286 1238009 INFO pro15 odoo.schema: Keep unexpected index library_book_name_index on table library_book 
+2022-01-13 04:02:57,286 1238009 INFO pro15 odoo.schema: Keep unexpected index library_book_copy_name_index on table library_book_copy 
+2022-01-13 04:02:57,292 1238009 INFO pro15 odoo.modules.loading: loading my_library/security/ir.model.access.csv 
+2022-01-13 04:02:57,510 1238009 INFO pro15 odoo.modules.loading: loading my_library/views/librarybook.xml 
+2022-01-13 04:02:57,686 1238009 INFO pro15 odoo.modules.loading: loading my_library/views/library_book_categ.xml 
+2022-01-13 04:02:57,825 1238009 INFO pro15 odoo.modules.loading: Module my_library loaded in 1.05s, 236 queries 
+2022-01-13 04:02:57,846 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:57,846 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:57,870 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:57,871 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:57,943 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:57,943 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:57,978 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:57,978 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:58,175 1238009 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-13 04:02:58,318 1238009 WARNING pro15 odoo.models: The model salary has no _description 
+2022-01-13 04:02:58,319 1238009 WARNING pro15 odoo.models: The model intrutor has no _description 
+2022-01-13 04:02:58,327 1238009 WARNING pro15 odoo.models: The model product.pet has no _description 
+2022-01-13 04:02:58,439 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 1.67s, 236 queries (+0 extra) 
+2022-01-13 04:02:58,441 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:58,447 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:58,448 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 0.00s, 0 queries (+0 extra) 
+2022-01-13 04:02:58,450 1238009 WARNING pro15 odoo.modules.graph: module my_module: not installable, skipped 
+2022-01-13 04:02:58,454 1238009 INFO pro15 odoo.modules.loading: loading 77 modules... 
+2022-01-13 04:02:58,455 1238009 INFO pro15 odoo.modules.loading: 77 modules loaded in 0.00s, 0 queries (+0 extra) 
+2022-01-13 04:02:58,456 1238009 ERROR pro15 odoo.modules.loading: Some modules are not loaded, some dependencies or manifest may be missing: ['my_module'] 
+2022-01-13 04:02:58,936 1238009 WARNING pro15 odoo.schema: Table 'library_book': unable to add constraint 'library_book_name_uniq' as UNIQUE (name) 
+2022-01-13 04:02:58,937 1238009 WARNING pro15 odoo.modules.loading: The model library.member has no access rules, consider adding one. E.g. access_library_member,access_library_member,model_library_member,base.group_user,1,0,0,0 
+2022-01-13 04:02:59,297 1238009 INFO pro15 odoo.modules.loading: Model library.book.rent is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:59,298 1238009 INFO pro15 odoo.modules.loading: Model library.book.rent.statistics is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:59,298 1238009 INFO pro15 odoo.modules.loading: Model library.rent.wizard is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:59,299 1238009 INFO pro15 odoo.modules.loading: Model library.return.wizard is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2022-01-13 04:02:59,307 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1164@ir.model.access (my_library.access_library_book_user) 
+2022-01-13 04:03:00,341 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [107189] 
+2022-01-13 04:03:00,342 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1164] 
+2022-01-13 04:03:00,347 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 537@ir.ui.menu (my_library.library_book_setting_menu) 
+2022-01-13 04:03:00,371 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106963] 
+2022-01-13 04:03:00,371 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [537] 
+2022-01-13 04:03:00,373 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 670@ir.actions.act_window (my_library.library_config_settings_action) 
+2022-01-13 04:03:00,389 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106962] 
+2022-01-13 04:03:00,390 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [670] 
+2022-01-13 04:03:00,392 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1974@ir.ui.view (my_library.res_config_settings_view_form) 
+2022-01-13 04:03:00,446 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106961] 
+2022-01-13 04:03:00,446 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1974] 
+2022-01-13 04:03:00,458 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1973@ir.ui.view (my_library.library_book_rent_view_pivot) 
+2022-01-13 04:03:00,500 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106960] 
+2022-01-13 04:03:00,500 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1973] 
+2022-01-13 04:03:00,502 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 536@ir.ui.menu (my_library.library_book_rent_statistics_menu) 
+2022-01-13 04:03:00,530 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106959] 
+2022-01-13 04:03:00,531 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [536] 
+2022-01-13 04:03:00,535 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 669@ir.actions.act_window (my_library.library_book_rent_statistics_action) 
+2022-01-13 04:03:00,560 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106958] 
+2022-01-13 04:03:00,561 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [669] 
+2022-01-13 04:03:00,563 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 535@ir.ui.menu (my_library.menu_wizard_return_books) 
+2022-01-13 04:03:00,579 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106957] 
+2022-01-13 04:03:00,580 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [535] 
+2022-01-13 04:03:00,581 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 668@ir.actions.act_window (my_library.action_wizard_return_books) 
+2022-01-13 04:03:00,597 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106956] 
+2022-01-13 04:03:00,597 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [668] 
+2022-01-13 04:03:00,600 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1972@ir.ui.view (my_library.library_return_wizard_form) 
+2022-01-13 04:03:00,627 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106955] 
+2022-01-13 04:03:00,627 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1972] 
+2022-01-13 04:03:00,628 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 534@ir.ui.menu (my_library.menu_wizard_rent_books) 
+2022-01-13 04:03:00,645 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106954] 
+2022-01-13 04:03:00,646 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [534] 
+2022-01-13 04:03:00,648 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 667@ir.actions.act_window (my_library.action_wizard_rent_books) 
+2022-01-13 04:03:00,668 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106953] 
+2022-01-13 04:03:00,669 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [667] 
+2022-01-13 04:03:00,672 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1971@ir.ui.view (my_library.library_rent_wizard_form) 
+2022-01-13 04:03:00,699 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106952] 
+2022-01-13 04:03:00,699 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1971] 
+2022-01-13 04:03:00,702 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1970@ir.ui.view (my_library.library_book_rent_view_search) 
+2022-01-13 04:03:00,734 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106951] 
+2022-01-13 04:03:00,734 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1970] 
+2022-01-13 04:03:00,737 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1969@ir.ui.view (my_library.library_book_rent_view_tree) 
+2022-01-13 04:03:00,764 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106950] 
+2022-01-13 04:03:00,764 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1969] 
+2022-01-13 04:03:00,767 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1968@ir.ui.view (my_library.library_book_rent_view_form) 
+2022-01-13 04:03:00,787 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106949] 
+2022-01-13 04:03:00,787 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.view records with IDs: [1968] 
+2022-01-13 04:03:00,788 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 533@ir.ui.menu (my_library.library_book_rent_menu) 
+2022-01-13 04:03:00,804 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106948] 
+2022-01-13 04:03:00,804 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [533] 
+2022-01-13 04:03:00,805 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 666@ir.actions.act_window (my_library.library_book_rent_action) 
+2022-01-13 04:03:00,822 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106947] 
+2022-01-13 04:03:00,822 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.actions.act_window records with IDs: [666] 
+2022-01-13 04:03:00,824 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1163@ir.model.access (my_library.access_library_return_wizard) 
+2022-01-13 04:03:00,838 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106936] 
+2022-01-13 04:03:00,838 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1163] 
+2022-01-13 04:03:00,840 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1162@ir.model.access (my_library.access_library_rent_wizard) 
+2022-01-13 04:03:00,854 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106935] 
+2022-01-13 04:03:00,855 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1162] 
+2022-01-13 04:03:00,856 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1161@ir.model.access (my_library.book_rent_statistics_librarian) 
+2022-01-13 04:03:00,870 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106934] 
+2022-01-13 04:03:00,870 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1161] 
+2022-01-13 04:03:00,871 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1160@ir.model.access (my_library.access_library_book_rent_librarian) 
+2022-01-13 04:03:00,883 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106933] 
+2022-01-13 04:03:00,884 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1160] 
+2022-01-13 04:03:00,885 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1159@ir.model.access (my_library.access_library_book_rent) 
+2022-01-13 04:03:00,898 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106932] 
+2022-01-13 04:03:00,898 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1159] 
+2022-01-13 04:03:00,900 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1158@ir.model.access (my_library.access_library_book_category_librarian) 
+2022-01-13 04:03:00,912 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106931] 
+2022-01-13 04:03:00,913 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1158] 
+2022-01-13 04:03:00,914 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1156@ir.model.access (my_library.access_library_book_librarian) 
+2022-01-13 04:03:00,929 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106929] 
+2022-01-13 04:03:00,930 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.access records with IDs: [1156] 
+2022-01-13 04:03:00,932 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 96@res.groups (my_library.group_self_borrow) 
+2022-01-13 04:03:01,007 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106927] 
+2022-01-13 04:03:01,008 1238009 INFO pro15 odoo.models.unlink: User #1 deleted res.groups records with IDs: [96] 
+2022-01-13 04:03:01,224 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 95@res.groups (my_library.group_librarian) 
+2022-01-13 04:03:01,272 1238009 INFO pro15 odoo.models.unlink: User #1 deleted ir.model.data records with IDs: [106926] 
+2022-01-13 04:03:01,273 1238009 INFO pro15 odoo.models.unlink: User #1 deleted res.groups records with IDs: [95] 
+2022-01-13 04:03:01,280 1238009 INFO pro15 odoo.addons.base.models.ir_model: Deleting 1596@ir.model.fields.selection (my_library.selection__library_book_rent__state__returned) 
+2022-01-13 04:03:01,287 1238009 WARNING pro15 odoo.modules.loading: Transient module states were reset 
+2022-01-13 04:03:01,287 1238009 ERROR pro15 odoo.modules.registry: Failed to load registry 
+2022-01-13 04:03:01,297 1238009 INFO pro15 werkzeug: 127.0.0.1 - - [13/Jan/2022 04:03:01] "GET / HTTP/1.1" 500 - 2460 1.766 14.710
+2022-01-13 04:03:01,316 1238009 ERROR pro15 werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1460, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 503, in load_modules
+    env['ir.model.data']._process_end(processed_modules)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 2296, in _process_end
+    record.unlink()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 1370, in unlink
+    self._process_ondelete()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 1408, in _process_ondelete
+    Model = self.env[selection.field_id.model]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/api.py", line 476, in __getitem__
+    return self.registry[model_name]._browse(self, (), ())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 177, in __getitem__
+    return self.models[model_name]
+KeyError: 'library.book.rent'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 63, in __new__
+    return cls.registries[db_name]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/func.py", line 71, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/tools/lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: 'pro15'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 306, in run_wsgi
+    execute(self.server.app)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/serving.py", line 294, in execute
+    application_iter = app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/server.py", line 441, in app
+    return self.app(e, s)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 113, in application
+    return application_unproxied(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/service/wsgi_server.py", line 88, in application_unproxied
+    result = odoo.http.root(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1306, in __call__
+    return self.dispatch(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1272, in __call__
+    return self.app(environ, start_wrapped)
+  File "/home/thinhnv/Desktop/Odoo/venv/lib/python3.9/site-packages/werkzeug/middleware/shared_data.py", line 220, in __call__
+    return self.app(environ, start_response)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 1482, in dispatch
+    response = self.get_response(httprequest, result, explicit_session)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 282, in __exit__
+    elif self.registry:
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/http.py", line 378, in registry
+    return odoo.registry(self.db)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/__init__.py", line 104, in registry
+    return modules.registry.Registry(database_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 65, in __new__
+    return cls.new(db_name)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 89, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/loading.py", line 503, in load_modules
+    env['ir.model.data']._process_end(processed_modules)
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 2296, in _process_end
+    record.unlink()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 1370, in unlink
+    self._process_ondelete()
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/addons/base/models/ir_model.py", line 1408, in _process_ondelete
+    Model = self.env[selection.field_id.model]
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/api.py", line 476, in __getitem__
+    return self.registry[model_name]._browse(self, (), ())
+  File "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo/modules/registry.py", line 177, in __getitem__
+    return self.models[model_name]
+KeyError: 'library.book.rent' - - -
