@@ -1,8 +1,6 @@
 from odoo import api, fields, models, tools, _
 from odoo.exceptions import UserError, ValidationError
 
-# class SuperPet(models.Model):
-#     _name = "super.pet" # <- new model name
 
 class MyPet(models.Model):
     _inherit = "my.pet" # <- inherit fields and methods from model "my.pet"

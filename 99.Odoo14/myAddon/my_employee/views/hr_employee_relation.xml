@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+        <record id="hr_employee_relation_from_view" model="ir.ui.view">
+            <field name="name">hr_employee_relation_from</field>
+            <field name="model">hr.employee.relation</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_employee_relation_action" model="ir.actions.act_window">
+            <field name="name">hr_employee_relation.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.employee.relation</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+        
+    </data>
+</odoo>

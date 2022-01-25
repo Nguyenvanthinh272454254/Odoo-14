@@ -21,7 +21,14 @@
     <record id="author_hb1" model="res.partner">
         <field name="name">Manh Nguyen</field>
     </record>
+    <record id="author_hb1w" model="res.partner">
+        <field name="name">Thinh Nguyen</field>
+    </record>
 
+    <record id="author_hb1ws" model="res.partner">
+        <field name="name">Nam Nguyen Trong</field>
+    </record>
+    
     <record id="book_cookbook_767" model="library.book">
         <field name="name">Odoo 14 Development Cookbook</field>
         <!-- <field name="short_name">cookbook</field> -->
@@ -32,8 +39,25 @@
         <field name="publisher_id" ref="res_partner_packt" /> -->
     </record>
 
-    <record id="book_cookbook_ew67" model="library.book">
-        <field name="name">Odoo 15 Development Cookbook</field>
+    <record id="book_cookbook_test" model="library.book">
+        <field name="name">thinh</field>
+        <field name="date_release">2016-03-01</field>
+        <!-- <field name="author_ids">Thinh ne</field> -->
+        <field name="cost_price">10.1</field>
+    </record>
+
+    <record id="book_cookbook_test1" model="library.book">
+        <field name="name">thinh 2</field>
+        <field name="date_release">2016-03-01</field>
+        <!-- <field name="author_ids">Thinh ne</field> -->
+        <field name="cost_price">10.1</field>
+    </record>
+
+    <record id="book_cookbook_test2" model="library.book">
+        <field name="name">thinh 3</field>
+        <field name="date_release">2016-03-01</field>
+        <!-- <field name="author_ids">Thinh ne</field> -->
+        <field name="cost_price">10.1</field>
     </record>
 
 </odoo>

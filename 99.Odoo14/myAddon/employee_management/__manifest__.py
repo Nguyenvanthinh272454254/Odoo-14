@@ -27,7 +27,11 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/salary.xml',
-        'views/intructor.xml'
+        'views/intructor.xml',
+        # 'views/search.xml'
+    ],
+      'qweb': [
+        "static/src/xml/search.xml",
     ],
     # only loaded in demonstration mode
     'demo': [

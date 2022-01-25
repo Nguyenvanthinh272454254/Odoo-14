@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "My library",
+    'name': "myLibrary",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
         subtitle on modules listing or apps.openerp.com""",
 
     'description': """
-        Thinh nguyen
+        Long description of module's purpose
     """,
 
     'author': "My Company",
@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','contacts'],
 
     # always loaded
     'data': [
@@ -29,16 +29,13 @@
         'views/librarybook.xml',
         'views/library_book_categ.xml',
         'views/library_book_rent.xml',
-        'wizard/library_book_rent_wizard.xml',
-        'wizard/library_book_return_wizard.xml',
-        'views/library_book_statistics.xml',
-        'views/res_config_settings_views.xml'
-
-
+        'data/library_stage.xml',
+        'report/book_rent_templates.xml',
+        'report/book_rent_report.xml'
     ],
-    'post_init_hook': 'add_book_hook',
+    
     # only loaded in demonstration mode
     'demo': [
-        'data/demo.xml'
+        'demo/demo.xml',
     ],
 }

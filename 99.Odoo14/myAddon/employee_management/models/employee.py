@@ -8,30 +8,34 @@ class Employrr(models.Model):
     _name = 'employee'
     _description = 'Employee'
 
+    employee_image = fields.Binary("Employee Image", attachment=True, help="Employee Image")    
     name = fields.Char()
     address = fields.Text("Address")
     gender = fields.Selection(string='Gender', selection=[
                               ('male', 'Male'), ('female', 'Female')],)
-    department_id = fields.Many2one(string='Depar', comodel_name='department')
-    
-    
-    @api.depends('department_id') 
-    def _domain_depart(self):
-        # list_task=self.env['task.manager'].search([('employee_id','=',self.id)])
-        # deparment_emp=self.department_id
-        # res = []
-        # for task in list_task:
-        #     if task.department_id.id == deparment_emp.id:
-        #         res.append(task.department_id.id)
-        # return [('id','in',res)]
+    department_id = fields.Many2one(string='Phong/ban', comodel_name='department')
 
-        for dm in self:
-            if dm.department_id:
-                # raise UserError(dm.department_id.id)
-                partner_ids =dm.department_id
-                partner_task_ids=(dm.env['task.manager'].search([('department_id', 'in', dm.department_id.ids)])).department_id
-                return {'domain': {'department_id': [( partner_task_ids, 'in',partner_ids.ids)]}}
-            else: return 
+    headquarter_id = fields.Many2one(string='Headquarter', comodel_name='headquarter')
+
+    
+    
+    # @api.depends('department_id') 
+    # def _domain_depart(self):
+    #     # list_task=self.env['task.manager'].search([('employee_id','=',self.id)])
+    #     # deparment_emp=self.department_id
+    #     # res = []
+    #     # for task in list_task:
+    #     #     if task.department_id.id == deparment_emp.id:
+    #     #         res.append(task.department_id.id)
+    #     # return [('id','in',res)]
+
+    #     for dm in self:
+    #         if dm.department_id:
+    #             # raise UserError(dm.department_id.id)
+    #             partner_ids =dm.department_id
+    #             partner_task_ids=(dm.env['task.manager'].search([('department_id', 'in', dm.department_id.ids)])).department_id
+    #             return {'domain': {'department_id': [( partner_task_ids, 'in',partner_ids.ids)]}}
+    #         else: return 
 
     # @api.onchange('department_id')
     # def onchange_department_id(self):
@@ -51,4 +55,3 @@ class Employrr(models.Model):
         for pet in self:
             pet.unlink()
         pass
-

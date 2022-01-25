@@ -54,7 +54,7 @@
       <record model="ir.actions.act_window" id="action_salary">
         <field name="name">salary manager</field>
         <field name="res_model">salary</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,kanban</field>
       </record>
   
 

@@ -7,6 +7,13 @@ class Department(models.Model):
 
     name = fields.Char()
 
+    # parent_id = fields.Many2one(
+    #     string='parent',
+    #     comodel_name='headquarter',
+    # )
+    
+
+
     def custom_remove(self):
         for pet in self:
             pet.unlink()

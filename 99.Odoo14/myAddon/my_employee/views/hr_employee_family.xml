@@ -1,0 +1,24 @@
+<odoo>
+    <data>
+        <record id="hr_employee_family_from_view" model="ir.ui.view">
+            <field name="name">hr_employee_family_from</field>
+            <field name="model">hr.employee.family</field>
+            <field name="arch" type="xml">
+                <tree string="">
+                    <field name="employee_id"/>
+                    <field name="relation_id"/>
+                    <field name="member_name"/>
+                    <field name="member_contact"/>
+                    <field name="birth_date"/>
+                </tree>
+            </field>
+        </record>
+        <record id="hr_employee_family_action" model="ir.actions.act_window">
+            <field name="name">hr_employee_family.action</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.employee.family</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+      
+    </data>
+</odoo>

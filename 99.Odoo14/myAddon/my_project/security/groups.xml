@@ -1,0 +1,57 @@
+<odoo>
+
+    <!-- Create setting ueer -->
+    <!-- <record id="module_category_project_father" model="ir.module.category">
+        <field name="name">My project group</field>
+        <field name="sequence">20</field>
+        <field name="parent_id" eval="False"/>
+    </record>
+    
+    <record id="module_category_project_Son" model="ir.module.category">
+        <field name="name">Project group</field>
+        <field name="parent_id" ref="module_category_project_father"/>
+        <field name="description">Helps you manage plan and tracking material, production, etc...</field>
+        <field name="sequence">10</field>
+    </record>
+
+    <record id="group_project_viewer" model="res.groups">
+        <field name="name">Project/Viewer</field>
+        <field name="category_id" ref="module_category_project_Son"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_project_leader" model="res.groups">
+        <field name="name">Project/Leader</field>
+        <field name="category_id" ref="module_category_project_Son"/>
+        <field name="implied_ids" eval="[(4, ref('group_project_viewer'))]"/>
+    </record> -->
+
+    <!-- Create setting test covid -->
+    <record id="module_my_project_father" model="ir.module.category">
+        <field name="name">my projecct</field>
+        <field name="sequence">8</field>
+        <field name="parent_id" eval="False"/>
+    </record>
+
+
+    <record id="module_my_project_Son" model="ir.module.category">
+        <field name="name">Project group</field>
+        <field name="parent_id" ref="module_my_project_father"/>
+        <field name="description">Helps you manage plan and tracking material, production, etc...</field>
+        <field name="sequence">8</field>
+    </record>
+
+    <record id="group_my_viewer" model="res.groups">
+        <field name="name">Project/Viewer</field>
+        <field name="category_id" ref="module_my_project_Son"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_my_leader" model="res.groups">
+        <field name="name">Project/Leader</field>
+        <field name="category_id" ref="module_my_project_Son"/>
+        <field name="implied_ids" eval="[(4, ref('group_my_viewer'))]"/>
+    </record>
+
+
+</odoo>

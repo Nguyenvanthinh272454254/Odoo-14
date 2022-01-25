@@ -1,0 +1,63 @@
+<odoo>
+  <data>
+    
+      <record id="my_project_from_view" model="ir.ui.view">
+        <field name="name">my_project_from_view</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.project_project_view_form_simplified_footer"></field>
+        <!-- <field name="arch" type="xml">
+          <xpath expr="//button[@name='action_view_tasks']" position="after">
+            <field name="name"/>
+          </xpath>
+        </field> -->
+      </record>
+
+
+      <record id="project_task_from_view" model="ir.ui.view">
+        <field name="name">project_task_from_view</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"></field>
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='partner_id']" position="after">
+            <field name="name" string="Date create"/>
+        </xpath>
+        </field>
+      </record>
+    
+    <record id="my_project_action" model="ir.actions.act_window">
+      <field name="name">my_project</field>
+      <field name="res_model">project.project</field>
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <record id="project_task_action" model="ir.actions.act_window">
+      <field name="name">project_task</field>
+      <field name="res_model">project.task</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+
+
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="myProject" id="my_project.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Project" id="my_project.menu_1" parent="my_project.menu_root"
+              action="my_project_action"/>
+    <menuitem name="Task" id="my_project.menu_2" parent="my_project.menu_root"
+    action="project_task_action"/>
+
+    <menuitem name="Leader" id="my_project.menu_3" parent="my_project.menu_root"
+    action="leader_action"/>
+    <menuitem name="Viewer" id="my_project.menu_4" parent="my_project.menu_root"
+    action="viewer_action"/>
+
+    <!-- actions -->
+
+
+  </data>
+</odoo>

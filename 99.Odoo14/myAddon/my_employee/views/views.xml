@@ -1,0 +1,77 @@
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="employee_form_view">
+      <field name="name">my_employee Form View</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form"></field>
+      <field name="arch" type="xml">
+      <xpath expr="//field[@name='tz']" position="after">
+          <field name="grandfather"/>
+          <field name="grandma"/>
+          <field name="address"/>
+      </xpath>
+     
+      </field>
+    </record>
+
+       <record model="ir.ui.view" id="department_form_view">
+        <field name="name">department Form View</field>
+        <field name="model">hr.department</field>
+        <field name="inherit_id" ref="hr.view_department_form"></field>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='message_ids']" position="after">
+            <field name="datecreated"/>
+        </xpath>
+        </field>
+      </record>
+     
+        <record id="addinfo_tree_view" model="ir.ui.view">
+          <field name="name">List addinfo</field>
+          <field name="model">addinfo</field>
+          <field name="arch" type="xml">
+            <tree>
+              <field name="user_id"/>
+              <field name="department_id"/>
+              <field name="DateWork"/>
+              <field name="bonus_price"/>
+              <field name="Seniority"/>
+              <field name="salary"/>
+            </tree>
+          </field>
+        </record>
+
+
+        <!-- actions -->
+        <record id="action_my_employee" model="ir.actions.act_window">
+          <field name="name">my_employee</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">hr.employee</field>
+          <field name="view_id" ref="hr.hr_kanban_view_employees"/>
+          <field name="view_mode">kanban,tree,form</field>
+        </record>
+        
+  
+    <record id="action_department" model="ir.actions.act_window">
+      <field name="name">department</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">hr.department</field>
+      <field name="view_mode">kanban,tree,form</field>
+  </record>
+
+  <record model="ir.actions.act_window" id="action_addinfo">
+    <field name="name">addinfo Management</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">addinfo</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  
+  <menuitem id="menu_my_employee" name="My employee" sequence="10" groups="base.group_user"/>
+
+      <menuitem name="List Empoloyee" id="employee_list_menu_new" parent="menu_my_employee" action="action_my_employee" />
+      <menuitem name="HR employee family" id="infomation_list_menu_new" parent="menu_my_employee" action="hr_employee_family_action" />
+      <menuitem name="List Department" id="department_list_menu_new" parent="menu_my_employee" action="action_department" />
+      <menuitem name="HR employee relation" id="relation_list_menu_new" parent="menu_my_employee" action="hr_employee_relation_action" />
+      <!-- <menuitem name="Infomation employee" id="infomation_list_menu_new" parent="menu_my_employee" action="action_addinfo" /> -->
+
+  </data>
+</odoo>

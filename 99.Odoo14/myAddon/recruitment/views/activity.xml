@@ -1,0 +1,18 @@
+<odoo>
+    <record model="ir.ui.view" id="activity_tree_view">
+        <field name="name">activity list</field>
+        <field name="model">activity</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </record>
+
+
+    <record model="ir.actions.act_window" id="actions_activity">
+        <field name="name">activity window</field>
+        <field name="res_model">activity</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+</odoo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <!-- Search view -->
+    <record id="search_all_customers" model="ir.ui.view">
+        <field name="model">employee</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- <field name="name" /> -->
+                <!-- <field name="department_id" filter_domain="[('department_id', 'child_of', self)]" /> -->
+                <!-- <field name="department_id" widget="many2one" /> -->
+                <!-- <filter name="suppliers" string="Suppliers" domain="[('supplier_rank', '>', 0)]" /> -->
+                <!-- <group expand="0" string="Group By">
+                    <filter string="Country" name="task_ids" context="{'group_by':'task_id'}"/>
+                </group> -->
+                 <searchpanel>
+                    <field name="headquarter_id" icon="fa-building"/>
+                </searchpanel>
+            </search>
+        </field>
+    </record>
+
+    <record id='action_all_contacts' model='ir.actions.act_window'>
+        <field name="name">All Employee</field>
+        <field name="res_model">employee</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="search_view_id" ref="search_all_customers" />
+    </record>
+
+    <menuitem id="menu_all_contacts" parent="employee_menu_root" action="action_all_contacts" sequence="10" groups="" />
+
+</odoo>

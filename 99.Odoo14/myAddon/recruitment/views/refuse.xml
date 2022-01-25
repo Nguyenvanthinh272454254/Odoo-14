@@ -1,0 +1,18 @@
+<odoo>
+    <record model="ir.ui.view" id="refuse_tree_view">
+        <field name="name">refuse list</field>
+        <field name="model">refuse</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </record>
+
+
+    <record model="ir.actions.act_window" id="actions_refuse">
+        <field name="name">refuse window</field>
+        <field name="res_model">refuse</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+</odoo>

@@ -70,7 +70,7 @@
     <record model="ir.actions.act_window" id="action_intrutor">
         <field name="name">intrutor manager</field>
         <field name="res_model">intrutor</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,kanban</field>
     </record>
 
 

@@ -1,0 +1,120 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="applicationall_tree_view">
+      <field name="name">applicationAll list</field>
+      <field name="model">applicationall</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="applicationjob_tree_view">
+      <field name="name">applicationjob list</field>
+      <field name="model">applicationjob</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="reportinganalys_tree_view">
+      <field name="name">reportinganalys list</field>
+      <field name="model">reportinganalys</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="actions_applicationall">
+      <field name="name">applicationAll window</field>
+      <field name="res_model">applicationall</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="actions_applicationjob">
+      <field name="name">applicationJob window</field>
+      <field name="res_model">applicationjob</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="actions_reportinganalys">
+      <field name="name">reportinganalys window</field>
+      <field name="res_model">reportinganalys</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+
+
+
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="recruitment" id="recruitment.menu_root"/>
+
+    <!-- menu categories -->
+
+      <menuitem name="Applications" id="recruitment.menu_1" parent="recruitment.menu_root"/>
+
+      <menuitem name="Reporting" id="reportinganalys_report" parent="recruitment.menu_root"/>
+      
+      <menuitem name="Configuration" id="Configuration_config" parent="recruitment.menu_root"/>
+
+
+
+      <!-- actions -->
+        <menuitem name="applicationall" id="applicationall_menu_first_list" parent="recruitment.menu_1"
+        action="actions_applicationall"/>
+
+        <menuitem name="applicationjob" id="applicationjob_menu_firsl_list" parent="recruitment.menu_1"
+        action="actions_applicationjob"/>
+
+        <!-- kanban hr.job -->
+        <!-- <menuitem name="Job" id="job_menu_firsl_list" parent="recruitment.menu_1"
+        action="job_actions"/> -->
+
+        <menuitem name="Recruitment Analysis" id="reportinganalys_menu_firsl_list" parent="reportinganalys_report"
+        action="actions_reportinganalys"/>
+
+        <menuitem name="Setting" id="setting_menu_firsl_list" parent="Configuration_config"
+        action="actions_setting"/>
+
+        <menuitem name="Tags" id="tags_menu_firsl_list" parent="Configuration_config"
+        action="actions_tags"/>
+
+        <menuitem name="Stages" id="stages_menu_firsl_list" parent="Configuration_config"
+        action="actions_stages"/>
+
+        <menuitem name="Soucres of Application" id="soucres_menu_firsl_list" parent="Configuration_config"
+        action="actions_soucres"/>
+
+
+        <menuitem name="Refuse Reasons" id="refuse_menu_firsl_list" parent="Configuration_config"
+        action="actions_refuse"/>
+
+        <menuitem name="Job Positions" id="jobpositions_menu_firsl_list" parent="Configuration_config"
+        action="actions_jobpositions"/>
+
+        <menuitem name="Degrees" id="degrees_menu_firsl_list" parent="Configuration_config"
+        action="actions_degrees"/>
+
+        <menuitem name="Department" id="department_menu_firsl_list" parent="Configuration_config"
+        action="actions_department"/>
+        <menuitem name="Activity" id="activity_menu_firsl_list" parent="Configuration_config"
+        action="actions_activity"/>
+
+  </data>
+</odoo>

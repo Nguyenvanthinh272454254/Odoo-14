@@ -5,3 +5,4 @@ from . import employee
 from . import task
 from . import salary
 from . import structure
+from . import headquarter

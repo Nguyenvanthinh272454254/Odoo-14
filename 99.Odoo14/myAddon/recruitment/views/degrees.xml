@@ -1,0 +1,18 @@
+<odoo>
+    <record model="ir.ui.view" id="degrees_tree_view">
+        <field name="name">degrees list</field>
+        <field name="model">degrees</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </record>
+
+
+    <record model="ir.actions.act_window" id="actions_degrees">
+        <field name="name">degrees window</field>
+        <field name="res_model">degrees</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+</odoo>

@@ -10,7 +10,7 @@
     <menuitem name="Book on rent" id="library_book_rent_menu" parent="library_base_menu" action="library_book_rent_action"/>
 
     <!-- Form View -->
-    <record id="library_book_rent_view_form" model="ir.ui.view">
+    <!-- <record id="library_book_rent_view__test_form" model="ir.ui.view">
         <field name="name">Library Rent Form</field>
         <field name="model">library.book.rent</field>
         <field name="arch" type="xml">
@@ -34,7 +34,7 @@
                 </sheet>
             </form>
         </field>
-    </record>
+    </record> -->
 
     <!-- Tree(list) View -->
     <record id="library_book_rent_view_tree" model="ir.ui.view">

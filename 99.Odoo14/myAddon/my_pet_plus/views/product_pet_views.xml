@@ -36,27 +36,27 @@
                       </group>
                       <notebook>
                           <page name="general_information" string="General Information">
-              <group>
-                <group>
-                  <field name="nickname"/>
-                </group>
-                <group>
-                  <label for="description" colspan="2"/>
-                  <field name="description" colspan="2" nolabel="1"/>
-                </group>
-              </group>
-            </page>
-            <page name="additional_information" string="Additional Information">
-              <group>
-                <group string="Images">
-                  <field name="pet_image" string="Pet's Image" widget="image"/>
-                </group>
-                <group string="Products">
-                  <field name="product_ids" widget="many2many_tags"/>
-                </group>
-              </group>
-            </page>							
-          </notebook>
+                            <group>
+                              <group>
+                                <field name="nickname"/>
+                              </group>
+                              <group>
+                                <label for="description" colspan="2"/>
+                                <field name="description" colspan="2" nolabel="1"/>
+                              </group>
+                            </group>
+                          </page>
+                          <page name="additional_information" string="Additional Information">
+                            <group>
+                              <group string="Images">
+                                <field name="pet_image" string="Pet's Image" widget="image"/>
+                              </group>
+                              <group string="Products">
+                                <field name="product_ids" widget="many2many_tags"/>
+                              </group>
+                            </group>
+                          </page>							
+                      </notebook>
                   </sheet>
               </form>
           </field>

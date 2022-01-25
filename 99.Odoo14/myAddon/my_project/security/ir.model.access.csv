@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_model_project_leader,model_project_leader,model_project_project,group_my_leader,1,0,0,0
+access_model_project_task_leader,model_project_task_leader,model_project_task,group_my_leader,1,0,0,0
+access_model_leader,model_leader,model_leader,group_my_leader,1,0,0,0
+access_model_viewer_see,model_viewer_see,model_viewer,group_my_leader,1,0,0,0
+access_model_project_viewer,model_project_viewer,model_project_project,group_my_viewer,1,0,0,0
+access_model_project_task_viewer,model_project_task_viewer,model_project_task,group_my_viewer,1,0,0,0
+access_model_viewer,model_viewer,model_viewer,group_my_viewer,0,0,0,0
+access_model_leader_see,model_leader_see,model_leader,group_my_viewer,0,0,0,0
+
+
+

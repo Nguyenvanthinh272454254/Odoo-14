@@ -40,6 +40,8 @@
                 <tree>
                     <field name="name"/>
                     <field name="date_release"/>
+                    <field name="author_ids"/>
+                    <field name="cost_price"/>
                 </tree>
             </field>
         </record>

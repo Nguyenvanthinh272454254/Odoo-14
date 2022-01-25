@@ -1,0 +1,18 @@
+<odoo>
+    <record model="ir.ui.view" id="soucres_tree_view">
+        <field name="name">soucres list</field>
+        <field name="model">soucres</field>
+        <field name="arch" type="xml">
+          <tree>
+            <field name="name"/>
+          </tree>
+        </field>
+      </record>
+
+
+    <record model="ir.actions.act_window" id="actions_soucres">
+        <field name="name">soucres window</field>
+        <field name="res_model">soucres</field>
+        <field name="view_mode">tree,form</field>
+      </record>
+</odoo>

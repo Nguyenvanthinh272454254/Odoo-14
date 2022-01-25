@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.rule" id="task_see_own_rule">
+        <field name="name">task: see own ..</field>
+        <field name="model_id" ref="model_my_task"/>
+        <field name="groups" eval="[(4, ref('group_my_supperviewer'))]"/>
+        <field name="domain_force">
+            [('assign_to', '=', user.id)]
+        </field>
+    </record>
+    <record model="ir.rule" id="task_see_all_rule">
+        <field name="name">task: see all ..</field>
+        <field name="model_id" ref="model_my_task"/>
+        <field name="groups" eval="[(4, ref('group_my_supperleader'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+    </record>
+
+    <record model="ir.rule" id="task_follower_rule">
+        <field name="name">task:follower ..</field>
+        <field name="model_id" ref="model_my_task"/>
+        <field name="groups" eval="[(4, ref('group_my_supperviewer'))]"/>
+        <field name="domain_force">
+        [ '&amp;',
+            ('assign_to', '=', user.id), 
+            ('follower_user_ids', 'in',user.id)
+        ]
+        </field>
+    </record>
+
+    <record model="ir.rule" id="task_mix1_rule">
+        <field name="name">task:mix 1 ..</field>
+        <field name="model_id" ref="model_my_task"/>
+        <field name="groups" eval="[(4, ref('group_my_supperviewer'))]"/>
+        <field name="domain_force">
+            [('state', 'in', ('Prioritize LV1', 'Prioritize LV2'))]
+        </field>
+    </record>
+    
+    <record model="ir.rule" id="task_mix2_rule">
+        <field name="name">task:mix 2 ..</field>
+        <field name="model_id" ref="model_my_task"/>
+        <field name="groups" eval="[(4, ref('group_my_supperviewer'))]"/>
+        <field name="domain_force">
+            ["|",
+            "&amp;",
+              ("active","=",True),
+              ('state', 'in', ('Prioritize LV3', 'Prioritize LV4')),
+            "&amp;",
+              ("datecreate","&gt;","2022-01-15"),
+              ("deadline","&lt;","2022-01-29")]
+        </field>
+    </record>
+<!--     
+    <record id="model_xml_id_rule" model="ir.rule">
+        <field name="name">Human readable name</field>
+        <field name="model_id" ref="model_xml_id"/>
+        <field name="domain_force">[("datecreate","&gt;","2022-01-15"),]</field>
+        <field name="active" eval="True" />
+    </record>
+     -->
+
+</odoo>

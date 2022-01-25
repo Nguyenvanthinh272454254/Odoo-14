@@ -1,0 +1,32 @@
+<odoo>
+    <record id="leader_tree" model="ir.ui.view">
+        <field name="name">Leader tree</field>
+        <field name="model">leader</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="leader_action" model="ir.actions.act_window">
+        <field name="name">leader action</field>
+        <field name="res_model">leader</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record id="viewer_tree" model="ir.ui.view">
+        <field name="name">viewer tree</field>
+        <field name="model">viewer</field>
+        <field name="arch" type="xml">
+            <tree string="">
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="viewer_action" model="ir.actions.act_window">
+        <field name="name">viewer.action</field>
+        <field name="res_model">viewer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

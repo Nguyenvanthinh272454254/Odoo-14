@@ -11,7 +11,7 @@
           <field name="address" />
           <field name="gender" />
           <field name="department_id" />
-          <field name="task_ids" string="Amount of work"/>
+          <field name="task_ids" string="Amount of work" />
           <button name="custom_remove" type="object" string="Remove" class="oe_highlight" />
         </tree>
       </field>
@@ -24,17 +24,21 @@
         <form>
           <sheet>
             <group name="Infor">
-              <field name="name" />
-              <field name="address" />
-              <field name="gender" />
+              <group>
+                <field name="name" />
+                <field name="address" />
+                <field name="gender" />
+                <field name="department_id" />
+                <field name="headquarter_id"/>
+              </group>
+              <group>
+                <field name="employee_image" widget="image" string="Employee Image" width="200px" />
+              </group>
             </group>
-            <group name="Others">
-              <field name="department_id" />
-            </group>
+
             <notebook>
               <page string="Current Task">
-                <field name="task_ids" 
-                />
+                <field name="task_ids" />
               </page>
               <!-- domain="[('department_id', '=', department_id),('employee_id','=',name)]"  -->
             </notebook>
@@ -43,12 +47,93 @@
       </field>
     </record>
 
+    <record id="myEmployee_kanban_view_employees" model="ir.ui.view">
+      <field name="name">employee</field>
+      <field name="model">employee</field>
+      <field name="priority">10</field>
+      <field name="arch" type="xml">
+        <kanban class="o_hr_employee_kanban" js_class="hr_employee_kanban" sample="1">
+          <field name="name" />
+          <field name="address" />
+          <field name="gender" />
+          <field name="department_id" />
+          <field name="employee_image" />
+
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_global_click o_kanban_record_has_image_fill o_hr_kanban_record">
+                <field name="employee_image" widget="image" class="o_kanban_image_fill_left" width="150px" options="{'zoom':false,'zoom_delay': 1000, 'background': true, 'preventClicks': false}" />
+                <div class="oe_kanban_details">
+                  <!-- <div class="o_kanban_record_top">
+                    <div class="o_kanban_record_headings">
+                      <div class="float-right">
+                        <field name="address" />
+                      </div>
+
+                    </div>
+                  </div> -->
+                  <!-- <field name="category_ids" widget="many2many_tags" options="{'color_field': 'color'}" groups="hr.group_hr_manager"/> -->
+                  <ul class="oe_kanban_content">
+                    <li id="last_login" />
+                    <li class="o_text_overflow" t-if="record.address.raw_value">
+                      <field name="name" />
+                    </li>
+                    <li class="o_force_ltr" t-if="record.department_id.raw_value">
+                      <field name="department_id" />
+                    </li>
+                    <li class="o_force_ltr" t-if="record.department_id.raw_value">
+                      <field name="address" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+    <!-- Search view -->
+    <record id="search_all_customers" model="ir.ui.view">
+      <field name="model">employee</field>
+      <field name="arch" type="xml">
+        <search>
+          <!-- <field name="name" /> -->
+          <!-- <field name="department_id" filter_domain="[('department_id', 'child_of', self)]" /> -->
+          <!-- <field name="department_id" widget="many2one" /> -->
+          <!-- <filter name="suppliers" string="Suppliers" domain="[('supplier_rank', '>', 0)]" /> -->
+          <!-- <group expand="0" string="Group By">
+                      <filter string="Country" name="task_ids" context="{'group_by':'task_id'}"/>
+                  </group> -->
+          <searchpanel>
+            <field name="headquarter_id" icon="fa fa-users"  class="o_search_panel_counter " enable_counters="1"/>
+            <field name="department_id" icon="fa fa-users"  class="o_search_panel_counter " select="multi" enable_counters="1"/>
+          </searchpanel>
+        </search>
+      </field>
+    </record>hr.hr_kanban_view_employees
+
+
     <record id="department_tree_view" model="ir.ui.view">
       <field name="name">List Depart</field>
       <field name="model">department</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name" />
+          <!-- <field name="headquarter_id"/> -->
+          <!-- <field name="parent_id"/> -->
+          <button name="custom_remove" type="object" string="Remove" class="oe_highlight" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="headquarter_tree_view" model="ir.ui.view">
+      <field name="name">List Depart</field>
+      <field name="model">headquarter</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="parent_id"/>
           <button name="custom_remove" type="object" string="Remove" class="oe_highlight" />
         </tree>
       </field>
@@ -69,32 +154,41 @@
       </field>
     </record>
 
-  
 
     <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="action_headquarter">
+      <field name="name">headquarter Management</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">headquarter</field>
+      <field name="view_mode">tree,form,kanban</field>
+    </record>
 
     <record model="ir.actions.act_window" id="action_employee">
       <field name="name">Employee Management</field>
+      <field name="type">ir.actions.act_window</field>
       <field name="res_model">employee</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">kanban,tree,form</field>
+      <field name="search_view_id" ref="search_all_customers" />
     </record>
 
 
     <record model="ir.actions.act_window" id="action_department">
       <field name="name">Department Management</field>
+      <field name="type">ir.actions.act_window</field>
       <field name="res_model">department</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record model="ir.actions.act_window" id="action_task">
       <field name="name">Task Management</field>
+      <field name="type">ir.actions.act_window</field>
       <field name="res_model">task.manager</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
 
-          
     <menuitem name="Employees" id="employee_menu_root" web_icon="employee_management/static/description/icon.png" />
+      <menuitem name="List Headquater" id="headquater_list_menu" parent="employee_menu_root" action="action_headquarter" />
 
       <menuitem name="List Department" id="department_list_menu" parent="employee_menu_root" action="action_department" />
 
@@ -103,7 +197,6 @@
       <menuitem name="List Task" id="task_list_menu" parent="employee_menu_root" action="action_task" />
 
 
-    <!-- <menuitem name="List Task" id="task_list_menu" parent="employee_menu_root" action="action_task" /> -->
 
 
   </data>
