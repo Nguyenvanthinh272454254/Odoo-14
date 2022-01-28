@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="production_template3">
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                <t t-if="o and 'company_id' in o"><t t-set="company" t-value="o.company_id"/></t>
+                <t t-if="not o or not 'company_id' in o"><t t-set="company" t-value="res_company"/></t>
+                    <div class="header">
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                            </div>
+                            <div class="col-xs-2 col-xs-offset-2 text-center">
+                                <span t-esc="company.name"/>
+                            </div>
+                            <div class="col-xs-2 col-xs-offset-3 text-right">
+                                <ul class="list-inline">
+                                    <li>
+                                        <span class="page"/>
+                                    </li>
+                                    <li>/</li>
+                                    <li>
+                                        <span class="topage"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <t t-call="web.basic_layout">
+                        <div class="page">
+                            <div class="oe_structure"/>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <td style="vertical-align:middle;">
+                                        <h2># Production Order:
+                                            <span t-field="o.name"/>
+                                        </h2>
+                                    </td>
+                                </div>
+                                <div class="col-xs-6">
+                                    <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:400px;height:60px;" class="pull-right mb16"/>
+                                </div>
+                            </div>
+                            <div class="row mt32 mb32">
+                                <div class="col-xs-3">
+                                    <strong>
+                                        <span class="text-center">Barcode:</span>
+                                    </strong>
+                                    <br/>
+                                    <td class="text-center">
+                                        <span t-field="o.product_id.barcode"/><br/>
+                                        <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.product_id.barcode, 300, 50)"/>
+                                    </td>
+                                </div>
+                                <div class="col-xs-3">
+                                    <strong>Internal Reference:</strong>
+                                    <br/>
+                                    <span t-field="o.product_id.default_code"/>
+                                </div>
+                                <div class="col-xs-3">
+                                    <strong>Name:</strong>
+                                    <br/>
+                                    <span t-field="o.product_id.name"/>
+                                </div>
+                                <div class="col-xs-3">
+                                    <strong>Quantity:</strong>
+                                    <br/>
+                                    <span t-esc="'{0:,.0f}'.format(int(o.product_qty))"/>
+                                    <span t-field="o.product_uom_id.name" groups="product.group_uom"/>
+                                </div>
+                            </div>
+                            <div class="row mt32 mb32">
+                                <div class="col-xs-3">
+                                    <strong>Related Document:</strong>
+                                    <br/>
+                                    <span t-field="o.origin"/>
+                                </div>
+                                <div class="col-xs-3">
+                                    <strong>Scheduled Date:</strong>
+                                    <br/>
+                                    <span t-field="o.date_planned_start" t-options='{"widget": "date"}'/>
+                                    <span t-if="o.date_planned_finished" t-options='{"widget": "date"}'> -
+                                        <span t-field="o.date_planned_finished" t-options='{"widget": "date"}'/>
+                                    </span>
+                                </div>
+                                <div class="col-xs-3">
+                                    <strong>Printing date:</strong>
+                                    <br/>
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%b-%d %H:%M')"/>
+                                </div>
+                                <div class="col-xs-3">
+                                    <strong>User print:</strong>
+                                    <br/>
+                                    <span t-esc="user.name"/>
+                                </div>
+                            </div>
+                            <h3>Bill Of Material</h3>
+                            <table class="table table-condensed table-bordered">
+                                <!--<t t-set="has_lot" t-value="any([l.lot_id and l.product_id.sudo().lot_id or l.lot_id for l in o.move_raw_ids.move_line_ids])"/>
+                                <t t-set="has_pack" t-value="any([l.package_id and l.product_id.sudo().package_id for l in o.move_raw_ids.move_line_ids])"/>
+                                <t t-set="has_raw" t-value="raw.filtered('product_id')" groups="stock.group_production_lot"/> -->
+                                <!-- <t t-set="has_location" t-value="o.move_raw_ids.move_line_ids.filtered('location_id')" groups="stock.group_production_lot"/>
+                                <t t-set="has_lot" t-value="o.move_raw_ids.move_line_ids.filtered('lot_id')" groups="stock.group_production_lot"/>
+                                <t t-set="has_pack" t-value="o.move_raw_ids.move_line_ids.filtered('package_id')" groups="stock.group_production_lot"/> -->
+                                <thead>
+                                    <tr class="active">
+                                        <th class="text-center" style="vertical-align:middle;" width="4%">
+                                            <strong>Item</strong>
+                                        </th>
+                                        <th class="text-center" style="vertical-align:middle;" width="12%">
+                                            <strong>Barcode</strong>
+                                        </th>
+                                        <th class="text-center" style="vertical-align:middle;" width="10%">
+                                            <strong>Internal Reference</strong>
+                                        </th>
+                                        <th class="text-center" style="vertical-align:middle;" width="20%">
+                                            <strong>Product</strong>
+                                        </th>
+                                        <!-- <th class="text-center" groups="stock.group_stock_multi_locations" style="vertical-align:middle;" width="8%">
+                                            <strong>From</strong>
+                                        </th>
+                                        <th class="text-center" groups="stock.group_stock_multi_locations" style="vertical-align:middle;" width="8%">
+                                            <strong>To</strong>
+                                        </th>
+                                        <th class="text-center" style="vertical-align:middle;">
+                                            <strong>Lot/SN</strong>
+                                        </th>
+                                        <th t-if="has_pack" class="text-center" style="vertical-align:middle;">
+                                            <strong>Packge</strong>
+                                        </th>
+                                        <th class="text-center" style="vertical-align:middle;">
+                                            <strong>Memolot1</strong>
+                                        </th>
+                                        <th class="text-center" style="vertical-align:middle;">
+                                            <strong>Memolot2</strong>
+                                        </th> -->
+                                        <th class="text-center" style="vertical-align:middle;" width="7%">
+                                            <strong>Quantity</strong>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t>
+                                        <tr>
+                                            <td colspan="11">
+                                                <strong>Products to Consume</strong>
+                                            </td>
+                                        </tr>
+                                        <tr t-foreach="o.move_raw_ids" t-as="raw">
+                                        <!-- <t t-set="raw" t-value="raws.filtered(lambda r: r.product_type == 'product')"/> -->
+                                        <t t-set="i" t-value="1"/>
+                                        <t t-foreach="raw.move_line_ids" t-as="line"/>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-esc="i" />
+                                                <t t-set="i" t-value="i+1"/>
+                                            </td>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="raw.product_id.barcode"/>
+                                                <br/>
+                                                <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', raw.product_id.barcode, 300, 50)" class="text-center"/>
+                                            </td>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="raw.product_id.code"/>
+                                            </td>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="raw.product_id"/>
+                                            </td>
+                                            <!-- <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="raw.location_id" groups="stock.group_stock_multi_locations"/>
+                                            </td>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="o.production_location_id" groups="stock.group_stock_multi_locations"/>
+                                            </td>
+                                            <td t-if="has_lot" class="text-center" style="vertical-align:middle;">
+                                                <span t-field="line.lot_id"/>
+                                            </td>
+                                            <td t-if="has_pack" class="text-center" style="vertical-align:middle;">
+                                                <span t-field="line.package_id"/>
+                                            </td>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="raw.memolot1"/>
+                                            </td>
+                                            <td class="text-center" style="vertical-align:middle;">
+                                                <span t-field="raw.memolot2"/>
+                                            </td> -->
+                                            <td class="text-right" style="vertical-align:middle;">
+                                                <span t-field="raw.product_uom_qty"/><br/>
+                                                <span t-field="raw.product_uom.name" groups="product.group_uom"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page">
+                            <div t-if="o.workorder_ids">
+                                <h3>Work Orders</h3>
+                                <table class="table table-condensed table-striped">
+                                    <tr>
+                                        <td class="text-center" width="15%" style="vertical-align:middle;">
+                                            <strong>#OP</strong>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <strong>WorkCenter</strong>
+                                        </td>
+                                        <td class="text-center" width="5%" style="vertical-align:middle;">
+                                            <strong>Time</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;">
+                                            <strong>Scrap Qty.</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;">
+                                            <strong>Finish Qty.</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;">
+                                            <strong>Operator</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;">
+                                            <strong>QC</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;">
+                                            <strong>NCR No.</strong>
+                                        </td>
+                                    </tr>
+                                    <tr t-foreach="o.workorder_ids" t-as="line2">
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <span t-field="line2.name"/>
+                                            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', line2.name, 600, 600)" style="width:200px;height:50px"/>
+                                        </td>
+                                        <td class="text-left">
+                                            <span t-field="line2.workcenter_id.name"/>
+                                            <br/>
+                                            <span t-field="line2.operation_id.note"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <span t-field="line2.duration_expected"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="oe_structure"/>
+                            <div class="footer">
+                                <div class="text-center" style="border-top: 1px solid black;">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <t t-if="doc.company_id.partner_id.phone">
+                                                <i class="fa fa-phone" aria-hidden="true"/>
+                                                <span t-field="doc.company_id.phone"/>
+                                            </t>
+                                        </div>
+                                        <div class="col-xs-4 col-xs-offset-1 text-center">
+                                            <t t-if="doc.company_id.partner_id.email">
+                                                <i class="fa fa-envelope-o" aria-hidden="true"/>
+                                                <span t-field="doc.company_id.email"/>
+                                            </t>
+                                        </div>
+                                        <div class="col-xs-3 col-xs-offset-1 text-right">
+                                            <t t-if="doc.company_id.partner_id.website">
+                                                <i class="fa fa-globe" aria-hidden="true"/>
+                                                <span t-field="doc.company_id.website"/>
+                                            </t>
+                                        </div>
+                                    </div>
+                                    <div class="text-muted">
+                                        <div class="row">
+                                            <div class="col-xs-3">
+                                                <t t-if="doc.company_id.name_report_prd">
+                                                    <span t-field="doc.company_id.name_report_prd"/>
+                                                </t>
+                                            </div>
+                                            <div class="col-xs-4 col-xs-offset-1 text-center">
+                                                <t t-if="doc.company_id.date_report_prd">Date issued:
+                                                    <span t-field="doc.company_id.date_report_prd"/>
+                                                </t>
+                                            </div>
+                                            <div class="col-xs-3 col-xs-offset-1 text-right">
+                                                <t t-if="doc.company_id.rev_report_prd">Revision:
+                                                    <span t-field="doc.company_id.rev_report_prd"/>
+                                                </t>
+                                            </div>
+                                        </div>
+                                        Page: <span class="page"/>/<span class="topage"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

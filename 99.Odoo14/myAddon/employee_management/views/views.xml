@@ -1,0 +1,110 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record id="employee_tree_view" model="ir.ui.view">
+      <field name="name">List Emp</field>
+      <field name="model">employee</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <field name="address" />
+          <field name="gender" />
+          <field name="department_id" />
+          <field name="task_ids" string="Amount of work"/>
+          <button name="custom_remove" type="object" string="Remove" class="oe_highlight" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="employee_management.employee_form_view" model="ir.ui.view">
+      <field name="name">employee</field>
+      <field name="model">employee</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group name="Infor">
+              <field name="name" />
+              <field name="address" />
+              <field name="gender" />
+            </group>
+            <group name="Others">
+              <field name="department_id" />
+            </group>
+            <notebook>
+              <page string="Current Task">
+                <field name="task_ids" 
+                />
+              </page>
+              <!-- domain="[('department_id', '=', department_id),('employee_id','=',name)]"  -->
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record id="department_tree_view" model="ir.ui.view">
+      <field name="name">List Depart</field>
+      <field name="model">department</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" />
+          <button name="custom_remove" type="object" string="Remove" class="oe_highlight" />
+        </tree>
+      </field>
+    </record>
+
+
+    <record id="task_tree_view" model="ir.ui.view">
+      <field name="name">List Task</field>
+      <field name="model">task.manager</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name" string="Name Work" />
+          <field name="deadline" />
+          <field name="employee_id" />
+          <field name="department_id" />
+          <button name="custom_remove" type="object" string="Remove" class="oe_highlight" />
+        </tree>
+      </field>
+    </record>
+
+  
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="action_employee">
+      <field name="name">Employee Management</field>
+      <field name="res_model">employee</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="action_department">
+      <field name="name">Department Management</field>
+      <field name="res_model">department</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="action_task">
+      <field name="name">Task Management</field>
+      <field name="res_model">task.manager</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+          
+    <menuitem name="Employees" id="employee_menu_root" web_icon="employee_management/static/description/icon.png" />
+
+      <menuitem name="List Department" id="department_list_menu" parent="employee_menu_root" action="action_department" />
+
+      <menuitem name="List Employee" id="employee_list_menu" parent="employee_menu_root" action="action_employee" />
+
+      <menuitem name="List Task" id="task_list_menu" parent="employee_menu_root" action="action_task" />
+
+
+    <!-- <menuitem name="List Task" id="task_list_menu" parent="employee_menu_root" action="action_task" /> -->
+
+
+  </data>
+</odoo>

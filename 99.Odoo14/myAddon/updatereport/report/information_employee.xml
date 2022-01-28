@@ -1,0 +1,92 @@
+<odoo>
+
+    <template id="hr_employee_by_Thinh_inherit" inherit_id="hr.print_employee_badge">
+        <xpath expr="//t[@t-foreach='docs']" position="replace">
+            <template id="print_employee_badge">
+                <t t-call="web.html_container">
+                    <t t-foreach="docs" t-as="employee">
+                        <t t-call="web.basic_layout">
+                            <div class="page" >
+                                <table style="width:100%">
+                                    <tr>
+                                      <td><h2 t-field="employee.name" style="font-size:40px"></h2></td>
+                                      <td><img t-if="employee.image_1920" t-att-src="image_data_uri(employee.image_1920)" style="max-height:85pt;max-width:90%" alt="Employee Image"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h4 t-field="employee.job_title"></h4></td>
+                                    </tr>
+                                  </table>
+                               
+                                <br></br>
+                                <h3>Consultant</h3>
+                                <table style="width:100%;" >
+                                    <tr>
+                                        <td><h5 style="color:blue;">Work Phone</h5></td>
+                                        <td><h5 style="color:blue;">Company</h5></td>
+                                        <td><h5 style="color:blue;">Department</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h4 t-field="employee.work_phone"></h4></td>
+                                        <td> <h4 t-field="employee.company_id"></h4></td>
+                                        <td> <h4 t-field="employee.department_id"></h4></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h5 style="color:blue;">Manager</h5></td>
+                                        <td><h5 style="color:blue;">Coach</h5></td>
+                                        <td><h5 style="color:blue;">Work Email</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h4 t-field="employee.parent_id"></h4></td>
+                                        <td> <h4 t-field="employee.coach_id"></h4></td>
+                                        <td> <h4 t-field="employee.work_email"></h4></td>
+                                    </tr>
+
+                                  </table>
+                                  <br></br>
+                                <h3>Location</h3>
+
+                                <table style="width:100%">
+                                    <tr>
+                                        <td><h5 style="color:blue;">Work Address</h5></td>
+                                        <td><h5 style="color:blue;">Work Location</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h4 t-field="employee.address_id"></h4></td>
+                                        <td> <h4 t-field="employee.work_location"></h4></td>
+                                    </tr>
+                                  
+                                  </table>
+                                  <br></br>
+                                <h3>Marital Status</h3>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td><h5 style="color:blue;">Marital Status</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h4 t-field="employee.marital"></h4></td>
+                                    </tr>
+                                  </table>
+                                  <br></br>
+                                  <h3>Schedule</h3>
+                                <table style="width:100%">
+                                    <tr>
+                                        <td><h5 style="color:blue;">Working Hours</h5></td>
+                                        <td><h5 style="color:blue;">Timezone</h5></td>
+                                    </tr>
+                                    <tr>
+                                        <td> <h4 t-field="employee.resource_calendar_id"></h4></td>
+                                        <td> <h4 t-field="employee.tz"></h4></td>
+                                    </tr>
+                                  </table>
+                               
+                            </div>
+                        </t>
+                    </t>
+
+                </t>
+            </template>
+        </xpath>
+    </template>
+
+
+</odoo>

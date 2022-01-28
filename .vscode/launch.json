@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Odoo14",
+            "type": "python",
+            "request": "launch",
+            "stopOnEntry": false,
+            "python": "/home/thinhnv/Desktop/Odoo/venv/bin/python3",
+            "program": "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo-bin",
+            "args": [
+                "-c", // config file
+                "/home/thinhnv/Desktop/Odoo/05.Config/config.cfg",
+                "-u", // update
+                "updatereport",
+                // "-i", //install
+                //  "erpvn_product_costing,erpvn_product_request",
+                "--dev",
+                "xml,js",
+            ],
+            "cwd": "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo",
+            "console": "integratedTerminal",
+        }
+    ]
+}

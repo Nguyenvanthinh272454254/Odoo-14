@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="product_label_template1">
+            <div class="page">
+                <div class="row">
+                    <div class="col-xs-8" style="vertical-align:middle; text-align:center;">
+                        <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', product.barcode, 1000, 200)" style="height:13mm;" class="pull-left mb1"/>
+                        <br/><span t-field="product.barcode" style="font-size:12px"/>
+                    </div>
+                    <div class="col-xs-4 text-right">
+                        <img t-if="product.company_id.logo" t-att-src="'data:image/png;base64,%s' %  to_text(product.company_id.logo)" style="height:20mm;" class="text-left" />
+                    </div><br/>
+                </div>
+                <br style="font-size:4px"/>
+                <div class="row" style="text-align:left; vertical-align:middle;">
+                    <div class="col-xs-12" style="font-size:20px">
+                        <strong t-if="product.name">
+                            Name: [<span t-field="product.name"/>]
+                        </strong>
+                    </div>
+                </div>
+                <div class="row" style="text-align: left; vertical-align: middle;">
+                    <div class="col-xs-12" style="font-size:18px">
+                        <strong t-if="product.default_code">
+                            Internal: [<span t-field="product.default_code"/>]
+                        </strong>
+                    </div>
+                </div>
+                <div class="row" style="text-align: left; vertical-align: middle;">
+                    <div class="col-xs-12" style="font-size:18px">
+                        <strong t-if="product.default_code">
+                            Price: [<span t-field="product.default_code"/>]
+                        </strong>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </data>
+</odoo>

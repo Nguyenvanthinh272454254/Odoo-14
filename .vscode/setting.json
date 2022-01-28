@@ -1,0 +1,13 @@
+{
+    "git.enabled": true,
+    "git.autofetch": true,
+    "python.linting.mypyEnabled": false,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "autopep8",
+    "jupyter.debugJustMyCode": false,
+    "python.pythonPath": "/home/thinhnv/Desktop/Odoo/venv/bin/python3",
+    "svn.ignoreMissingSvnWarning": true,
+    "files.useExperimentalFileWatcher" : true
+}

@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_my_project_user,my.project,model_my_project,group_my_supperleader,1,1,1,1
+access_my_project_admin,my.project_task,model_my_task,group_my_supperviewer,1,1,1,1
+access_my_project_nopeople,my.project_nopeople,model_my_project,,0,0,0,0
+access_my_project_admin_nopeople,my.project_task_nopeople,model_my_task,,0,0,0,0
+

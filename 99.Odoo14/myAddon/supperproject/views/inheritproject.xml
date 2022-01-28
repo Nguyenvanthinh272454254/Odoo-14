@@ -1,0 +1,115 @@
+<odoo>
+  <data>
+   <record id="my_super_project_tree" model="ir.ui.view">
+     <field name="name">my_super_project</field>
+     <field name="model">my.project</field>
+     <field name="arch" type="xml">
+       <tree string="">
+         <field name="name"/>
+         <field name="task_ids"/>
+         <field name="parent_id"/>
+       </tree>
+     </field>
+   </record>
+
+   <record id="my_task_project_tree" model="ir.ui.view">
+    <field name="name">my_task_project</field>
+    <field name="model">my.task</field>
+    <field name="arch" type="xml">
+      <tree string="">
+        <field name="name"/>
+        <field name="project_id"/>
+        <field name="assign_to"/>
+        <field name="follower_user_ids"/>
+        <field name="active"/>
+        <field name="deadline"/>
+        <field name="datecreate"/>
+        <field name="state"/>
+        <field name="manager"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="task_by_thinh_form" model="ir.ui.view">
+    <field name="name">Task viewer</field>
+    <field name="model">my.task</field>
+    <field name="arch" type="xml">
+      <form string="">
+        <header>
+        </header>
+        <sheet>
+          <group>
+            <group string="Info 1">
+              <field name="name" string="Name ne"/>
+              <field name="project_id" string="Name Project"/>
+              <field name="manager"/>
+            </group>
+            <group>
+              <field name="datecreate"/>
+              <field name="assign_to"/>
+            </group>
+          </group>
+          <group string="Info 1">
+            <group>
+              <field name="active"/>
+              <field name="deadline"/>
+            </group>
+            <group>
+              <field name="follower_user_ids"/>
+              <field name="state"/>
+            </group>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+
+  <record id="information_tree" model="ir.ui.view">
+    <field name="name">Information</field>
+    <field name="model">res.users</field>
+    <field name="inherit_id" ref="base.view_users_tree"></field>
+    <field name="arch" type="xml">
+      <tree>
+            <field name="age"/>
+      </tree>
+    </field>
+  </record>
+
+  <record id="information_form" model="ir.ui.view">
+    <field name="name">Information</field>
+    <field name="model">res.users</field>
+    <field name="inherit_id" ref="base.view_users_form"></field>
+    <field name="arch" type="xml">
+          <xpath expr="//field[@name='login']" position="after">
+            <label for="age" class="oe_edit_only" string="AGE"/>
+                            <h2><field name="age"/></h2>
+          
+          </xpath>
+    </field>
+  </record>
+  <record id="my_project_action" model="ir.actions.act_window">
+    <field name="name">my_task_project_action</field>
+    <field name="res_model">my.project</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  
+  
+  <record id="my_task_action" model="ir.actions.act_window">
+    <field name="name">my_task_project_by_thinh.action</field>
+    <field name="res_model">my.task</field>
+    <field name="view_mode">kanban,tree,form</field>
+  </record>
+  
+    <record id="my_information_action" model="ir.actions.act_window">
+      <field name="name">my_information_action</field>
+      <field name="res_model">res.users</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  
+
+  <menuitem id="myproject_by_Thinh_menu" name="Super project" action="my_project_action" sequence="5"/>
+  <menuitem id="myproject_by_Thinh_cute_menu" name="Super task" action="my_task_action" sequence="4"/>
+  <menuitem id="myproject_by_Thinh_infor_menu" name="Information task" action="my_information_action" sequence="3"/>
+  </data>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="assets_backend" name="libary assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="my_library/static/src/css/my_css.scss"/>
+        </xpath>
+    </template>
+
+    <!-- <template id="assets_backend" name="hr assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/scss" href="/hr/static/src/scss/hr.scss"/>
+            <link rel="stylesheet" type="text/scss" href="/hr/static/src/bugfix/bugfix.scss"/>
+        </xpath>
+    </template> -->
+<!-- 
+    <template id="assets_frontend" name="purchase assets" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/purchase/static/src/js/purchase_datetimepicker.js"></script>
+        </xpath>
+    </template> -->
+</odoo>

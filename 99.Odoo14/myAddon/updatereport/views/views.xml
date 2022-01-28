@@ -1,0 +1,28 @@
+<odoo>
+  <data>
+    <record id="my_employee_by_thinh_from" model="ir.ui.view">
+      <field name="name">my_employee Form View</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form"></field>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='tz']" position="after">
+            <field name="grandma"/>
+            <field name="address"/>
+            <field name="category_ids"/>
+        </xpath>
+      </field>
+    </record>
+
+    <record id="my_employee_action" model="ir.actions.act_window">
+      <field name="name">my_employee.action</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">hr.employee</field>
+      <field name="view_id" ref="hr.hr_kanban_view_employees"/>
+      <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <menuitem id="menu_my_employee_test" name="My employee" sequence="10" />
+
+      <menuitem name="Empoloyee" id="employee_list_menu_new_test" parent="menu_my_employee_test" action="my_employee_action" />
+  </data>
+</odoo>

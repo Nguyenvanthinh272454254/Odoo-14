@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="production_template2">
+            <t t-foreach="docs" t-as="o">
+                <t t-if="o and 'company_id' in o"><t t-set="company" t-value="o.company_id"/></t>
+                <t t-if="not o or not 'company_id' in o"><t t-set="company" t-value="res_company"/></t>
+                <div class="header">
+                    <div class="row">
+                        <div class="col-xs-2">
+                             <img t-if="doc.company_id.logo" t-att-src="'data:image/png;base64,%s' %  to_text(doc.company_id.logo)" style="max-height: 150px;"/>
+                        </div>
+                        <div class="col-xs-6 col-xs-offset-1 text-center" style=" margin-left:250px">
+                            <td style="vertical-align:middle;">
+                                <div t-attf-style="vertical-align:middle; font-weight:bold;">
+                                    <strong><h1>PRODUCTION ORDER</h1></strong>
+                                </div>
+                                <div t-attf-style="vertical-align:middle;">
+                                    <b><h2>No: <span t-field="o.name"/></h2></b>
+                                </div>
+                            </td>
+                            <div t-attf-style="border: 1px !important; border-color:{{data['primary_color']}}!important; border-style: groove !important;"/>
+                        </div>
+                        <div class="col-xs-3 text-right" style="margin-left:15%" position="right">
+                            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:300px;height:60px;"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <t t-if="doc.company_id.watermark_selection == 'custom_name' and doc.company_id.add_watermark == True ">
+                            <div style="position:absolute;opacity:0.11;z-index:1000;-webkit-transform:rotate(-45deg);width:100%; height:100%; top: 450px; ">
+                                <p t-field="doc.company_id.custom_watermark_name" style="font-size:250px; "/>
+                            </div>
+                        </t>
+                        <t t-if="doc.company_id.watermark_selection == 'company_logo' and doc.company_id.add_watermark == True ">
+                            <div style="position:absolute;opacity:0.11;z-index:1000;-webkit-transform:rotate(-45deg);width:100%; height:100%; top: 400px;">
+                                <img t-att-src="'data:image/png;base64,%s' %  to_text(doc.company_id.logo) " style="height:500px;"/>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+                <t t-call="web.basic_layout">
+                    <div class="oe_structure"/>
+                    <div class="oe_structure"/>
+                    <div class="page">
+                        <br/>
+                        <!-- <h3>Product Revision: <span t-if="o.product_id.version" t-field="o.product_id.version"/></h3> -->
+                        <h3>Product Revision: </h3>
+                        <table class="table table-condensed table-bordered" >
+                            <thead>
+                                <tr t-aff-style="background-color:{{data['primary_color']}}!important;">
+                                    <td rowspan="2" class="col-xs-3" width="3%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <table>
+                                            <tr class="text-left">
+                                                    <strong>
+                                                        <span>BARCODE</span>
+                                                    </strong>
+                                            </tr>
+                                            <br/>
+                                            <br/>
+                                            <tr class="text-center" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                                    <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.product_id.barcode, 300, 50)"/>
+                                                    <br/><span t-field="o.product_id.barcode"/>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>NAME</strong>
+                                        <br/>
+                                        <span t-field="o.product_id.name"/>
+                                    </td>
+                                    <td width="20%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>INTERNAL REFERENCE</strong>
+                                        <br/>
+                                        <span t-field="o.product_id.default_code"/>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>RESPONSIBLE</strong>
+                                        <br/>
+                                        <span t-field="o.user_id"/>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>PLANNED</strong>
+                                        <br/>
+                                        <span t-field="o.date_planned_start"/>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>USER PRINT</strong>
+                                        <br/>
+                                        <span t-esc="user.name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="15%" t-aff-style="background-color:{{data['primary_color']}}!important;">
+                                        <strong>RELATED DOCUMENT</strong>
+                                        <br/>
+                                        <span t-field="o.origin"/>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>QUANTITY</strong>
+                                        <br/>
+                                        <span t-esc="'{0:,.0f}'.format(int(o.product_qty))"/>
+                                        <span t-field="o.product_uom_id.name" groups="product.group_uom"/>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>SCHEDULED DATE</strong>
+                                        <br/>
+                                        <span t-field="o.date_planned_start" t-options='{"widget": "date"}'/>
+                                        <span t-if="o.date_planned_finished" t-options='{"widget": "date"}'> -
+                                            <span t-field="o.date_planned_finished" t-options='{"widget": "date"}'/>
+                                        </span>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>DEADLINE START</strong>
+                                        <br/>
+                                        <span t-field="o.date_planned_start"/>
+                                    </td>
+                                    <td width="15%" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                        <strong>PRINT DATE</strong>
+                                        <br/>
+                                        <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%b-%d %H:%M')"/>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                        <h3>Bill Of Material Revision: <span t-if="o.bom_id.code" t-field="o.bom_id.code"/></h3>
+                        <table class="table table-condensed table-bordered"  t-attf-style="border-color:{{data['primary_color']}}!important">
+                            <!-- <t t-set="has_lot" t-value="any([l.lot_id and l.product_id.sudo().lot_id or l.lot_id for l in o.move_raw_ids.move_line_ids])"/>
+                            <t t-set="has_pack" t-value="any([l.package_id and l.product_id.sudo().package_id for l in o.move_raw_ids.move_line_ids])"/>
+                            <t t-set="has_raw" t-value="raw.filtered('product_id')" groups="stock.group_production_lot"/>
+                            <t t-set="has_location" t-value="o.move_raw_ids.move_line_ids.filtered('location_id')" groups="stock.group_production_lot"/>
+                            <t t-set="has_lot" t-value="o.move_raw_ids.move_line_ids.filtered('lot_id')" groups="stock.group_production_lot"/>
+                            <t t-set="has_pack" t-value="o.move_raw_ids.move_line_ids.filtered('package_id')" groups="stock.group_production_lot"/> -->
+                            <thead >
+                                <tr class="active" t-aff-style="background-color:{{data['primary_color']}}!important;">
+                                    <th class="text-center" style="vertical-align:middle;" width="5%">
+                                        <font> <strong class="fa fa-sort-numeric-asc" aria-hidden="true"></strong> Item</font>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;" width="10%">
+                                        <strong>Barcode</strong>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;" width="10%">
+                                        <strong>Internal Reference</strong>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;" width="20%">
+                                        <strong>Product</strong>
+                                    </th>
+                                    <!-- <th class="text-center" groups="stock.group_stock_multi_locations" style="vertical-align:middle;" width="8%"> -->
+                                    <th class="text-center" style="vertical-align:middle;" width="8%">
+                                        <strong>From</strong>
+                                    </th>
+                                    <!-- <th class="text-center" groups="stock.group_stock_multi_locations" style="vertical-align:middle;" width="8%"> -->
+                                    <th class="text-center" style="vertical-align:middle;" width="8%">
+                                        <strong>To</strong>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;">
+                                        <strong>Lot/SN</strong>
+                                    </th>
+                                    <!-- <th t-if="has_pack" class="text-center" style="vertical-align:middle;"> -->
+                                    <th class="text-center" style="vertical-align:middle;">
+                                        <strong>Packge</strong>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;">
+                                        <strong>Memolot1</strong>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;">
+                                        <strong>Memolot2</strong>
+                                    </th>
+                                    <th class="text-center" style="vertical-align:middle;" width="7%">
+                                        <strong>Quantity</strong>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="i" t-value="1"/>
+                                <tr>
+                                        <td colspan="11">
+                                            <strong>Products to Consume</strong>
+                                        </td>
+                                </tr>
+                                <t t-foreach="o.move_raw_ids" t-as="raw">
+                                    <t t-foreach="raw.move_line_ids" t-as="line"/>
+                                     <!-- <t t-set="raw" t-value="raws.filtered(lambda r: r.product_type == 'product')"/>
+                                    <t t-set="raw" t-value="raws.filtered(lambda r: r.state != 'cancel')"/> -->
+                                    <tr style="page-break-inside:avoid;margin-top:5%"> 
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <span t-esc="i" /><t t-set="i" t-value="i+1"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', raw.product_id.barcode, 300, 50)" class="text-center"/>
+                                            <br/><span t-field="raw.product_id.barcode"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <span t-field="raw.product_id.code"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <span t-field="raw.product_id"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <!-- <span t-field="raw.location_id" groups="stock.group_stock_multi_locations"/> -->
+                                            <span t-field="raw.location_id"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <!-- <span t-field="o.production_location_id" groups="stock.group_stock_multi_locations"/> -->
+                                            <span t-field="o.production_location_id"/>
+                                        </td>
+                                        <!-- <td t-if="has_lot" class="text-center" style="vertical-align:middle;"> -->
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <!-- <span t-field="line.lot_id"/> -->
+                                            <span>__________</span>
+                                        </td>
+                                        <!-- <td t-if="has_pack" class="text-center" style="vertical-align:middle;"> -->
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <!-- <span t-field="line.package_id"/> -->
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <!-- <span t-field="raw.memolot1"/> -->
+                                           <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <!-- <span t-field="raw.memolot2"/> -->
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-right" style="vertical-align:middle;">
+                                            <span t-field="raw.product_uom_qty"/><br/>
+                                            <span t-field="raw.product_uom.name" groups="product.group_uom"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                        <!-- <div t-if="o.workorder_ids"> -->
+                         
+                          <div class="page">
+                            <!-- <h3>Work Orders Routing Revision: <span t-if="o.routing_id.version" t-field="o.routing_id.version"/></h3> -->
+                              <h3>Work Orders Routing Revision:</h3>
+                            <table class="table table-condensed table-bordered">
+                                <thead>
+                                    <tr style="page-break-inside:avoid;margin-top:5%" t-aff-style="background-color:{{data['primary_color']}}!important;">
+                                        <td class="text-center" width="15%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>#OP</strong>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>WorkCenter</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>Time</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>Scrap Qty.</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>Finish Qty.</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>Operator</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>QC</strong>
+                                        </td>
+                                        <td class="text-center" width="8%" style="vertical-align:middle;" t-aff-style="border-color:{{data['primary_color']}}!important;">
+                                            <strong>NCR No.</strong>
+                                        </td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- <tr t-foreach="o.workorder_ids" t-as="line2"> -->
+                                    <tr t-foreach="o.workorder_ids" t-as="line2">
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            <span t-field="line2.name"/>
+                                            <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', line2.name, 600, 150)" style="width:200px;height:50px"/>
+                                        </td>
+                                        <td class="text-left">
+                                            
+                                            <span t-field="line2.workcenter_id.name"/>
+                                            <br/>
+                                            <span t-field="line2.operation_id.note"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:middle;">
+                                            
+                                            <span t-field="line2.duration_expected"/>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                        <td class="text-center" style="vertical-align:bottom;">
+                                            <span>__________</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </t>
+                <br/>
+                <br/>
+                <div class="footer" position="fixed;">
+                    <div class="text-center" style="border-top: 1px solid black;">
+                        <div class="text-muted">
+                    <div class="row">
+                    <div class="col-xs-3 text-left" position="left">
+                        <table style="vertical-align:baseline;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <t t-if="doc.company_id.name_report_sale">
+                                    <span t-field="doc.company_id.name_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.date_report_prd">Date Issue:
+                                    <span t-field="doc.company_id.date_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.rev_report_prd">Revision:
+                                    <span t-field="doc.company_id.rev_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-4 text-center" position="center">
+                        <table style="vertical-align:baseline;margin-left:18.75em;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <t t-if="doc.company_id.partner_id.website">
+                                    <i class="fa fa-globe" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.website"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.partner_id.email">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.email"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.partner_id.phone">
+                                    <i class="fa fa-phone" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.phone"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                     </div>
+                    <div class="col-xs-3 text-right" position="right">
+                        <table style="vertical-align:baseline;margin-left:18.75em;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <span t-field="docs.user_id"/> 
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    Page: <span class="page"/>/<span class="topage" />    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

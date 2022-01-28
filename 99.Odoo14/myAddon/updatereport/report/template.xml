@@ -1,0 +1,44 @@
+<odoo>
+    <template id="hr_employee_by_Thinh_inherit" inherit_id="hr.print_employee_badge">
+        <xpath expr="//t[@t-foreach='docs']" position="replace">
+            <template id="print_employee_badge">
+                <t t-call="web.basic_layout">
+                    <div class="page" style="width:950px; height:50px">
+                        <t t-foreach="docs" t-as="employee">
+                        <link rel="stylesheet" type="text/scss" href="updatereport/static/src/css/my_css.css"/>
+                            <div style="
+                            display: inline-block;
+                            border: 1pt solid black; border-collapse:separate; border-radius:8pt; margin:5pt;
+                            height:200px">
+                                <div style="width:300pt; height:100pt;">
+                                    <div style="width:33%; margin-right:0;" valign="center">
+                                        <div style="height:30%">
+                                            <div align="center" valign="center">
+                                                <img t-if="employee.company_id.logo" t-att-src="image_data_uri(employee.company_id.logo)" style="max-height:45pt;width:60%" alt="Company Logo" />
+                                            </div>
+                                        </div>
+                                        <div style="height:70%; margin-top:10px">
+                                            <div align="center" valign="center">
+                                                <img t-if="employee.image_1920" t-att-src="image_data_uri(employee.image_1920)" style="max-height:85pt;width:60%" alt="Employee Image" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="width:67%; float:right;" valign="center">
+                                        <div align="center">
+                                            <t t-esc="employee.name" />
+                                        </div>
+                                        <div align="center">
+                                            <t t-esc="employee.job_id.name" />
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </t>
+            </template>
+        </xpath>
+    </template>
+
+</odoo>

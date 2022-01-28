@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="product_test" name="Product_test">
+        <t t-call="website.layout">
+            <t t-foreach="employees" t-as="o">
+                <div class="container supper" style="max-width:500px;height:700pxupdatereportupdatereport">
+                    <div class="row">
+                        <div class="conten">
+                            <h1>
+                                <t t-esc="o.name" />
+                                <hr />
+                            </h1>
+                            <div class="conten_img">
+                                <img src=""></img>
+                            </div>
+                        </div>
+                        <div class="Consultant">
+                            <div class="Consultant_left">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th>Contact</th>
+                                        <th>Country</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Consultant_right"></div>
+                        </div>
+                        <div class="Location">
+                            <div class="Location_left"></div>
+                            <div class="Location_right"></div>
+                        </div>
+                        <div class="Schedule">
+                            <div class="Schedule_left"></div>
+                            <div class="Schedule_right"></div>
+                        </div>
+
+                        <t t-esc="o.mobile_phone" />
+                 
+                        <t t-esc="o.work_phone" />
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <t t-esc="o.work_email" />
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <t t-esc="o.company_id.name" />
+                                                     <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                        <t t-esc="o.department_id.name" />
+                                                     <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                        <t t-esc="o.parent_id.name" />
+                                                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <h1></h1>
+                        <t t-esc="o.coach_id.name" />
+                                                       <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+                    </div>
+
+                </div>
+                <!-- <div class="container" style="border:1px solid">
+                    <div class="row" style="display: inline;">
+                        <div class="conten">
+                            <h3>
+                                Thinh ne
+                                <hr />
+                            </h3>
+                            <div class="conten_img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/IMG_logo_%282017%29.svg" style="width:100px;"></img>
+                            </div>
+                        </div>
+                        <h2>Consultant</h2>
+                        <div class="Consultant" style="display: flex;">
+                            <div class="Consultant_left" style="width: 50%;">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h3>Contact</h3></th>
+                                        <th><h3>Country</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Consultant_right" style="width: 50%;">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h3>Contact</h3></th>
+                                        <th><h3>Country</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <h2>Location</h2>
+                        <div class="Location" style="display: flex;">
+                            <div class="Location_left" style="width: 50%;">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h3>Contact</h3></th>
+                                        <th><h3>Country</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Location_right" style="width: 50%;">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h3>Contact</h3></th>
+                                        <th><h3>Country</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <h2>Schedule</h2>
+                        <div class="Schedule" style="display: flex;">
+                            
+                            <div class="Schedule_left" style="width: 50%;">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h3>Contact</h3></th>
+                                        <th><h3>Country</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="Schedule_right" style="width: 50%;">
+                                <table style="width:100%">
+                                    <tr>
+                                        <th><h3>Contact</h3></th>
+                                        <th><h3>Country</h3></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Francisco Chang</td>
+                                        <td>Mexico</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div> -->
+
+            </t>
+        </t>
+
+    </template>
+</odoo> 

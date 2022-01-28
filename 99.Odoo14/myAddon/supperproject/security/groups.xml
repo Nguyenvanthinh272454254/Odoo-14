@@ -1,0 +1,28 @@
+<odoo>
+    <record id="module_my_supperproject_father" model="ir.module.category">
+        <field name="name">Projecct by Thinh</field>
+        <field name="sequence">8</field>
+        <field name="parent_id" eval="False"/>
+    </record>
+
+
+    <record id="module_my_supperproject_Son" model="ir.module.category">
+        <field name="name">Project group</field>
+        <field name="parent_id" ref="module_my_supperproject_father"/>
+        <field name="description">Helps you manage plan and tracking material, production, etc...</field>
+        <field name="sequence">8</field>
+    </record>
+
+    <record id="group_my_supperviewer" model="res.groups">
+        <field name="name">Project/SupperViewer</field>
+        <field name="category_id" ref="module_my_supperproject_Son"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_my_supperleader" model="res.groups">
+        <field name="name">Project/SupperLeader</field>
+        <field name="category_id" ref="module_my_supperproject_Son"/>
+        <field name="implied_ids" eval="[(4, ref('group_my_supperviewer'))]"/>
+    </record>
+
+</odoo>
