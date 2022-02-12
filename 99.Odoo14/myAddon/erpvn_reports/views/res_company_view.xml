@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="inherit_res_company_view" model="ir.ui.view">
+            <field name="name">inherit.res_company.view</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form" />
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <notebook position="inside">
+                    <page string="Report All in One">
+                        <group string ="Select Template">
+                            <group >
+                                <field name="temp_selection" default="template2"/>
+                                <!-- hai field an -->
+                                
+                                <field name="sale_header_footer" attrs="{'invisible': [('temp_selection','in',['odoo_standard','template1','template2','template3','template4',False])]}"
+									widget="color"/>
+                               
+                                <field name="primary_color" attrs="{'invisible': [('temp_selection','in',['odoo_standard',False])]}"
+									widget="color"/>
+                                <field name="secondary_color" attrs="{'invisible': [('temp_selection','in',['odoo_standard','template1','template3','template4',False])]}"
+									widget="color"/>
+                                <field name="sale_font_color" attrs="{'invisible': [('temp_selection','in',['odoo_standard',False])]}"
+									widget="color"/>
+                                <field name="watermark_selection" attrs="{'invisible': ['|',('add_watermark', '=',False), ('temp_selection','in',['odoo_standard',False])]}" />
+                               
+                                <!-- hai field an -->
+                                <field name="custom_watermark_name" attrs="{'invisible': ['|','|',('add_watermark','=', False),('temp_selection','in',['odoo_standard',False]), ('watermark_selection','in',['letter_head','company_logo',False])]}"/>
+                                <field name="letter_head" attrs="{'invisible': ['|','|',('add_watermark', '=', False),('temp_selection','in',['odoo_standard',False]),('watermark_selection','in',['company_logo','custom_name',False])]}"/>
+                               
+                                <field name="add_signature" attrs="{'invisible': [('temp_selection','in',['odoo_standard',False])]}"/>
+                                <field name="signature_logo" attrs="{'invisible': ['|',('add_signature', '=',False),('temp_selection','in',['odoo_standard',False])]}"/>
+                            </group>
+                            <group>
+                                <field name="add_product_image" attrs="{'invisible': [('temp_selection','in',['odoo_standard',False])]}"/>
+                                <field name="add_watermark" attrs="{'invisible': [('temp_selection','in',['odoo_standard',False])]}"/>
+                                <field name="show_name_report" default="False"/>
+                                <field name="show_price_label" default="True"/>
+                                <!-- <field name="selection_label" default="template2"/> -->
+                            </group>
+                        </group>
+                    </page>
+                    <page string ="Report name revision" attrs="{'invisible':[('show_name_report', '=', False)]}">
+                        <group>
+                            <group string ="Report Stock Picking">
+                                <field name="name_report_picking"/>
+                                <field name="date_report_picking"/>
+                                <field name="rev_report_picking"/>
+                            </group>
+                            <group string ="Report Stock Delivery">
+                                <field name="name_report_delivery"/>
+                                <field name="date_report_delivery"/>
+                                <field name="rev_report_delivery"/>
+                            </group>
+                            <group string ="Report Purchase Orders">
+                                <field name="name_report_pur"/>
+                                <field name="date_report_pur"/>
+                                <field name="rev_report_pur"/>
+                            </group>
+                            <group string ="Report Sale Orders">
+                                <field name="name_report_sale"/>
+                                <field name="date_report_sale"/>
+                                <field name="rev_report_sale"/>
+                            </group>
+                            <group string ="Report Manufacture Orders">
+                                <field name="name_report_prd"/>
+                                <field name="date_report_prd"/>
+                                <field name="rev_report_prd"/>
+                            </group>
+                            <group string ="Report Invoice">
+                                <field name="name_report_inv"/>
+                                <field name="date_report_inv"/>
+                                <field name="rev_report_inv"/>
+                            </group>
+                            <group string ="Report Inventory Adjustments">
+                                <field name="name_report_adj"/>
+                                <field name="date_report_adj"/>
+                                <field name="rev_report_adj"/>
+                            </group>
+                        </group>
+                    </page>
+                </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

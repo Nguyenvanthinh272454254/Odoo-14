@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="purchase_quotation_template2">
+            <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})"/>
+            <div class="header" >
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <div t-attf-style="color:{{data['primary_color']}}!important;">
+                            <span> 
+                                <strong style="" t-field="doc.company_id.partner_id"/>
+                            </span>
+                        </div>
+                        <div t-field="o.company_id.partner_id"  t-options='{"widget": "contact", "fields": ["address", "city", "state_id", "country_id", "phone"], "no_marker": true}'/></div>
+                    <div class="col-xs-6 text-right" >
+                        <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' %  to_text(o.company_id.logo)" style="max-height: 150px;margin-left:300%"  class="pull-left img-responsive" position="right"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <t t-if="doc.company_id.watermark_selection == 'custom_name' and doc.company_id.add_watermark == True ">
+                        <div style="position:absolute;opacity:0.11;z-index:1000;-webkit-transform:rotate(-45deg);width:100%; height:100%; top: 450px; ">
+                            <p t-field="doc.company_id.custom_watermark_name" style="font-size:250px;"/>
+                        </div>
+                    </t>
+                    <t t-if="doc.company_id.watermark_selection == 'company_logo' and doc.company_id.add_watermark == True ">
+                        <div style="position:absolute;opacity:0.11;z-index:1000;-webkit-transform:rotate(-45deg);width:100%; height:100%; top: 400px;">
+                            <img t-att-src="'data:image/png;base64,%s' %  to_text(doc.company_id.logo) " style="height:500px;"/>
+                        </div>
+                    </t>
+                </div>
+            </div>
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <div class="row">
+                        <div class="col-xs-6 text-center">
+                            <table class="table table-condensed table table-striped">
+                                <tr>
+                                    <td t-attf-style="color:{{data['sale_font_color']}}!important;  width:60%; background-color:{{data['primary_color']}} !important;" class="text-center table-bordered" >
+                                        <font>
+                                            <span style="font:25px lucida-console,sans-serif!important;"># Request for Quotation:</span>
+                                            <span style="font:25px lucida-console,sans-serif !important;" t-field="docs.name"/>
+                                        </font>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 text-left">
+                            <table class="table table-condensed table table-striped" style=" table-layout:fixed;">
+                                <tr>
+                                    <strong>Vendor Address :</strong>
+                                    <div t-attf-style="color:{{data['primary_color']}}!important;">
+                                        <span>
+                                            <strong t-field="o.partner_id"/>
+                                        </span>
+                                    </div>
+                                    <div t-field="docs.partner_id" t-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": True, "phone_icons": True}' />
+                                    <p t-if="docs.partner_id.vat">VAT: <span t-field="docs.partner_id.vat"/></p>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-xs-6 text-right" >
+                            <table class="table" style=" table-layout:fixed;margin-left:1250px">
+                                <tr>
+                                    <strong>Shipping Address :</strong>
+                                    <div t-attf-style="color:{{data['primary_color']}}!important;">
+                                        <span>
+                                            <strong t-field="o.company_id"/>
+                                        </span>
+                                    </div>
+                                    <t t-if="docs.dest_address_id">
+                                        <div t-field="docs.dest_address_id" t-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": True, "phone_icons": True}'/>
+                                    </t>
+                                    <t t-if="not docs.dest_address_id and docs.picking_type_id and docs.picking_type_id.warehouse_id">
+                                        <span t-field="docs.picking_type_id.warehouse_id.name"/>
+                                        <div t-field="docs.picking_type_id.warehouse_id.partner_id" t-options='{"widget": "contact", "fields": ["address", "phone"], "no_marker": True, "phone_icons": True}'/>
+                                    </t>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <table class="table table-bordered" t-attf-style="background-color:{{data['primary_color']}} !important; border-collapse: seperate; !important; border-spacing: 20px;!important; color:{{data['sale_font_color']}}!important;">
+                                <tbody >
+                                    <tr style="border-style: solid !important;">
+                                        <td t-if="docs.partner_ref" width="8%" style="border-collapse: seperate; !important; border-spacing: 20px;!important;">Your Reference:<br/>
+                                            <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.partner_ref"/>
+                                        </td>
+                                        <td t-if="docs.date_order" width="8%" style="border-collapse: seperate; !important; border-spacing: 20px;!important;">Order Date:<br/>
+                                            <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.date_order" t-options="{'widget': 'date'}"/>
+                                        </td>
+                                        <td t-if="docs.date_planned" width="8%" style="border-collapse: seperate; !important; border-spacing:20px;!important;">Scheduled Date:<br/>
+                                            <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.date_planned" t-options="{'widget': 'date'}"/>
+                                        </td>
+                                        <td t-if="docs.origin" width="8%" style="border-collapse: seperate; !important; border-spacing: 20px;!important;">Source Document:<br/>
+                                            <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.origin"/>
+                                        </td>
+                                        <td t-if="docs.fiscal_position_id" width="8%" style="border-collapse: seperate; !important; border-spacing: 20px;!important;">Fiscal Position:<br/>
+                                            <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.fiscal_position_id"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <table class="table table-condensed" t-attf-style="border-spacing:20px;!important; border-color:#000000">
+                                <tbody>
+                                    <tr>
+                                        <td style="border-collapse: seperate; !important; border-spacing: 20px;!important;" width="40%">
+                                            <strong>Requirement:</strong>
+                                            <span t-field="docs.notes"/>
+                                        </td>
+                                        <td style="border-collapse: seperate; !important; border-spacing: 20px;!important" width="20%">
+                                            <p t-if="docs.payment_term_id"><strong>Payment Term: </strong><span t-field="docs.payment_term_id"/></p>
+                                        </td>
+                                        <td style="border-collapse: seperate; !important; border-spacing: 20px;!important" width="20%">
+                                            <p t-if="docs.incoterm_id"><strong>Shipping Terms: </strong><span t-field="docs.incoterm_id"/></p>
+                                        </td>
+                                        <td style="border-collapse: seperate; !important; border-spacing: 20px;!important" width="20%">
+                                            <p t-if="docs.create_uid"><strong>Purchase personal: </strong><span t-field="docs.create_uid"/></p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 ">
+                            <table class="table table-striped">
+                                <thead  t-attf-style="background-color:{{data['primary_color']}}!important; color:{{data['sale_font_color']}}!important;"> 
+                                    <tr>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle" class="text-center" width="3%">
+                                            <font><i class="fa fa-list-ol" aria-hidden="true"/> Item</font>
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle"  class="text-center" width="10%">
+                                            <font><strong><i class="fa fa-th-large" aria-hidden="true"/> Part No.</strong></font>
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle"  class="text-center" width="13%">
+                                            <font><strong><i class="fa fa-th-large" aria-hidden="true"/> Description</strong></font>
+                                        </th>
+                                        <t t-if="o.company_id.add_product_image">
+                                            <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle"  class="text-center">
+                                                <font><i class="fa fa-picture-o" aria-hidden="true"/> Product Image</font>
+                                            </th>
+                                        </t>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle"  class="text-center" width="32%">
+                                            <font><strong><i class="fa fa-th-large" aria-hidden="true"/> Notes</strong></font>
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle"  class="text-center" width="8%">
+                                            <font><strong><i class="fa fa-calendar" aria-hidden="true"/> Date Request</strong></font>
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; vertical-align:middle"  class="text-center" width="5%">
+                                            <font><strong><i class="fa fa-sort-amount-asc" aria-hidden="true"/> Qty</strong></font>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <t t-set="j" t-value="1" />
+                                    <t t-foreach="docs.order_line" t-as="l">
+                                        <tr>
+                                            <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;" class="active; text-center">
+                                                <span t-esc="j" />
+                                                <t t-set="j" t-value="j+1" />
+                                            </td>
+                                            <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;">
+                                                <span t-field="l.product_id.barcode"/>
+                                            </td>
+                                            <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;">
+                                                <span t-field="l.product_id.name"/>
+                                            </td>
+                                            <t t-if="o.company_id.add_product_image">
+                                                <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;" class="active; text-center">
+                                                    <span t-field="l.product_id.image" t-options='{"widget": "image"}'/>
+                                                </td>
+                                            </t>
+                                            <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;">
+                                                <span t-field="l.name"/>
+                                            </td>
+                                            <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;" class="text-right">
+                                                <span t-field="l.date_planned" t-options="{'widget': 'date'}"/>
+                                            </td>
+                                            <td style="border: 1px !important;border-color: #fff !important;vertical-align:middle;" class="text-right">
+                                                <span t-esc="'{0:,.2f}'.format(int(l.product_qty))"/>
+                                                <span t-field="l.product_uom.name" groups="product.group_uom"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4" style="margin-left:66%"  >
+                            <t t-if="doc.company_id.add_signature == True">
+                                <span>Signature :</span>
+                                <span t-field="doc.company_id.signature_logo" t-options='{"widget": "image","style":"width: 100px; height: 100px; margin-right: 10px; display:inline" }'/>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/></div>
+            </t>
+            <div class="footer">
+                <div class="text-center" style="border-top: 1px solid black;">
+                    <div class="text-muted">
+                    <div class="row">
+                    <div class="col-xs-3 text-left" position="left">
+                        <table style="vertical-align:baseline;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <t t-if="doc.company_id.name_report_sale">
+                                    <span t-field="doc.company_id.name_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.date_report_prd">Date Issue:
+                                    <span t-field="doc.company_id.date_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.rev_report_prd">Revision:
+                                    <span t-field="doc.company_id.rev_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-4 text-center" position="center">
+                        <table style="vertical-align:baseline;margin-left:18.75em;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <t t-if="doc.company_id.partner_id.website">
+                                    <i class="fa fa-globe" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.website"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.partner_id.email">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.email"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.partner_id.phone">
+                                    <i class="fa fa-phone" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.phone"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                     </div>
+                    <div class="col-xs-3 text-right" position="right">
+                        <table style="vertical-align:baseline;margin-left:18.75em;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <span t-field="docs.user_id"/> 
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    Page: <span class="page"/>/<span class="topage" />    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="purcharse_quotation_report" inherit_id="purchase.report_purchasequotation">
+            <xpath expr="//t[@t-call='web.html_container']" position="replace">
+                <t t-foreach="doc" t-as="o">
+                    <t t-if="o.company_id.temp_selection == 'template1'">
+                        <t t-call="erpvn_reports.purchase_quotation_template1" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection == 'template2'">
+                        <t t-call="erpvn_reports.purchase_quotation_template2" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection== 'template3'">
+                        <t t-call="erpvn_reports.purchase_quotation_template3" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection == 'template4'">
+                        <t t-call="erpvn_reports.purchase_quotation_template4" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection == False or o.company_id.temp_selection == 'template5'">
+                        <t t-call="purchase.report_purchasequotation_document" t-lang="o.partner_id.lang"/>
+                    </t>
+                </t>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>

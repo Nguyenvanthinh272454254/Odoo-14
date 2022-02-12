@@ -1,0 +1,21 @@
+<odoo>
+    <data>
+    <record id="paperformat_a4_clear_sale_by_Thinh" model="report.paperformat">
+        <field name="name">A4 sale-thinh</field>
+        <field name="default" eval="True" />
+        <field name="format">custom</field>
+        <field name="page_height">297</field>
+        <field name="page_width">210</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">30</field>
+        <field name="margin_bottom">20</field>
+        <field name="margin_left">3</field>
+        <field name="margin_right">3</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">25</field>
+        <field name="dpi">90</field>
+
+    </record>
+    </data>
+    
+</odoo>

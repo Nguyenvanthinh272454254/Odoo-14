@@ -1,0 +1,49 @@
+<odoo>
+  <data>
+    <record id="my_sale_views_inherit_form" model="ir.ui.view">
+      <field name="name">sale_from</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form" />
+      <field name="arch" type="xml">
+        <!-- <xpath expr="//tree/field[@name='product_id']" position="before">
+          <field name="image_1902" widget="image" class="oe_avatar" options="{'preview_image': 'image_128'}"/>
+      </xpath> -->
+        <xpath expr="//tree/field[@name='name']" position="after">
+          <field name="length" />
+          <field name="weight" />
+          <field name="height" />
+        </xpath>
+        <xpath expr="//tree/field[@name='qty_delivered']" position="attributes">
+          <attribute name="invisible">1</attribute> <!-- hide description field -->
+      </xpath>
+      <xpath expr="//tree/field[@name='qty_invoiced']" position="attributes">
+        <attribute name="invisible">1</attribute> <!-- hide description field -->
+    </xpath>
+    <xpath expr="//tree/field[@name='tax_id']" position="attributes">
+      <attribute name="invisible">1</attribute> <!-- hide description field -->
+  </xpath>
+      </field>
+    </record>
+
+    <record id="my_sale_action" model="ir.actions.act_window">
+      <field name="name">my_sale.action</field>
+      <field name="res_model">sale.order</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- <record id="sale_order_line_action" model="ir.actions.act_window">
+    <field name="name">.action</field>
+    <field name="res_model"></field>
+    <field name="view_mode">tree,form</field>
+  </record> -->
+    <!-- Top menu item -->
+
+    <menuitem name="My sales" id="my_sale.menu_root" 
+    web_icon="my_sale,static/description/odoo_icon2.png" />
+    <!-- actions -->
+
+    <menuitem name="Orders" id="my_sale.menu_1_list" parent="my_sale.menu_root" action="my_sale_action" />
+    <!-- <menuitem name="Orders line" id="my_sale.menu_1_list" parent="my_sale.menu_root"
+              action="sale_order_line_action"/> -->
+  </data>
+</odoo>

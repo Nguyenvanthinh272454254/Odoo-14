@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="account_invoice_template2">
+            <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})" />
+            <div class="header" style="max-height:10px">
+                <div class="row">
+                    <div class="col-xs-6 text-left">
+                        <div t-attf-style="color:{{data['primary_color']}}!important;">
+                            <span>
+                                <strong t-field="o.company_id.partner_id"/>
+                            </span>
+                        </div>
+                        <div t-field="o.company_id.partner_id"
+                             t-options='{"widget": "contact", "fields": ["address", "city", "state_id", "country_id", "phone"], "no_marker": true}' />
+                        </div>
+                        <div class="col-xs-6 col-xs-offset-1 text-center" style=" margin-left:100px">
+                            <td style="vertical-align:middle;">
+                                <div t-attf-style="vertical-align:middle; font-weight:bold;">
+                                    <strong><h1>COMPANY'S INVOICE</h1></strong>
+                                </div>
+                                <div t-attf-style="vertical-align:middle;">
+                                    <b><h2>No: <span t-field="docs.number"/></h2></b>
+                                </div>
+                            </td>
+                            <div t-attf-style="border: 1px !important; border-color:{{data['primary_color']}}!important; border-style: groove !important;"/>
+                        </div>
+                        <div class="col-xs-6 text-right" position="right" >
+                            <img t-if="o.company_id.logo" t-att-src="'data:image/png;base64,%s' %  to_text(o.company_id.logo) "
+                                style="max-height: 150px; margin-left:150px" class="pull-left img-responsive" position="right" />
+                        </div>
+                    </div>
+                <div class="row">
+                    <t t-if="doc.company_id.watermark_selection == 'custom_name' and doc.company_id.add_watermark
+						== True ">
+                        <div style="position:absolute;opacity:0.11;z-index:1000;-webkit-transform:rotate(-45deg);width:100%;
+							height:100%; top: 450px; ">
+                            <p t-field="doc.company_id.custom_watermark_name" style="font-size:250px; "/>
+                        </div>
+                    </t>
+                    <t t-if="doc.company_id.watermark_selection == 'company_logo' and doc.company_id.add_watermark
+						== True ">
+                        <div style="position:absolute;opacity:0.11;z-index:1000;-webkit-transform:rotate(-45deg);width:100%;
+							height:100%; top: 400px;">
+                            <img t-att-src="'data:image/png;base64,%s' %  to_text(doc.company_id.logo) " style="height:500px;"
+								/>
+                        </div>
+                    </t>
+                </div>
+            </div>
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+                    <div class="row">
+                        <div class="col-xs-6 text-left">
+                            <h3>Invoice To :</h3>
+                            <div t-attf-style="color:{{data['primary_color']}}!important;">
+                                <span>
+                                    <strong t-field="o.partner_id"/>
+                                </span>
+                            </div>
+                            <div t-field="o.partner_id" t-options='{"widget": "contact", "fields": ["address",
+							"phone"], "no_marker": True, "phone_icons": True}'/>
+                            <span t-if="o.partner_id.vat">TIN: <span t-field="o.partner_id.vat"/></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12" >
+                            <table class="table table-bordered" t-attf-style="background-color:{{data['primary_color']}} !important; border-collapse: seperate; !important; border-spacing: 20px;!important; color:{{data['sale_font_color']}}!important;" >
+                                <tbody >
+                                    <tr style="border-style: solid !important;">
+                                        <td t-if="docs.name">Reference:
+                                                <br/>
+                                                    <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.name"/>
+                                        </td>
+                                        <td t-if="docs.date_due and docs.type == 'out_invoice' and (docs.state == 'open' or docs.state
+                                            == 'paid')">
+                                            Due Date:
+                                                <br/>
+                                                    <span t-field="docs.date_due"/>
+                                        </td>
+                                        <td t-if="docs.date_invoice">
+                                            Invoice Date :
+                                                <br/>
+                                                    <span t-field="docs.date_invoice"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td t-if="docs.origin">
+                                            Source :
+                                                <br/>
+                                                    <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.origin"/>
+                                        </td>
+                                        <td t-if="docs.partner_id.ref">
+                                            Customer Code :
+                                                <br/>
+                                                    <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.partner_id.ref"/>
+                                        </td>
+                                         <td t-if="docs.fiscal_position_id">
+                                            Fiscal Position:
+                                                <br/>
+                                                    <span style="border: 1px !important;border-color: #fff !important;" t-field="docs.fiscal_position_id"/>
+                                        </td>
+                                        <td>
+                                            Source Document:
+                                                <br/>
+                                                    <h4>
+                                                        <span t-if="docs.type == 'out_invoice' and (docs.state == 'open' or docs.state == 'paid')">Invoice :</span>
+                                                        <span t-if="docs.type == 'out_invoice' and docs.state == 'proforma2'">PRO-FORMA :</span>
+                                                        <span t-if="docs.type == 'out_invoice' and docs.state == 'draft'">Draft Invoice :</span>
+                                                        <span t-if="docs.type == 'out_invoice' and docs.state == 'cancel'">Cancelled Invoice :</span>
+                                                        <span t-if="docs.type == 'out_refund'">Refund :</span>
+                                                        <span t-if="docs.type == 'in_refund'">Vendor Refund :</span>
+                                                        <span t-if="docs.type == 'in_invoice'">Vendor Bill :</span>
+                                                        <span t-field="docs.number"/>
+                                                    </h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="row">
+                        <div  class="col-xs-12 ">
+                            <t t-set="display_discount" t-value="any([l.discount for l in docs.invoice_line_ids])"/>
+                            <table  class="table table-condensed table table-striped">
+                                <thead t-attf-style="border-collapse:seperate; !important; border-spacing:2px;!important;">
+                                    <tr>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="5%">
+                                            <i class="fa fa-list-ol" aria-hidden="true"/>Item
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="25%">
+                                            <i class="fa fa-th-large" aria-hidden="true"/>Description
+                                        </th>
+                                        <t t-if="o.company_id.add_product_image">
+                                           <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="10%">
+                                                <i class="fa fa-picture-o" aria-hidden="true"/>Product Image
+                                            </th>
+                                        </t>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="6%">
+                                            <i class="fa fa-sort-amount-asc" aria-hidden="true"/>Quantity
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="6%">
+                                            <i class="fa fa-gg-circle" aria-hidden="true"/>Unit Price
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="6%" t-if="display_discount">
+                                            <i class="fa fa-percent" aria-hidden="true"/>Disc.(%)
+                                        </th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="15%">
+                                            <i class="fa fa-tags" aria-hidden="true"/>Taxes
+                                        </th>
+                                       <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;" class="text-center" width="10%">
+                                            <i class="fa fa-cc-mastercard" aria-hidden="true"/>Tax Excluded Price
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="invoice_tbody">
+                                    <t t-set="j" t-value="1" />
+                                    <t t-foreach="docs.invoice_line_ids" t-as="l">
+                                        <tr style="page-break-inside:avoid;margin-top:5%">
+                                           <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;"  class="text-center">
+                                                <span t-esc="j" />
+                                                <t t-set="j" t-value="j+1" />
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;">
+                                                <span t-field="l.name"/>
+                                            </td>
+                                            <t t-if="o.company_id.add_product_image">
+                                                <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;">
+                                                    <span t-field="l.product_id.image" t-field-options='{"widget": "image"}'/>
+                                                </td>
+                                            </t>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-right">
+                                                <span t-field="l.quantity"/>
+                                                <span t-field="l.uom_id"  groups="product.group_uom"/>
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-right">
+                                                <span t-field="l.price_unit"/>
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" t-if="display_discount"
+											class="text-right" >
+                                                <span t-field="l.discount"/>
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-right">
+                                                <span t-esc="', '.join(map(lambda x: (x.description or x.name), l.invoice_line_tax_ids))"/>
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-right">
+                                                <span t-field="l.price_subtotal" t-options='{"widget": "monetary", "display_currency":
+												o.currency_id}'/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br></br>
+                    <p style="page-break-before:avoid" />
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <table class="table table-condensed" style="margin-left:190%">
+                                <tr class="border-black">
+                                    <td width="35%">
+                                        <strong>Total Without Taxes</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="docs.amount_untaxed" t-field-options='{"widget": "monetary", "display_currency":
+										"o.currency_id"}' />
+                                    </td>
+                                </tr>
+                                <t t-foreach="docs.amount_by_group" t-as="amount_by_group">
+                                    <tr>
+                                        <td  width="35%">Taxes</td>
+                                        <td class="text-right">
+                                            <span t-esc="amount_by_group[1]" t-options='{"widget": "monetary", "display_currency":
+											o.currency_id}'/>
+                                        </td>
+                                    </tr>
+                                </t>
+                                <tr class="border-black" t-attf-style="background-color:{{data['primary_color']}} !important;">
+                                    <td  width="35%">
+                                        <strong>Total</strong>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="docs.amount_total" t-field-options='{"widget": "monetary", "display_currency":
+										"o.currency_id"}' />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  width="35%">Amount Due</td>
+                                    <td class="text-right">
+                                        <span t-field="docs.residual" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td  width="35%">Payment Status</td>
+                                    <td class="text-right">
+                                        <span t-field="docs.state" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="page">
+                        <div class="col-xs-6"  t-if="docs.tax_line_ids">
+                             <table  class="table table-condensed table table-striped" t-attf-style="border-collapse:seperate; !important; border-spacing:2px;!important;">
+                                <thead>
+                                    <tr>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;color:{{data['sale_font_color']}}!important;" class="text-center" width="8%">Item</th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;color:{{data['sale_font_color']}}!important;" class="text-center" width="15%">Taxes</th>
+                                        <th t-attf-style="border: 1px !important; border-style: solid !important;border-color: #fff; background-color:{{data['primary_color']}} !important; vertical-align:middle;color:{{data['sale_font_color']}}!important;" class="text-center" width="8%">Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="invoice_tbody">
+                                    <t t-set="i" t-value="1" />
+                                    <t t-foreach="docs.tax_line_ids" t-as="t">
+                                        <tr>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-center">
+                                                <span t-esc="i" />
+                                                <t t-set="i" t-value="i+1" />
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-right">
+                                                <span t-field="t.name" />
+                                            </td>
+                                            <td style="border: 1px !important; border-style: solid !important;border-color:#FFFFFF !important;" class="text-right">
+                                                <span t-field="t.amount" t-field-options='{"widget": "monetary", "display_currency":
+												"o.currency_id"}' />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="row">
+                        <div class="col-xs-6"  t-if="docs.tax_line_ids">
+                            <table class="table table-condensed" style="margin-left:10%">
+                                <tr>
+                                    <td>
+                                        <strong>Comment:</strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p t-if="docs.comment">
+                                            <span t-field="docs.comment"/>
+                                        </p>
+                                        <p t-if="docs.payment_term_id">
+                                            <span t-field="docs.payment_term_id.note"/>
+                                        </p>
+                                        <p t-if="docs.fiscal_position_id.note">
+                                            <strong>Fiscal Position Remark:</strong>
+                                            <span t-field="docs.fiscal_position_id.note"/>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="row">
+                        <div class="col-xs-4" style="margin-left:66%">
+                            <t t-if="doc.company_id.add_signature == True">
+                                <span>Signature :</span>
+                                <span t-field="doc.company_id.signature_logo" t-options='{"widget": "image","style":"width: 100px; height: 100px; margin-right: 10px; display:inline" }'/>
+                            </t>
+                        </div>
+                    </div>
+                    <div class="oe_structure"/></div>
+            </t>
+            <br/>
+            <br/>
+            <div class="footer" position="fixed;">
+                <div class="text-center" style="border-top: 1px solid black;">
+                    <div class="text-muted">
+                    <div class="row">
+                    <div class="col-xs-3 text-left" position="left">
+                        <table style="vertical-align:baseline;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <t t-if="doc.company_id.name_report_sale">
+                                    <span t-field="doc.company_id.name_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.date_report_prd">Date Issue:
+                                    <span t-field="doc.company_id.date_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.rev_report_prd">Revision:
+                                    <span t-field="doc.company_id.rev_report_sale"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-xs-4 text-center" position="center">
+                        <table style="vertical-align:baseline;margin-left:18.75em;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <t t-if="doc.company_id.partner_id.website">
+                                    <i class="fa fa-globe" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.website"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.partner_id.email">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.email"/>
+                                    </t>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <t t-if="doc.company_id.partner_id.phone">
+                                    <i class="fa fa-phone" aria-hidden="true"/>
+                                    <span t-field="doc.company_id.phone"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </table>
+                     </div>
+                    <div class="col-xs-3 text-right" position="right">
+                        <table style="vertical-align:baseline;margin-left:18.75em;table-layout:fixed;">
+                            <tr>
+                                <td>
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    <span t-field="docs.user_id"/> 
+                                </td>
+                            </tr>
+                            <tr>
+                                 <td>
+                                    Page: <span class="page"/>/<span class="topage" />    
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </template>
+        <template id="account_invoice_template2_duplicate" inherit_id="erpvn_reports.account_invoice_template2"
+			primary="True">
+            <xpath expr="//h4" position="replace">
+                <h4>
+                    <span>Duplicate:</span>
+                    <span t-if="docs.type == 'out_refund'">refund</span>
+                    <span t-if="docs.type == 'out_invoice'">invoice</span>
+                    <span t-field="docs.number"/>
+                </h4>
+            </xpath>
+        </template>
+
+        <template id="report_account_invoice" inherit_id="account.report_invoice">
+            <xpath expr="//t[@t-call='web.html_container']" position="replace">
+                <t t-foreach="doc" t-as="o">
+                    <t t-if="o.company_id.temp_selection == 'template1'">
+                        <t t-call="erpvn_reports.account_invoice_template1" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection == 'template2'">
+                        <t t-call="erpvn_reports.account_invoice_template2" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection== 'template3'">
+                        <t t-call="erpvn_reports.account_invoice_template3" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection == 'template4'">
+                        <t t-call="erpvn_reports.account_invoice_template4" t-lang="o.partner_id.lang"/>
+                    </t>
+                    <t t-if="o.company_id.temp_selection == False or o.company_id.temp_selection == 'template5'">
+                        <t t-call="account.report_invoice_document" t-lang="o.partner_id.lang"/></t>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo> 

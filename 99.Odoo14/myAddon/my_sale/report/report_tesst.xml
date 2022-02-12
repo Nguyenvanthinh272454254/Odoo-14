@@ -1,0 +1,17 @@
+<odoo>
+    
+    <record id="action_report_qweb-pdf" model="ir.actions.report.xml">
+        <field name="name">report test</field>
+        <field name="model">sale_orreder</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">my_sale.order_template</field>
+        <field name="report_file">my_sale.order_template</field>
+         <field name="binding_model_id" ref="model_sale_order" />
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="template_id" name="template_name">
+        
+    </template>
+    
+</odoo>

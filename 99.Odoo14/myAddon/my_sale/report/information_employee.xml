@@ -1,0 +1,350 @@
+<odoo>
+    <record id="report_sale_order" model="ir.actions.report">
+        <field name="name">Sale report(PDF)</field>
+        <field name="model">sale.order</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">my_sale.order_template</field>
+        <field name="report_file">my_sale.order_template</field>
+        <field name="binding_model_id" ref="model_sale_order" />
+        <field name="paperformat_id" ref="my_sale.paperformat_a4_clear_sale_by_Thinh" />
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="report_sale_order_html" model="ir.actions.report">
+        <field name="name">Sale report(HTML)</field>
+        <field name="model">sale.order</field>
+        <field name="report_type">qweb-html</field>
+        <field name="paperformat_id" ref="my_sale.paperformat_a4_clear_sale_by_Thinh" />
+        <field name="report_name">my_sale.order_template</field>
+        <field name="report_file">my_sale.order_template</field>
+        <field name="binding_model_id" ref="model_sale_order" />
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="order_template">
+        <t t-set="company" t-value="user.company_id" />
+        <div class="header">
+            <div class="row" style="font-family: 'Trebuchet MS', sans-serif;">
+                <div class="col-7">
+                    <div class="row">
+                        <div class="col-7">
+                            <div t-field="company.partner_id" style="font-size:12px"
+                            t-options='{"widget": "contact", "fields": ["address", "email"], "no_marker": true}'
+                        />
+                        </div>
+                        <div class="col-5">
+                            <t t-foreach="docs" t-as="doc">
+                                <h4 t-esc="doc.name" style="
+                                                    color: white;
+                                                    font-size: 15px;
+                                                    width: 86%;
+                                                    background-color: red;
+                                                    padding-left: 13%;
+                                                    padding-top: 6%;"
+                                 />
+                            </t>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-5">
+                    <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" 
+                    style="
+                    max-height: 80px;
+                    padding-bottom: 12%;
+                    padding-left:3%
+                    " alt="Logo" />
+                </div>
+
+            </div>
+            <div t-if="company.logo or company.report_header" class="row zero_min_height">
+                <div class="col-12">
+                    <div style="border-bottom: 1px solid black;" />
+                </div>
+            </div>
+
+        </div>
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <link rel="stylesheet" href="/my_sale/static/src/css/style.css" />
+                        <h5 style="text-align:center">COMMERCIAL INVOICE</h5>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="edit" style="width:27%">
+                                        <ul style="font-size:12px; font-weight:bold">
+                                            <li>CUSTOMER</li>
+                                            <li>PROJECT REF</li>
+                                            <li>ADDRESS</li>
+                                            <li>CONTACT</li>
+                                            <li>TEL</li>
+                                            <li>DELIVERY ADD</li>
+                                        </ul> 
+                                    </div>
+                                    <div class="edit2" style="width:73%">
+                                        <ul style="font-size:12px">
+                                            <li><t t-esc="doc.partner_id.name" /></li>
+                                            <li>sad</li>
+                                            <li>dsadasd</li>
+                                            <li>david@noordesign.net</li>
+                                            <li>(+84) 28 38224626</li>
+                                            <li> Manazel Alnaqa Company
+                                                8683 Abdul Maqsud Khuja - Ar Rawdah Dist. Unit No 65
+                                                Jeddah 23435 - 2623
+                                                Kingdom of Saudi Arabia</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="edit3" style="width:30%">
+                                        <ul style="font-size:12px;font-weight:bold">
+                                            <li>BUYER</li>
+                                            <li>INVOICE DATE</li>
+                                            <li>INVOICE # </li>
+                                            <li>READY TO DELIVER</li>
+                                            <li>PO #</li>
+                                            <li>COUNTRY</li>
+                                            <li>VALID UNTIL</li>
+                                            <li>TERMS</li>
+                                        </ul> 
+                                    </div>
+                                    <div class="edit4" style="width:70%">
+                                        <ul style="font-size:12px">
+                                            <li><t t-esc="doc.partner_id.name" /></li>
+                                            <li>07/18/2021</li>
+                                            <li>PI21-P027</li>
+                                            <li>See T and Cs</li>
+                                            <li>...</li>
+                                            <li> Saudi Arabia</li>
+                                            <li>...</li>
+                                            <li>30%-70% TT</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <table class="table table-hover" style="width:100%;">
+                            <thead>
+                                <tr>
+                                    <th class="tg-z9od">NO. </th>
+                                    <th class="tg-0lax" style="width: 12%;">PICTURE</th>
+                                    <th class="tg-0lax" style="width: 10%;">D8 REFERENCE</th>
+                                    <th class="tg-0lax" style="width: 10%;">DESCRIPTION</th>
+                                    <th class="tg-0lax" style="width: 20%;">FINISH</th>
+                                    <th class="tg-0lax">L</th>
+                                    <th class="tg-0lax">W</th>
+                                    <th class="tg-0lax">H</th>
+                                    <th class="tg-0lax">QTY</th>
+                                    <th class="tg-0lax">UNIT PRICE (USD) </th>
+                                    <th class="tg-0lax " style="width: 14%;">TOTAL (USD)</th>
+                                    <th class="tg-0lax" scope="col">PI REF.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.order_line" t-as="order">
+                                    <tr>
+                                        <td>
+                                            <t t-esc="order.product_id.id" />
+                                        </td>
+                                        <td>
+                                            <img t-if="order.product_id.image_1920" t-att-src="image_data_uri(order.product_id.image_1920)" style="max-height:57pt;width:78%;margin-left: 22px;" />
+                                            <img src="my_sale/static/description/odoo_icon.png" style="max-height:57pt;width:78%;margin-left: 22px;" />
+                                        </td>
+                                        <td>
+                                            D8 REFERENCE
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.name" />
+                                        </td>
+                                        <td>
+                                            Ebonized Oak with Antique Copper metal finish
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.length" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.weight" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.height" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.product_uom_qty" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.price_unit" />
+                                        </td>
+                                        <td>
+                                            <t t-esc="order.price_subtotal" />
+                                        </td>
+                                        <td>
+                                            abc
+                                        </td>
+                                    </tr>
+                                </t>
+
+                            </tbody>
+
+
+                        </table>
+                        <div class="row">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <table class="table table-hover">
+                                    <tbody>
+                                        <tr>
+                                            <th class="edit" colspan="9" style="border-left-style:none; border-bottom-style: none;
+                                            border-top-style: none;"></th>
+                                            <th class="tg-0lax2">
+                                                <h5 style="color:red;font-size:12px">TOTAL</h5>
+                                            </th>
+                                            <td class="tg-0lax2" style="color:red;">
+                                                <t t-esc="doc.amount_untaxed" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="edit" colspan="9" style="border-left-style:none"></th>
+                                            <th class="tg-0lax2">SHIPPING COST</th>
+                                            <td class="tg-0lax2">13998</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="edit" colspan="9" style="border-left-style:none"></th>
+                                            <th class="tg-0lax2">PALLETS</th>
+                                            <td class="tg-0lax2">250</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="edit" colspan="9" style="border-left-style:none"></th>
+                                            <th class="tg-0lax2">
+                                                <h5 style="color:blue;font-size:12px">GRAND TOTAL</h5>
+                                            </th>
+                                            <td class="tg-0lax2" style="color:blue;">
+                                                <t t-esc="doc.amount_total" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="edit" colspan="9" style="border-left-style:none"></th>
+                                            <th class="tg-0lax2">DEPOSIT PAID 30%</th>
+                                            <td class="tg-0lax2">...</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="edit" colspan="9" style="border-left-style:none"></th>
+                                            <th class="tg-0lax2">BALANCE DUE</th>
+                                            <td class="tg-0lax2">...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="edit">
+                            <h5 t-esc="doc.name" style="position: absolute;font-size: 80px;top: 500px;left: 20%;opacity: 0.4;font-weight: bold;
+                            -webkit-transform: rotate(-38deg);-moz-transform: rotate(-38deg);-o-transform: rotate(-38deg);-ms-transform: rotate(-38deg);transform: rotate(-38deg);"></h5>
+                        </div>
+                        <ul>
+
+                            <li>
+                                <h6>Terms and Conditions</h6>
+                            </li>
+                            <li>
+                                <h6>Standard package included</h6>
+                            </li>
+                            <li>
+                                <h6>All prices are net in USD (Ex-works)</h6>
+                            </li>
+                            <li>
+                                <h6>Lead time for samples: 5 weeks from deposit paymen</h6>
+                            </li>
+                            <li>
+                                <h6>Lead time for roll-out: 90 days from deposit payment, subject to sample approval by Buyer</h6>
+                            </li>
+                            <li>
+                                <h6>Delivery terms: ex-works Ho Chi Minh City, Vietnam</h6>
+                            </li>
+                            <li>
+                                <h6>30% TT payment on order placement, balance upon shipment ready</h6>
+                            </li>
+                            <li>
+                                <h6>All expected ship dates are dependant on the payment being received within 5 days of date of invoice</h6>
+                            </li>
+                            <li>
+                                <h6>Please make all payments to:</h6>
+                            </li>
+                        </ul>
+                        <style type="text/css"></style>
+                        <table class="info">
+                            <thead>
+                                <tr>
+                                    <td>Account Name:</td>
+                                    <td>District Eight Design Co., Ltd</td>
+                                </tr>
+                                <tr>
+                                    <td>Account No.:</td>
+                                    <td>002840070000305 (USD) / 002704070012632 (VND)</td>
+                                </tr>
+                                <tr>
+                                    <td>Swift code : </td>
+                                    <td>HDBCVNVX</td>
+                                </tr>
+                                <tr>
+                                    <td>Bank Name:</td>
+                                    <td>HoChiMinh City Development Joint Stock Commercial Bank (HDBank)</td>
+                                </tr>
+                                <tr>
+                                    <td>Address:</td>
+                                    <td>HoChiMinh City Development Joint Stock Commercial Bank (HDBank)</td>
+                                </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+                </t>
+            </t>
+        </t>
+        <br />
+        <div class="footer">
+            <div class="text-center" style="border-top: 1px solid black;">
+                <ul class="list-inline mb4 text-nowrap">
+                    <li t-if="company.phone" class="list-inline-item d-inline">
+                        Phone:
+                        <span class="o_force_ltr" t-field="company.phone" />
+                    </li>
+                    <li t-if="company.email" class="list-inline-item d-inline">
+                        Email:
+                        <span t-field="company.email" />
+                    </li>
+                    <li t-if="company.website" class="list-inline-item d-inline">
+                        Web:
+                        <span t-field="company.website" />
+                    </li>
+                    <li t-if="company.vat" class="list-inline-item d-inline">
+                        <t t-esc="company.country_id.vat_label or 'Tax ID'" />
+                        :
+                        <span t-field="company.vat" />
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center">
+                <div t-if="report_type == 'pdf'" class="text-muted">
+                    Page:
+                    <li class="list-inline-item">
+                        <strong>
+                            <span class="page" />
+                            /
+                            <span class="topage" />
+                        </strong>
+                    </li>
+                </div>
+                <!-- <div>
+                    Print date: <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
+                </div> -->
+            </div>
+        </div>
+
+    </template>
+
+
+</odoo>
