@@ -351,8 +351,8 @@
 
                         </div>
 
-                        <t t-set="counter" t-value="0" />
-                        <t t-set="flag" t-value="True" />
+                        <t t-set="counter" t-value="2" />
+                        <!-- <t t-set="flag" t-value="True" /> -->
                         <t t-foreach="doc.order_line" t-as="order">
                             <div class="row" style="margin:0px 4px 0px 4px">
                                 <div class="col-8">
@@ -381,56 +381,108 @@
                                             <tr>
                                                 <th scope="row">DESCRIPTION</th>
                                                 <td style="line-height: 0px;">
-                                                    <t t-esc="order.product_id.description" />
+                                                    <t t-esc="order.name" />
                                                 </td>
                                             </tr>
-
-                                            <tr>
-                                                <t t-if="order.product_id.dimension_length">
-                                                    <th scope="row">LENGTH</th>
-                                                    <td>
-                                                        <t t-esc="order.product_id.dimension_length" />
-                                                    </td>
-                                                    <t t-if="order.product_id.dimension_length and order.product_id.dimension_width">
-                                                        <th scope="row">x WIDTH</th>
-                                                        <td>
-                                                            <t t-esc="order.product_id.dimension_length" />
-                                                            x
-                                                            <t t-esc="order.product_id.dimension_width" />
-                                                        </td>
+                                            <t t-if="order.product_id.dimension_length or order.product_id.dimension_width or order.product_id.dimension_height">
+                                                <tr>
+                                                    <th>
                                                         <t t-if="order.product_id.dimension_length and order.product_id.dimension_width and order.product_id.dimension_height">
-                                                            <th scope="row">x HEIGHT</th>
-                                                            <td>
-                                                                <t t-esc="order.product_id.dimension_length" />
-                                                                x
-                                                                <t t-esc="order.product_id.dimension_width" />
-                                                                x
-                                                                <t t-esc="order.product_id.dimension_height" />
-                                                            </td>
+                                                            LENGTH x WIDTH x HEIGHT
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_width">
+                                                            LENGTH x WIDTH
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_height">
+                                                            LENGTH x HEIGHT
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            WIDTH x HEIGHT
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length">
+                                                            LENGTH
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_width">
+                                                            WIDTH
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_height">
+                                                            HEIGHT
+                                                        </t>
+                                                    </th>
+                                                    <td>
+                                                        <t t-if="order.product_id.dimension_length and order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                                    x
+                                                                    <t t-esc="order.product_id.dimension_width" />
+                                                                    x
+                                                                    <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+                                                        <!-- ton tai leng va width -->
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_width">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                                    x
+                                                            <t t-esc="order.product_id.dimension_width" />
                                                         </t>
 
-                                                    </t>
+                                                        <!-- ton tai leng va height -->
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                                    x
+                                                            <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
 
+                                                        <!-- ton tai width va height -->
+                                                        <t t-elif="order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_width " />
+                                                                    x
+                                                            <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+
+                                                        <t t-elif="order.product_id.dimension_length">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                           
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_width">
+                                                            <t t-esc="order.product_id.dimension_width" />
+                                                        </t>
+    
+                                                        <t t-elif="order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+                                                    </td>
+    
+                                                </tr>
+                                            </t>
+
+                                            <tr>
+                                                <t t-if="order.product_id.dimension_thick">
+                                                    <th>THICK</th>
+                                                    <td>
+                                                        <t t-esc="order.product_id.dimension_thick"/>
+                                                    </td>
                                                 </t>
-
-
-                                                <!-- <th scope="row">LENGTH</th>
-                                                <td>
-                                                    <t t-esc="order.product_id.dimension_length" />
-                                                </td> -->
                                             </tr>
-                                            <!-- <tr>
-                                                <th scope="row">WIDTH</th>
-                                                <td>
-                                                    <t t-esc="order.product_id.dimension_width" />
-                                                </td>
-                                            </tr> -->
-                                            <!-- <tr>
-                                                <th scope="row">HEIGHT</th>
-                                                <td>
-                                                    <t t-esc="order.product_id.dimension_height" />
-                                                </td>
-                                            </tr> -->
+                                            <tr>
+                                                <t t-if="order.product_id.dimension_od">
+                                                    <th>
+                                                        OUTSIDE DIAMETER
+                                                    </th>
+                                                    <td>
+                                                        <t t-esc="order.product_id.dimension_od"/>
+                                                    </td>
+                                                </t>
+                                            </tr>
+                                            <tr>
+                                                <t t-if="order.product_id.dimension_id">
+                                                    <th>
+                                                        INSIDE DIAMETER
+                                                    </th>
+                                                    <td>
+                                                        <t t-esc="order.product_id.dimension_id"/>
+                                                    </td>
+                                                </t>
+                                            </tr>
+                                          
                                             <tr>
                                                 <th scope="row">QUANTITY</th>
                                                 <td>
@@ -467,12 +519,16 @@
 
 
                             <t t-set="counter" t-value="counter + 1" />
-                            <t t-if="counter % 2 == 0">
+                            <!-- <t t-if="counter % 2 == 0">
                                 <t t-if="flag == True">
                                     <p style="page-break-before:always;"></p>
                                     <t t-set="flag" t-value="False" />
                                 </t>
+                            </t> -->
+                            <t t-if="counter % 4 ==0">
+                                <p style="page-break-before:always;"></p>
                             </t>
+                           
                             <t t-if="counter %2 == 0">
                                 <h5 t-esc="order.order_id.name" style="
                                 position: fixed;
@@ -485,14 +541,6 @@
                                 -o-transform: rotate(-38deg);
                                 transform: rotate(-38deg);"></h5>
                             </t>
-
-                            <!-- <t t-if="counter > 4 and 6 > counter">
-                                <p style="page-break-before:always;"></p>
-                            </t>
-                            <t t-if="counter % 4== 0 and counter > 7">
-                                <p style="page-break-before:always;"></p>
-                            </t> -->
-
 
                         </t>
 
@@ -543,62 +591,51 @@
                 </t>
                 <div class="footer">
                     <div class="tesst" style="border-top: 1px solid black;">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="text-left">
-                                    <div t-if="report_type == 'pdf'" style="padding-left:1%">
-                                        <ul style="padding-left:1%">
-                                            <li class="list-inline-item d-block">
-                                                Printer:
-                                                <span class="o_force_ltr" t-esc="user.name" />
-                                            </li>
-                                            <li class="list-inline-item d-block">
-                                                Date:
-                                                <span class="o_force_ltr" t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')" />
-                                            </li>
-    
-                                        </ul>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="text-left">
+                                        <div t-if="report_type == 'pdf'" style="padding-left:1%">
+                                            <ul style="padding-left:1%">
+                                                <li class="list-inline-item d-block" style="font-size:12px;font-style: oblique;">
+                                                    Printer:
+                                                    <span class="o_force_ltr" t-esc="user.name" />
+                                                </li>
+                                                <li class="list-inline-item d-block" style="font-size:12px;font-style: oblique;">
+                                                    Date:
+                                                    <span class="o_force_ltr" t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')" />
+                                                </li>
+        
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-8" style="padding-left:0">
-                                <ul class="list-inline mb4 text-nowrap">
-                                    <li t-if="company.website" class="list-inline-item d-inline">
-                                        Website:
-                                        <span t-field="company.website" />
-                                    </li>
-                                    <li t-if="company.vat" class="list-inline-item d-inline">
-                                        <t t-esc="company.country_id.vat_label or 'Tax ID'" />
-                                        :
-                                        <span t-field="company.vat" />
-                                    </li>
-                                </ul>
-                            </div>
-                        
-                          </div>
-                        <div class="row">
-                            <div class="col-6">
-                            
-    
-                            </div>
-                            <div class="col-6">
-                                <div class="text-right">
-                                    <div t-if="report_type == 'pdf'" style="margin-right:3%">
-                                        Page:
-                                        <li class="list-inline-item">
-                                            <strong>
-                                                <span class="page" />
-                                                /
-                                                <span class="topage" />
-                                            </strong>
+                                <div class="col-4" style="padding:0">
+                                    <ul class="list-inline text-nowrap" style="padding-left:3%">
+                                        <li t-if="company.website" class="list-inline-item d-inline" style="font-size:12px;font-style: oblique;">
+                                            Website:
+                                            <span t-field="company.website" />
                                         </li>
+                                    </ul>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-right">
+                                        <div t-if="report_type == 'pdf'">
+                                            Page:
+                                            <li class="list-inline-item" style="font-size:12px;font-style: oblique;">
+                                                <strong style="display:flex">
+                                                    <span class="page" />
+                                                    /
+                                                    <span class="topage" />
+                                                </strong>
+                                            </li>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            
+                              </div>
+
                         </div>
-                    
-               
-                       
                     </div>
                   
                 </div>
