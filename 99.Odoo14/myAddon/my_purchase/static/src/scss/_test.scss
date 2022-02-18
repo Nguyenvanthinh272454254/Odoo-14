@@ -1,0 +1,18 @@
+.box{
+    width: 100%;
+    &_first{
+        width: 50%;
+        h5{
+            text-align: center;
+            text-decoration: underline;
+            font-size: 15px;
+        }
+    }
+    &_two{
+        width: 50%;
+        h5{
+            text-align: left;
+            font-size: 30px;
+        }
+    }
+}

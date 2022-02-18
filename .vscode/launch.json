@@ -9,11 +9,11 @@
             "type": "python",
             "request": "launch",
             "stopOnEntry": false,
-            "python": "/home/thinhnv/Desktop/Odoo/venv/bin/python3",
-            "program": "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo-bin",
+            "python": "/home/thinhnv/Desktop/Odoo-14/venv/bin/python3",
+            "program": "/home/thinhnv/Desktop/Odoo-14/99.Odoo14/server/odoo-bin",
             "args": [
                 "-c", // config file
-                "/home/thinhnv/Desktop/Odoo/05.Config/config.cfg",
+                "/home/thinhnv/Desktop/Odoo-14/05.Config/config.cfg",
                 "-u", // update
                 "my_library",
                 // "-i", //install
@@ -21,7 +21,7 @@
                 "--dev",
                 "xml,js",
             ],
-            "cwd": "/home/thinhnv/Desktop/Odoo/99.Odoo14/server/odoo",
+            "cwd": "/home/thinhnv/Desktop/Odoo-14/99.Odoo14/server/odoo",
             "console": "integratedTerminal",
         }
     ]

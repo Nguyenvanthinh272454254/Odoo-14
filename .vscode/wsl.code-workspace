@@ -1,12 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "/home/thinhnv/Desktop/Odoo/"
+			"path": "/home/thinhnv/Desktop/Odoo-14/"
 		}
 	],
 	"settings": {
-		"python.pythonPath": "/home/thinhnv/Desktop/Odoo/venv/bin/python3",
-		"python.envFile": "/home/thinhnv/Desktop/Odoo/venv/bin",
+		"python.pythonPath": "/home/thinhnv/Desktop/Odoo-14/venv/bin/python3",
+		
+		"python.envFile": "/home/thinhnv/Desktop/Odoo-14/venv/bin",
 		"python.testing.pytestEnabled": true,
 		"python.testing.nosetestsEnabled": false,
 		"python.testing.unittestEnabled": false,

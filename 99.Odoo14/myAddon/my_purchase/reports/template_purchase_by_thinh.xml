@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="order_template_my_purchase">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-set="company" t-value="user.company_id" />
+                <div class="header">
+                    <div class="row" style="font-family: 'Trebuchet MS', sans-serif;">
+                        <div class="col-4">
+                            <div class="text-left">
+                                <div t-if="report_type == 'pdf'" style="padding-left:1%">
+                                    <ul style="padding-left:1%">
+                                        <li class="list-inline-item d-block" style="font-size:14px;">
+                                            <t t-esc="company.street" />
+                                        </li>
+                                        <li class="list-inline-item d-block" style="font-size:14px;">
+                                            <t t-esc="company.street2"></t>
+                                        </li>
+                                        <li class="list-inline-item d-block" style="font-size:14px;">
+                                            <t t-esc="company.phone" />
+                                        </li>
+                                        <li class="list-inline-item d-block" style="font-size:14px;">
+                                            <t t-esc="company.email" />
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <h4 t-esc="doc.name" style="
+                                font-size: 30px;
+                                padding-left: 20%;
+                                padding-top: 8%;
+                                " />
+                        </div>
+                        <div class="col-3">
+                            <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" style="
+                        max-height: 70px;
+                        float:right;
+                        padding-bottom: 22%;
+                        margin-top: 13%;
+                        " alt="Logo" />
+                        </div>
+
+                    </div>
+                    <div t-if="company.logo or company.report_header" class="row zero_min_height">
+                        <div class="col-12">
+                            <div style="border-bottom: 1px solid black;" />
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <link rel="stylesheet" href="/my_purchase/static/src/css/style.css" />
+                        <h5 style="text-align:center;
+                        padding:4% 0 4% 0;
+                        font-size: 25px;
+                        font-weight: bold;">PURCHASE REQUEST QUOTATION</h5>
+                        <div class="row" style="margin-top:30px;margin-left: 1%;
+                        line-height: 17px;width:100%">
+                            <div class="col-5" style="padding-left: 4%;">
+                                <h5 style="
+                                text-align:left;
+                                font-weight: bold;
+                                margin-bottom: 2%;">
+                                DELIVERY ADDRESS
+                            </h5>
+                                <div class="row edit" style="padding-left:5%">
+                                    <table style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <h6>NAME COMPANY</h6>
+                                                </th>
+                                                <td>
+                                                    <h6>
+                                                        <t t-esc="company.name" />
+                                                    </h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <h6>ADDRESS</h6>
+                                                </th>
+                                                <td>
+                                                    <h6>
+                                                        <t t-esc="company.street" />
+                                                        <t t-if="company.street2">
+                                                            ,
+                                                            <t t-esc="company.street2" />
+                                                        </t>
+                                                    </h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <h6>TEL</h6>
+                                                </th>
+                                                <td>
+                                                    <h6>
+                                                        <t t-esc="company.phone" />
+                                                    </h6>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-7" style="padding-left: 15%;">
+                                <h5 style="padding-left: 1%;margin-bottom: 2%;font-weight: bold;">VENDOR ADDRESS</h5>
+                                <div class="row edit2" style="width:100%;padding-left:5%">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <h6>NAME COMPANY</h6>
+                                                </th>
+                                                <td>
+                                                    <h6>
+                                                        <t t-esc="doc.partner_id.name" />
+                                                    </h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <h6>ADDRESS</h6>
+                                                </th>
+                                                <td>
+                                                    <h6>
+                                                        <t t-esc="doc.partner_id.street" />
+                                                        <t t-if="doc.partner_id.street2">
+                                                            ,
+                                                            <t t-esc="doc.partner_id.street2" />
+                                                        </t>
+                                                    </h6>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <h6>TEL</h6>
+                                                </th>
+                                                <td>
+                                                    <h6>
+                                                        <t t-esc="doc.partner_id.phone" />
+                                                    </h6>
+                                                </td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="margin-top:10%;margin-bottom:10%;margin-left: 1%;
+                        line-height: 17px;width:100%">
+                            <div class="col-5">
+                                <h6 style=";padding-left: 6%;font-weight: bolder;
+                                margin-bottom: 2%; font-size:18px">
+                            PLEASE MAKE ALL PAYMENTS TO:</h6>
+                                <div class="row" style="padding-left: 11%;">
+                                    <div class="edit_bank" style="width:35%">
+                                        <h5>
+                                            ACCOUNT NAME:
+                                        </h5>
+                                        <h5>
+                                            ACCOUNT NO.:
+                                        </h5>
+                                        <h5>
+                                            SWIFT CODE
+                                        </h5>
+                                        <h5>
+                                            BANK NAME
+                                        </h5>
+                                        <h5>
+                                            ADDRESS:
+                                        </h5>
+                                    </div>
+                                    <div class="edit_bank_id" style="width:65%;padding-left:4%">
+                                        <h5>
+                                            <t t-esc="doc.company_id.name" />
+                                        </h5>
+                                        <h5>
+                                            <t t-esc="doc.partner_id.bank_ids.acc_number" />
+                                            (
+                                            <t t-esc="doc.partner_id.currency_id.name" />
+                                            )
+                                        </h5>
+                                        <h5>HDBCVNVX</h5>
+                                        <h5>
+                                            <t t-esc="doc.partner_id.bank_ids.bank_id.name" />
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-7" style="padding:0px">
+                                <h6 style="padding-left: 1%;margin-bottom: 2%;font-weight: bold;font-size:18px">
+                                    TERMS AND CONDITIONS:
+                                </h6>
+                                <ul style="padding-left: 1%;">
+                                    <li>
+                                        <pre t-esc="doc.notes" style="overflow:hidden; color: black;
+                                                font-size: 12px;"></pre>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <t t-set="counter" t-value="2" />
+                        <t t-foreach="doc.order_line" t-as="order">
+                            <div class="row" style="margin:0px 4px 0px 4px">
+                                <div class="col-8">
+                                    <table class="table table-hover edittable">
+                                        <tbody style="line-height: 0px;">
+                                            <tr class="idet_thead">
+                                                <th>Name</th>
+                                                <td>Description</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">PRODUCT NAME</th>
+                                                <td>
+                                                    <t t-esc="order.product_id.name" />
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
+                                                <th scope="row">REFERENCE</th>
+                                                <td style="line-height: 0px;">
+                                                    <t t-esc="order.product_id.default_code" />
+                                                </td>
+                                            </tr> -->
+                                            <tr>
+                                                <th scope="row">DESCRIPTION</th>
+                                                <td style="line-height: 16px; padding-top:0px;padding-bottom:0px">
+                                                    <t t-esc="order.name" />
+                                                </td>
+                                            </tr>
+                                            <!-- <t t-if="order.product_id.dimension_length or order.product_id.dimension_width or order.product_id.dimension_height">
+                                                <tr>
+                                                    <th>
+                                                        <t t-if="order.product_id.dimension_length and order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            LENGTH x WIDTH x HEIGHT
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_width">
+                                                            LENGTH x WIDTH
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_height">
+                                                            LENGTH x HEIGHT
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            WIDTH x HEIGHT
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length">
+                                                            LENGTH
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_width">
+                                                            WIDTH
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_height">
+                                                            HEIGHT
+                                                        </t>
+                                                    </th>
+                                                    <td>
+                                                        <t t-if="order.product_id.dimension_length and order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                                    x
+                                                                    <t t-esc="order.product_id.dimension_width" />
+                                                                    x
+                                                                    <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_width">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                                    x
+                                                            <t t-esc="order.product_id.dimension_width" />
+                                                        </t>
+
+                                                        <t t-elif="order.product_id.dimension_length and order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                                    x
+                                                            <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+
+                                                        <t t-elif="order.product_id.dimension_width and order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_width " />
+                                                                    x
+                                                            <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+
+                                                        <t t-elif="order.product_id.dimension_length">
+                                                            <t t-esc="order.product_id.dimension_length" />
+                                                           
+                                                        </t>
+                                                        <t t-elif="order.product_id.dimension_width">
+                                                            <t t-esc="order.product_id.dimension_width" />
+                                                        </t>
+    
+                                                        <t t-elif="order.product_id.dimension_height">
+                                                            <t t-esc="order.product_id.dimension_height" />
+                                                        </t>
+                                                    </td>
+    
+                                                </tr>
+                                            </t> -->
+                                            <!-- <tr>
+                                                <t t-if="order.product_id.dimension_id">
+                                                    <th>
+                                                        INSIDE DIAMETER
+                                                    </th>
+                                                    <td>
+                                                        <t t-esc="order.product_id.dimension_id"/>
+                                                    </td>
+                                                </t>
+                                            </tr> -->
+                                            <tr>
+                                                <th>TAXES</th>
+                                                <td>
+                                                    <t t-esc="order.taxes_id.name" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    DELIVERY DATE
+                                                </th>
+                                                <td>
+                                                    <t t-esc="order.date_planned.date()" />
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th scope="row">QUANTITY</th>
+                                                <td>
+                                                    <t t-esc="order.product_qty" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">UNIT PRICE (USD)</th>
+                                                <td>
+                                                    <t t-esc="order.price_unit" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">AMOUNT (USD)</th>
+                                                <td>
+                                                    <t t-esc="order.price_subtotal" />
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <img t-att-src="image_data_uri(order.product_id.image_1920)" style="max-height: 100pt;
+                                    width: 60%;
+                                    border-radius: 15px;
+                                    margin-top: 15%;
+                                    margin-left:20%" />
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <t t-set="counter" t-value="counter + 1" />
+                            <t t-if="counter % 4 ==0">
+                                <p style="page-break-before:always;"></p>
+                            </t>
+
+                            <t t-if="counter %2 == 0">
+                                <h5 t-esc="order.order_id.name" style="
+                                position: fixed;
+                                font-size: 80px;
+                                z-index: 10000;
+                                left: 20%;
+                                opacity: 0.05 !important;
+                                -webkit-transform: rotate(-38deg);
+                                -moz-transform: rotate(-38deg);
+                                -o-transform: rotate(-38deg);
+                                transform: rotate(-38deg);"></h5>
+                            </t>
+
+                        </t>
+
+                        <div class="row" style="margin-top:15px">
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <th class="tg-0lax2">
+                                                <h5 style="color:red;font-size:12px">TOTAL</h5>
+                                            </th>
+                                            <td class="tg-0lax2" style="color:red;">
+                                                <t t-esc="doc.amount_untaxed" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tg-0lax2">TAXES</th>
+                                            <td class="tg-0lax2">
+                                                <t t-esc="doc.amount_tax" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tg-0lax2">SHIPPING COST</th>
+                                            <td class="tg-0lax2">13998</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tg-0lax2">PALLETS</th>
+                                            <td class="tg-0lax2">250</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="tg-0lax2">
+                                                <h5 style="color:blue;font-size:12px">GRAND TOTAL</h5>
+                                            </th>
+                                            <td class="tg-0lax2" style="color:blue;">
+                                                <t t-esc="doc.amount_total" />
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </t>
+
+
+                <div class="footer">
+                    <div class="tesst" style="border-top: 1px solid black;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="text-left">
+                                        <div t-if="report_type == 'pdf'" style="padding-left:1%">
+                                            <ul style="padding-left:1%">
+                                                <li class="list-inline-item d-block" style="font-size:12px;font-style: oblique;">
+                                                    Printer:
+                                                    <span class="o_force_ltr" t-esc="user.name" />
+                                                </li>
+                                                <li class="list-inline-item d-block" style="font-size:12px;font-style: oblique;">
+                                                    Date:
+                                                    <span class="o_force_ltr" t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')" />
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4" style="padding:0">
+                                    <ul class="list-inline text-nowrap" style="padding-left:3%">
+                                        <li t-if="company.website" class="list-inline-item d-inline" style="font-size:12px;font-style: oblique;">
+                                            Website:
+                                            <span t-field="company.website" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-right">
+                                        <div t-if="report_type == 'pdf'">
+                                            Page:
+                                            <li class="list-inline-item" style="font-size:12px;font-style: oblique;">
+                                                <strong style="display:flex">
+                                                    <span class="page" />
+                                                    /
+                                                    <span class="topage" />
+                                                </strong>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </t>
+        </t>
+
+
+    </template>
+
+
+</odoo>
